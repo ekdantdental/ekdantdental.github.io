@@ -60,6 +60,13 @@ export const doctors = [
     title: "ENT Specialist, MD",
     description: "Experienced ENT specialist with expertise in sinus treatments and ear-related conditions.",
     image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    id: 4,
+    name: "Dr. Reshma Rathod",
+    title: "Prosthodontist, MDS, BDS",
+    description: "11 years of experience in prosthodontics and crown bridge procedures.",
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   }
 ];
 
