@@ -18,7 +18,7 @@ const DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const ContactSection = () => {
-  const position: [number, number] = [40.712776, -74.005974]; // Example coordinates (NYC)
+  const position: [number, number] = [19.0631, 73.0095]; // Ekdant Clinic Coordinates in Sanpada, Navi Mumbai
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
@@ -43,7 +43,7 @@ const ContactSection = () => {
         <div className="h-96 rounded-lg overflow-hidden shadow-lg">
           <MapContainer 
             center={position} 
-            zoom={14} 
+            zoom={16} 
             scrollWheelZoom={false} 
             style={{ height: "100%", width: "100%" }}
           >
@@ -53,10 +53,18 @@ const ContactSection = () => {
             />
             <Marker position={position}>
               <Popup>
-                Ekdant Dental and ENT Clinic<br />
+                <strong>Ekdant Dental and ENT Clinic</strong><br />
                 18, Shiv Triveni Complex, Sector 7<br />
                 Sanpada, Navi Mumbai<br />
-                Landmark: Near Chaudhri medical
+                Landmark: Near Chaudhri medical<br />
+                <a 
+                  href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Dental+and+ENT+clinic+Sanpada+Navi+Mumbai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline mt-2 inline-block"
+                >
+                  Get Directions
+                </a>
               </Popup>
             </Marker>
           </MapContainer>
