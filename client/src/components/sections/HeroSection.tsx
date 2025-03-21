@@ -1,7 +1,14 @@
-import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  // Function to scroll to section by ID
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="relative bg-primary text-white">
       {/* Hero Background */}
@@ -29,16 +36,16 @@ const HeroSection = () => {
           <div className="flex flex-wrap gap-4">
             <Button
               className="bg-[#06B6D4] hover:bg-white hover:text-primary text-white font-semibold py-3 px-8 rounded-md transition duration-300"
-              asChild
+              onClick={() => scrollToSection('book-appointment')}
             >
-              <Link href="#book-appointment">Book Appointment</Link>
+              Book Appointment
             </Button>
             <Button
               variant="outline"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-semibold py-3 px-8 rounded-md transition duration-300"
-              asChild
+              onClick={() => scrollToSection('services')}
             >
-              <Link href="#services">Our Services</Link>
+              Our Services
             </Button>
           </div>
         </div>
