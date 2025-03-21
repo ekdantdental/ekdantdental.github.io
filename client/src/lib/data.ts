@@ -16,25 +16,25 @@ export const services = [
     id: 3,
     title: "Ear Treatments",
     description: "Ear wax (cerumen) removal, hearing tests, hearing aids, tympanoplasty, and treatment of ear-related conditions.",
-    image: "https://images.unsplash.com/photo-1605615923013-f26a18d5753c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 4,
     title: "Throat & Voice Treatments",
     description: "Tonsillitis treatment, throat pain management, voice problems, cysts and nodules of vocal fold, and microsurgery of the larynx.",
-    image: "https://images.unsplash.com/photo-1603743130967-458260baacc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1616279969862-e74d9982b541?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 5,
     title: "Nasal & Sinus Procedures",
     description: "Endoscopic sinus surgery, septoplasty, treatment of epistaxis, foreign body removal, and diagnostic nasal endoscopy.",
-    image: "https://images.unsplash.com/photo-1577896851812-261b1de02011?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1624454002302-52288334e7a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 6,
     title: "Advanced ENT Surgeries",
     description: "Head and neck tumor/cancer surgery, thyroid surgery, parotid surgery, DCR surgery, and laser surgeries for head and neck lesions.",
-    image: "https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   }
 ];
 
@@ -45,7 +45,7 @@ export const doctors = [
     name: "Dr. Reshma Rathod",
     title: "Prosthodontist, MDS, BDS",
     description: "11 years of experience in prosthodontics and crown bridge procedures.",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   }
 ];
 
