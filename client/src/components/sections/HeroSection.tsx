@@ -18,13 +18,13 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative">
         <div className="max-w-2xl">
           <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6">
-            Your Smile Deserves The Best Care
+            Ekdant Dental and ENT Clinic
           </h1>
           <p className="text-lg mb-8 text-light/90">
-            At Bright Smile Dental, we're committed to providing exceptional
-            dental care in a comfortable environment. Our team of experienced
-            professionals uses the latest technology to ensure your smile stays
-            healthy and beautiful.
+            At Ekdant Dental and ENT Clinic, we're committed to providing exceptional
+            dental and ENT care in a comfortable environment. Our multi-speciality clinic
+            uses the latest technology to ensure you receive the highest quality healthcare
+            for your dental and ENT needs.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button

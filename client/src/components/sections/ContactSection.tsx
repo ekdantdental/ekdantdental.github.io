@@ -25,7 +25,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-dark mb-4">
-            Contact Us
+            Contact Ekdant Dental and ENT Clinic
           </h2>
           <p className="text-gray-600">
             Have questions or need assistance? Reach out to our team through any
@@ -53,8 +53,10 @@ const ContactSection = () => {
             />
             <Marker position={position}>
               <Popup>
-                Bright Smile Dental Clinic<br />
-                123 Dental Way, Healthytown, HT 12345
+                Ekdant Dental and ENT Clinic<br />
+                18, Shiv Triveni Complex, Sector 7<br />
+                Sanpada, Navi Mumbai<br />
+                Landmark: Near Chaudhri medical
               </Popup>
             </Marker>
           </MapContainer>

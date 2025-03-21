@@ -9,13 +9,13 @@ const AboutSection = () => {
           <div>
             <div className="mb-8">
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-dark mb-4">
-                About Our Dental Clinic
+                About Ekdant Dental and ENT Clinic
               </h2>
               <p className="text-gray-600 mb-6">
-                Bright Smile Dental has been serving our community for over 15
-                years, providing exceptional dental care in a comfortable,
+                Ekdant Dental and ENT Clinic is a multi-speciality clinic serving the 
+                Navi Mumbai community with exceptional dental and ENT care in a comfortable,
                 state-of-the-art facility. Our mission is to help you achieve
-                and maintain optimal oral health throughout your lifetime.
+                and maintain optimal oral and ENT health throughout your lifetime.
               </p>
               <p className="text-gray-600 mb-6">
                 We pride ourselves on staying current with the latest
@@ -28,19 +28,19 @@ const AboutSection = () => {
               <ul className="space-y-2 mb-8">
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-[#06B6D4] mt-1 mr-2"></i>
-                  <span>State-of-the-art dental technology</span>
+                  <span>State-of-the-art dental and ENT technology</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-[#06B6D4] mt-1 mr-2"></i>
-                  <span>Comfortable, spa-like environment</span>
+                  <span>Comfortable, patient-friendly environment</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-[#06B6D4] mt-1 mr-2"></i>
-                  <span>Highly trained, compassionate staff</span>
+                  <span>Highly trained, compassionate specialists</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-[#06B6D4] mt-1 mr-2"></i>
-                  <span>Comprehensive dental services for the whole family</span>
+                  <span>Comprehensive dental and ENT services for the whole family</span>
                 </li>
               </ul>
             </div>

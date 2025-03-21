@@ -86,7 +86,7 @@ export const contactInfo = [
   {
     id: 1,
     title: "Our Location",
-    content: ["123 Dental Way", "Healthytown, HT 12345"],
+    content: ["18, Shiv Triveni Complex, Sector 7", "Sanpada, Navi Mumbai", "Landmark: Near Chaudhri medical"],
     icon: "fas fa-map-marker-alt text-2xl",
     action: {
       text: "Get Directions",
@@ -106,11 +106,11 @@ export const contactInfo = [
   {
     id: 3,
     title: "Email",
-    content: ["info@brightsmile.com", "appointments@brightsmile.com"],
+    content: ["info@ekdantclinic.com", "appointments@ekdantclinic.com"],
     icon: "fas fa-envelope text-2xl",
     action: {
       text: "Email Us",
-      url: "mailto:info@brightsmile.com"
+      url: "mailto:info@ekdantclinic.com"
     }
   }
 ];
