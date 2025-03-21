@@ -106,11 +106,11 @@ const AppointmentForm = () => {
               name="firstName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>First Name*</FormLabel>
+                  <FormLabel className="text-sm md:text-base">First Name*</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} className="text-sm md:text-base" />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-xs md:text-sm" />
                 </FormItem>
               )}
             />
@@ -120,11 +120,11 @@ const AppointmentForm = () => {
               name="lastName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Last Name*</FormLabel>
+                  <FormLabel className="text-sm md:text-base">Last Name*</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} className="text-sm md:text-base" />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-xs md:text-sm" />
                 </FormItem>
               )}
             />
@@ -136,11 +136,11 @@ const AppointmentForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email Address*</FormLabel>
+                  <FormLabel className="text-sm md:text-base">Email Address*</FormLabel>
                   <FormControl>
-                    <Input type="email" {...field} />
+                    <Input type="email" {...field} className="text-sm md:text-base" />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-xs md:text-sm" />
                 </FormItem>
               )}
             />
@@ -150,11 +150,11 @@ const AppointmentForm = () => {
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Phone Number*</FormLabel>
+                  <FormLabel className="text-sm md:text-base">Phone Number*</FormLabel>
                   <FormControl>
-                    <Input type="tel" {...field} />
+                    <Input type="tel" {...field} className="text-sm md:text-base" />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-xs md:text-sm" />
                 </FormItem>
               )}
             />
@@ -165,27 +165,27 @@ const AppointmentForm = () => {
             name="service"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Service Required*</FormLabel>
+                <FormLabel className="text-sm md:text-base">Service Required*</FormLabel>
                 <Select 
                   onValueChange={field.onChange} 
                   defaultValue={field.value}
                 >
                   <FormControl>
-                    <SelectTrigger>
+                    <SelectTrigger className="text-sm md:text-base">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                   </FormControl>
-                  <SelectContent>
+                  <SelectContent className="text-sm md:text-base">
                     <SelectItem value="general">General Dentistry</SelectItem>
                     <SelectItem value="cosmetic">Cosmetic Dentistry</SelectItem>
-                    <SelectItem value="ear-treatments">Ear Treatments (Ear Wax Removal, Hearing Tests)</SelectItem>
-                    <SelectItem value="throat-treatments">Throat Treatments (Tonsillitis, Voice Problems)</SelectItem>
+                    <SelectItem value="ear-treatments">Ear Treatments</SelectItem>
+                    <SelectItem value="throat-treatments">Throat Treatments</SelectItem>
                     <SelectItem value="nasal-procedures">Nasal & Sinus Procedures</SelectItem>
-                    <SelectItem value="ent-surgeries">Advanced ENT Surgeries</SelectItem>
+                    <SelectItem value="ent-surgeries">ENT Surgeries</SelectItem>
                     <SelectItem value="emergency">Emergency Care</SelectItem>
                   </SelectContent>
                 </Select>
-                <FormMessage />
+                <FormMessage className="text-xs md:text-sm" />
               </FormItem>
             )}
           />
@@ -196,11 +196,11 @@ const AppointmentForm = () => {
               name="preferredDate"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Preferred Date*</FormLabel>
+                  <FormLabel className="text-sm md:text-base">Preferred Date*</FormLabel>
                   <FormControl>
-                    <Input type="date" {...field} />
+                    <Input type="date" {...field} className="text-sm md:text-base" />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-xs md:text-sm" />
                 </FormItem>
               )}
             />
@@ -210,23 +210,23 @@ const AppointmentForm = () => {
               name="preferredTime"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Preferred Time*</FormLabel>
+                  <FormLabel className="text-sm md:text-base">Preferred Time*</FormLabel>
                   <Select 
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
                   >
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger className="text-sm md:text-base">
                         <SelectValue placeholder="Select a time" />
                       </SelectTrigger>
                     </FormControl>
-                    <SelectContent>
-                      <SelectItem value="morning">Morning (8AM - 12PM)</SelectItem>
-                      <SelectItem value="afternoon">Afternoon (12PM - 4PM)</SelectItem>
-                      <SelectItem value="evening">Evening (4PM - 6PM)</SelectItem>
+                    <SelectContent className="text-sm md:text-base">
+                      <SelectItem value="morning">Morning (9AM - 12PM)</SelectItem>
+                      <SelectItem value="afternoon">Afternoon (12PM - 5PM)</SelectItem>
+                      <SelectItem value="evening">Evening (5PM - 9PM)</SelectItem>
                     </SelectContent>
                   </Select>
-                  <FormMessage />
+                  <FormMessage className="text-xs md:text-sm" />
                 </FormItem>
               )}
             />
@@ -237,11 +237,19 @@ const AppointmentForm = () => {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Additional Information</FormLabel>
+                <FormLabel className="text-sm md:text-base">Additional Information</FormLabel>
                 <FormControl>
-                  <Textarea rows={4} {...field} />
+                  <Textarea 
+                    rows={3} 
+                    value={field.value || ''} 
+                    onChange={field.onChange}
+                    onBlur={field.onBlur}
+                    name={field.name}
+                    ref={field.ref}
+                    className="text-sm md:text-base" 
+                  />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-xs md:text-sm" />
               </FormItem>
             )}
           />
@@ -250,18 +258,19 @@ const AppointmentForm = () => {
             control={form.control}
             name="consent"
             render={({ field }) => (
-              <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+              <FormItem className="flex flex-row items-start space-x-2 md:space-x-3 space-y-0">
                 <FormControl>
                   <Checkbox
                     checked={field.value}
                     onCheckedChange={field.onChange}
+                    className="mt-0.5"
                   />
                 </FormControl>
                 <div className="space-y-1 leading-none">
-                  <FormLabel>
-                    I consent to having my submitted information collected and stored as outlined in our privacy policy.*
+                  <FormLabel className="text-xs md:text-sm">
+                    I consent to having my information collected and stored as per privacy policy.*
                   </FormLabel>
-                  <FormMessage />
+                  <FormMessage className="text-xs" />
                 </div>
               </FormItem>
             )}
@@ -269,7 +278,7 @@ const AppointmentForm = () => {
 
           <Button 
             type="submit" 
-            className="w-full bg-primary hover:bg-secondary text-white font-semibold py-3 px-6 rounded-md transition duration-300"
+            className="w-full bg-primary hover:bg-secondary text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-md transition duration-300 text-sm md:text-base"
             disabled={mutation.isPending}
           >
             {mutation.isPending ? "Submitting..." : "Request Appointment"}
