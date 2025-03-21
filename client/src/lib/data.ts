@@ -42,27 +42,6 @@ export const services = [
 export const doctors = [
   {
     id: 1,
-    name: "Dr. Sarah Johnson",
-    title: "Lead Dentist, DDS",
-    description: "Over 15 years of experience in general and cosmetic dentistry.",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
-  },
-  {
-    id: 2,
-    name: "Dr. Michael Chen",
-    title: "Orthodontist, DMD",
-    description: "Specialist in orthodontics and dental alignment treatments.",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
-  },
-  {
-    id: 3,
-    name: "Dr. Anjali Patel",
-    title: "ENT Specialist, MD",
-    description: "Experienced ENT specialist with expertise in sinus treatments and ear-related conditions.",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
-  },
-  {
-    id: 4,
     name: "Dr. Reshma Rathod",
     title: "Prosthodontist, MDS, BDS",
     description: "11 years of experience in prosthodontics and crown bridge procedures.",
@@ -76,28 +55,28 @@ export const testimonials = [
     id: 1,
     name: "Emily Rodriguez",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
-    text: "I've always been anxious about dental visits, but the team at Ekdant Dental and ENT Clinic made me feel completely at ease. Dr. Johnson explained everything thoroughly and the treatment was painless. I'm no longer afraid of the dentist!",
+    text: "I've always been anxious about dental visits, but the team at Ekdant Dental and ENT Clinic made me feel completely at ease. Dr. Rathod explained everything thoroughly and the treatment was painless. I'm no longer afraid of the dentist!",
     rating: 5
   },
   {
     id: 2,
     name: "David Thompson",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
-    text: "My son needed braces, and we couldn't be happier with Dr. Chen and his orthodontic team. They were fantastic with him, explaining everything in terms he could understand. The results are amazing, and he now has a beautiful smile!",
+    text: "My son needed dental work, and we couldn't be happier with Dr. Rathod and her team. They were fantastic with him, explaining everything in terms he could understand. The results are amazing, and he now has a beautiful smile!",
     rating: 5
   },
   {
     id: 3,
     name: "Jennifer Wilson",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
-    text: "I came to Ekdant Dental and ENT Clinic for a complete smile makeover, and I couldn't be happier with the results. The team was professional from start to finish, and my new veneers look completely natural. Best decision I ever made!",
+    text: "I came to Ekdant Dental and ENT Clinic for crown work, and I couldn't be happier with the results. Dr. Rathod was professional from start to finish, and my new crowns look completely natural. Best decision I ever made!",
     rating: 5
   },
   {
     id: 4,
     name: "Rahul Sharma",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
-    text: "I had been struggling with chronic sinus issues for years until I visited Dr. Patel at Ekdant Dental and ENT Clinic. The diagnosis was spot on, and the treatment has given me relief I hadn't experienced in years. Highly recommend their ENT services!",
+    text: "I had been struggling with dental issues for years until I visited Ekdant Dental and ENT Clinic. Dr. Rathod's diagnosis was spot on, and the treatment has given me relief I hadn't experienced in years. Highly recommend their prosthodontic services!",
     rating: 5
   }
 ];
