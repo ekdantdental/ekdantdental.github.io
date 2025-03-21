@@ -22,7 +22,7 @@ export const services = [
     id: 4,
     title: "Throat & Voice Treatments",
     description: "Tonsillitis treatment, throat pain management, voice problems, cysts and nodules of vocal fold, and microsurgery of the larynx.",
-    image: "https://images.unsplash.com/photo-1584098731294-99628a0ebdbc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 5,
