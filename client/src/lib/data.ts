@@ -28,7 +28,7 @@ export const services = [
     id: 5,
     title: "Nasal & Sinus Procedures",
     description: "Endoscopic sinus surgery, septoplasty, treatment of epistaxis, foreign body removal, and diagnostic nasal endoscopy.",
-    image: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 6,
