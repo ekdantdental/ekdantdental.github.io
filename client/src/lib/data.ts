@@ -14,27 +14,27 @@ export const services = [
   },
   {
     id: 3,
-    title: "ENT Consultations",
-    description: "Expert diagnosis and treatment for ear, nose, and throat conditions by specialized ENT doctors.",
+    title: "Ear Treatments",
+    description: "Ear wax (cerumen) removal, hearing tests, hearing aids, tympanoplasty, and treatment of ear-related conditions.",
     image: "https://images.unsplash.com/photo-1605615923013-f26a18d5753c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 4,
-    title: "Sinus Treatments",
-    description: "Advanced solutions for sinus infections, allergies, congestion, and other sinus-related issues.",
-    image: "https://images.unsplash.com/photo-1577896851812-261b1de02011?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Throat & Voice Treatments",
+    description: "Tonsillitis treatment, throat pain management, voice problems, cysts and nodules of vocal fold, and microsurgery of the larynx.",
+    image: "https://images.unsplash.com/photo-1603743130967-458260baacc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 5,
-    title: "Orthodontics",
-    description: "Traditional braces, clear aligners, and other treatments to straighten teeth and improve bite.",
-    image: "https://images.unsplash.com/photo-1579083578254-4405fe586adf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Nasal & Sinus Procedures",
+    description: "Endoscopic sinus surgery, septoplasty, treatment of epistaxis, foreign body removal, and diagnostic nasal endoscopy.",
+    image: "https://images.unsplash.com/photo-1577896851812-261b1de02011?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 6,
-    title: "Emergency Care",
-    description: "Quick response to dental and ENT emergencies including pain, injuries, and other urgent issues.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Advanced ENT Surgeries",
+    description: "Head and neck tumor/cancer surgery, thyroid surgery, parotid surgery, DCR surgery, and laser surgeries for head and neck lesions.",
+    image: "https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   }
 ];
 

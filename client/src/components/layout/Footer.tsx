@@ -88,22 +88,22 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
-                  Orthodontics
+                  Ear Treatments
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
-                  ENT Consultations
+                  Throat & Voice Treatments
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
-                  Sinus Treatments
+                  Nasal & Sinus Procedures
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
-                  Emergency Care
+                  Advanced ENT Surgeries
                 </a>
               </li>
             </ul>

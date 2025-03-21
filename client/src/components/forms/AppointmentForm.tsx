@@ -149,10 +149,10 @@ const AppointmentForm = () => {
                   <SelectContent>
                     <SelectItem value="general">General Dentistry</SelectItem>
                     <SelectItem value="cosmetic">Cosmetic Dentistry</SelectItem>
-                    <SelectItem value="orthodontics">Orthodontics</SelectItem>
-                    <SelectItem value="ent-consultation">ENT Consultation</SelectItem>
-                    <SelectItem value="sinus-treatment">Sinus Treatment</SelectItem>
-                    <SelectItem value="pediatric">Pediatric Dentistry</SelectItem>
+                    <SelectItem value="ear-treatments">Ear Treatments (Ear Wax Removal, Hearing Tests)</SelectItem>
+                    <SelectItem value="throat-treatments">Throat Treatments (Tonsillitis, Voice Problems)</SelectItem>
+                    <SelectItem value="nasal-procedures">Nasal & Sinus Procedures</SelectItem>
+                    <SelectItem value="ent-surgeries">Advanced ENT Surgeries</SelectItem>
                     <SelectItem value="emergency">Emergency Care</SelectItem>
                   </SelectContent>
                 </Select>
