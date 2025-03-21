@@ -54,35 +54,35 @@ export const testimonials = [
   {
     id: 1,
     name: "Ishant Tale",
-    image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
+    image: "https://images.unsplash.com/photo-1618568221633-0a84dd0284fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
     text: "My wife has tooth pain. After investigation, some tooths root canal n one extraction need to b done. My wife found Dr Reshma a caring, well knowledge, tooth expert, calm in nature who takes care her 2 root canals n 1 extraction little easier. I am thankful to her as she has adjusted her timing according to us due to our twin babies.",
     rating: 5
   },
   {
     id: 2,
     name: "Bharati Tirakannavar",
-    image: "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
+    image: "https://images.unsplash.com/photo-1611432579699-484f7990b127?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
     text: "I needed root canal treatment which was done here. The treatment provided was really good and happy about it. Highly satisfied. Dr Manisha explained everything about the treatment in detail, took very good care while treating me, making me comfortable. The approach of staff at clinic was friendly and supportive. Really highly recommend dental clinic.",
     rating: 5
   },
   {
     id: 3,
     name: "Rashmi Kirve",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
+    image: "https://images.unsplash.com/photo-1621353269062-6aa0165336d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
     text: "It was Really nice Experience. All Drs. and staff are professional. My 7 yr son tooth treatment has been done, very carefully handle him. He also felt very comfortable at time of treatment. Highly recommend.",
     rating: 5
   },
   {
     id: 4,
     name: "Dr. Abhishek Gupta",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
+    image: "https://images.unsplash.com/photo-1617189486738-b678af9b1814?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
     text: "Ekdant is well organized and staff is friendly and compassionate. Everything about procedure was explained in detail. Procedure was done efficiently. Doctor's have good expertise in terms of procedure.",
     rating: 5
   },
   {
     id: 5,
     name: "Anonymous Patient",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
+    image: "https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
     text: "Dr Reshma is very experienced, knowledgeable and proficient in her work. She makes the patient very much comfortable during entire treatment. Clinic is very neat, hygienic and organized. Dr Manisha is also very efficient. Sanjyota tai is also co-operative and friendly. They all take every single measure to make you comfortable during treatment.",
     rating: 5
   }
