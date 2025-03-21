@@ -11,9 +11,9 @@ const AppointmentSection = () => {
               Book Your Appointment
             </h2>
             <p className="text-white/90 mb-8">
-              Schedule your next dental visit with ease. Fill out the form, and
+              Schedule your next dental or ENT consultation with ease. Fill out the form, and
               our team will contact you promptly to confirm your appointment. We
-              look forward to taking care of your smile!
+              look forward to taking care of your health and wellbeing!
             </p>
 
             <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm mb-8">

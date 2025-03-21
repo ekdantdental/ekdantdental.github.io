@@ -150,7 +150,8 @@ const AppointmentForm = () => {
                     <SelectItem value="general">General Dentistry</SelectItem>
                     <SelectItem value="cosmetic">Cosmetic Dentistry</SelectItem>
                     <SelectItem value="orthodontics">Orthodontics</SelectItem>
-                    <SelectItem value="implants">Dental Implants</SelectItem>
+                    <SelectItem value="ent-consultation">ENT Consultation</SelectItem>
+                    <SelectItem value="sinus-treatment">Sinus Treatment</SelectItem>
                     <SelectItem value="pediatric">Pediatric Dentistry</SelectItem>
                     <SelectItem value="emergency">Emergency Care</SelectItem>
                   </SelectContent>

@@ -53,6 +53,13 @@ export const doctors = [
     title: "Orthodontist, DMD",
     description: "Specialist in orthodontics and dental alignment treatments.",
     image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    id: 3,
+    name: "Dr. Anjali Patel",
+    title: "ENT Specialist, MD",
+    description: "Experienced ENT specialist with expertise in sinus treatments and ear-related conditions.",
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   }
 ];
 
@@ -77,6 +84,13 @@ export const testimonials = [
     name: "Jennifer Wilson",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
     text: "I came to Ekdant Dental and ENT Clinic for a complete smile makeover, and I couldn't be happier with the results. The team was professional from start to finish, and my new veneers look completely natural. Best decision I ever made!",
+    rating: 5
+  },
+  {
+    id: 4,
+    name: "Rahul Sharma",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
+    text: "I had been struggling with chronic sinus issues for years until I visited Dr. Patel at Ekdant Dental and ENT Clinic. The diagnosis was spot on, and the treatment has given me relief I hadn't experienced in years. Highly recommend their ENT services!",
     rating: 5
   }
 ];
