@@ -3,106 +3,106 @@ import { FaTooth, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaMapMarkerAlt
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E293B] text-white pt-16 pb-8">
+    <footer className="bg-[#1E293B] text-white pt-12 md:pt-16 pb-6 md:pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
-            <div className="flex items-center mb-6">
-              <FaTooth className="text-2xl text-[#06B6D4] mr-2" />
-              <span className="font-heading font-bold text-xl text-white">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12">
+          <div className="mb-2 md:mb-0">
+            <div className="flex items-center mb-4 md:mb-6">
+              <FaTooth className="text-xl md:text-2xl text-[#06B6D4] mr-2" />
+              <span className="font-heading font-bold text-lg md:text-xl text-white">
                 Ekdant Dental and ENT
               </span>
             </div>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 text-sm md:text-base mb-4 md:mb-6">
               Providing exceptional dental and ENT care for patients of all ages in a
               comfortable, state-of-the-art environment.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300">
+              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
                 <FaFacebookF />
               </a>
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300">
+              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
                 <FaTwitter />
               </a>
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300">
+              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
                 <FaInstagram />
               </a>
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300">
+              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
                 <FaYoutube />
               </a>
             </div>
           </div>
 
-          <div>
-            <h3 className="font-heading font-semibold text-lg text-white mb-6">
+          <div className="mb-2 md:mb-0">
+            <h3 className="font-heading font-semibold text-base md:text-lg text-white mb-3 md:mb-6">
               Quick Links
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/#home" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <Link href="/#home" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <Link href="/#services" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/#about" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <Link href="/#about" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/#testimonials" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <Link href="/#testimonials" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <Link href="/#contact" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/#book-appointment" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <Link href="/#book-appointment" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Book Appointment
                 </Link>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-heading font-semibold text-lg text-white mb-6">
+          <div className="mb-2 md:mb-0">
+            <h3 className="font-heading font-semibold text-base md:text-lg text-white mb-3 md:mb-6">
               Services
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 md:space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   General Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Cosmetic Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Ear Treatments
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Throat & Voice Treatments
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Nasal & Sinus Procedures
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
+                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
                   Advanced ENT Surgeries
                 </a>
               </li>
@@ -110,49 +110,48 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-heading font-semibold text-lg text-white mb-6">
+            <h3 className="font-heading font-semibold text-base md:text-lg text-white mb-3 md:mb-6">
               Contact Information
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3 md:space-y-4">
               <li className="flex items-start">
-                <FaMapMarkerAlt className="mt-1 mr-3 text-[#06B6D4]" />
-                <span className="text-gray-400">
+                <FaMapMarkerAlt className="mt-1 mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <span className="text-gray-400 text-sm md:text-base">
                   18, Shiv Triveni Complex, Sector 7<br />Sanpada, Navi Mumbai<br />Landmark: Near Chaudhri medical
                 </span>
               </li>
               <li className="flex items-center">
-                <FaPhoneAlt className="mr-3 text-[#06B6D4]" />
-                <span className="text-gray-400">(123) 456-7890</span>
+                <FaPhoneAlt className="mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <span className="text-gray-400 text-sm md:text-base">+91 79001 39417</span>
               </li>
               <li className="flex items-center">
-                <FaEnvelope className="mr-3 text-[#06B6D4]" />
-                <span className="text-gray-400">info@ekdantclinic.com</span>
+                <FaEnvelope className="mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <span className="text-gray-400 text-sm md:text-base">info@ekdantclinic.com</span>
               </li>
               <li className="flex items-start">
-                <FaClock className="mt-1 mr-3 text-[#06B6D4]" />
-                <div className="text-gray-400">
-                  <p>Mon-Thu: 8AM - 6PM</p>
-                  <p>Fri: 8AM - 5PM</p>
-                  <p>Sat: 9AM - 2PM</p>
+                <FaClock className="mt-1 mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <div className="text-gray-400 text-sm md:text-base">
+                  <p>Mon-Sat: 9AM - 9PM</p>
+                  <p>Sun: 10AM - 2PM</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
+        <div className="border-t border-gray-800 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm mb-4 md:mb-0">
+            <p className="text-gray-500 text-xs md:text-sm mb-4 md:mb-0 text-center md:text-left">
               &copy; {new Date().getFullYear()} Ekdant Dental and ENT Clinic. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-sm transition duration-300">
+            <div className="flex flex-wrap justify-center md:justify-end gap-4 md:space-x-6">
+              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-sm transition duration-300">
+              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-sm transition duration-300">
+              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">
                 Accessibility
               </a>
             </div>
