@@ -1,9 +1,16 @@
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/shared/ServiceCard";
 import { services } from "@/lib/data";
-import { Link } from "wouter";
 
 const ServicesSection = () => {
+  // Function to scroll to appointment section
+  const scrollToAppointment = () => {
+    const appointmentSection = document.getElementById('book-appointment');
+    if (appointmentSection) {
+      appointmentSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="services" className="py-16 md:py-24 bg-light">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,8 +32,11 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-md transition duration-300" asChild>
-            <Link href="#book-appointment">Schedule Your Visit</Link>
+          <Button 
+            className="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-md transition duration-300"
+            onClick={scrollToAppointment}
+          >
+            Schedule Your Visit
           </Button>
         </div>
       </div>
