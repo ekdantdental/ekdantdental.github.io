@@ -97,7 +97,7 @@ export const contactInfo = [
     icon: "fas fa-map-marker-alt text-2xl",
     action: {
       text: "Get Directions",
-      url: "https://maps.google.com"
+      url: "https://www.google.com/maps/search/?api=1&query=Ekdant+Dental+and+ENT+Clinic+18+Shiv+Triveni+Complex+Sector+7+Sanpada+Navi+Mumbai"
     }
   },
   {
