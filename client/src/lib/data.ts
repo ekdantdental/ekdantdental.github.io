@@ -103,11 +103,11 @@ export const contactInfo = [
   {
     id: 2,
     title: "Phone",
-    content: ["Main: (123) 456-7890", "Emergency: (123) 456-7899"],
+    content: ["Main: +91 79001 39417"],
     icon: "fas fa-phone-alt text-2xl",
     action: {
       text: "Call Now",
-      url: "tel:+11234567890"
+      url: "tel:+917900139417"
     }
   },
   {

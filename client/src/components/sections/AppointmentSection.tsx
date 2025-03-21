@@ -22,30 +22,42 @@ const AppointmentSection = () => {
               </h3>
               <ul className="space-y-3 text-white/90">
                 <li className="flex justify-between">
-                  <span>Monday - Thursday</span>
-                  <span>8:00 AM - 6:00 PM</span>
+                  <span>Monday</span>
+                  <span>9:00 AM - 9:00 PM</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Tuesday</span>
+                  <span>9:00 AM - 9:00 PM</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Wednesday</span>
+                  <span>9:00 AM - 9:00 PM</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Thursday</span>
+                  <span>9:00 AM - 9:00 PM</span>
                 </li>
                 <li className="flex justify-between">
                   <span>Friday</span>
-                  <span>8:00 AM - 5:00 PM</span>
+                  <span>9:00 AM - 9:00 PM</span>
                 </li>
                 <li className="flex justify-between">
                   <span>Saturday</span>
-                  <span>9:00 AM - 2:00 PM</span>
+                  <span>9:00 AM - 9:00 PM</span>
                 </li>
                 <li className="flex justify-between">
                   <span>Sunday</span>
-                  <span>Closed</span>
+                  <span>10:00 AM - 2:00 PM</span>
                 </li>
               </ul>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+11234567890"
+                href="tel:+917900139417"
                 className="flex items-center justify-center bg-white text-primary hover:bg-[#06B6D4] hover:text-white py-3 px-6 rounded-md transition duration-300 font-medium"
               >
-                <i className="fas fa-phone-alt mr-2"></i> (123) 456-7890
+                <i className="fas fa-phone-alt mr-2"></i> +91 79001 39417
               </a>
               <a
                 href="mailto:info@ekdantclinic.com"
