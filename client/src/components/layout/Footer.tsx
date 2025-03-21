@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <FaTooth className="text-2xl text-[#06B6D4] mr-2" />
               <span className="font-heading font-bold text-xl text-white">
-                Bright Smile Dental
+                Ekdant Dental and ENT
               </span>
             </div>
             <p className="text-gray-400 mb-6">
@@ -117,7 +117,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mt-1 mr-3 text-[#06B6D4]" />
                 <span className="text-gray-400">
-                  123 Dental Way<br />Healthytown, HT 12345
+                  18, Shiv Triveni Complex, Sector 7<br />Sanpada, Navi Mumbai<br />Landmark: Near Chaudhri medical
                 </span>
               </li>
               <li className="flex items-center">
@@ -143,7 +143,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Bright Smile Dental. All rights reserved.
+              &copy; {new Date().getFullYear()} Ekdant Dental and ENT Clinic. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-sm transition duration-300">

@@ -22,7 +22,7 @@ const Header = () => {
             <Link href="/" className="flex items-center">
               <FaTooth className="text-3xl text-primary mr-2" />
               <span className="font-heading font-bold text-xl md:text-2xl text-primary">
-                Bright Smile Dental
+                Ekdant Dental and ENT
               </span>
             </Link>
           </div>

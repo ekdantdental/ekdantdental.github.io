@@ -70,7 +70,7 @@ const HeroSection = () => {
                   Expert Specialists
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Experienced team of dental professionals
+                  Experienced team of dental and ENT professionals
                 </p>
               </div>
             </div>
