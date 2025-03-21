@@ -1,0 +1,67 @@
+import ContactCard from "@/components/shared/ContactCard";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import { contactInfo } from "@/lib/data";
+import L from "leaflet";
+
+// Fix marker icons in Leaflet
+import icon from "leaflet/dist/images/marker-icon.png";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
+
+const DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41]
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
+
+const ContactSection = () => {
+  const position: [number, number] = [40.712776, -74.005974]; // Example coordinates (NYC)
+
+  return (
+    <section id="contact" className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-dark mb-4">
+            Contact Us
+          </h2>
+          <p className="text-gray-600">
+            Have questions or need assistance? Reach out to our team through any
+            of these channels, and we'll be happy to help you.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {contactInfo.map((info) => (
+            <ContactCard key={info.id} info={info} />
+          ))}
+        </div>
+
+        {/* Map */}
+        <div className="h-96 rounded-lg overflow-hidden shadow-lg">
+          <MapContainer 
+            center={position} 
+            zoom={14} 
+            scrollWheelZoom={false} 
+            style={{ height: "100%", width: "100%" }}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position}>
+              <Popup>
+                Bright Smile Dental Clinic<br />
+                123 Dental Way, Healthytown, HT 12345
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
