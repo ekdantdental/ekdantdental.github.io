@@ -93,13 +93,13 @@ const AppointmentForm = () => {
   
   // Otherwise show the form
   return (
-    <div className="bg-white rounded-lg shadow-lg p-8">
-      <h3 className="font-heading font-semibold text-2xl text-dark mb-6">
+    <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
+      <h3 className="font-heading font-semibold text-xl md:text-2xl text-dark mb-4 md:mb-6">
         Request an Appointment
       </h3>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 md:space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FormField
               control={form.control}

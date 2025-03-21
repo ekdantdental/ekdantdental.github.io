@@ -7,42 +7,21 @@ const AppointmentSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-white mb-6">
+            <h2 className="font-heading font-bold text-2xl md:text-4xl text-white mb-4 md:mb-6">
               Book Your Appointment
             </h2>
-            <p className="text-white/90 mb-8">
-              Schedule your next dental or ENT consultation with ease. Fill out the form, and
-              our team will contact you promptly to confirm your appointment. We
-              look forward to taking care of your health and wellbeing!
+            <p className="text-white/90 text-sm md:text-base mb-6 md:mb-8">
+              Schedule your dental or ENT consultation with ease. 
+              We'll contact you promptly to confirm your appointment.
             </p>
 
-            <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm mb-8">
-              <h3 className="font-heading font-semibold text-xl text-white mb-4">
+            <div className="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm mb-6 md:mb-8">
+              <h3 className="font-heading font-semibold text-lg md:text-xl text-white mb-3 md:mb-4">
                 Clinic Hours
               </h3>
-              <ul className="space-y-3 text-white/90">
+              <ul className="space-y-2 md:space-y-3 text-white/90 text-sm md:text-base">
                 <li className="flex justify-between">
-                  <span>Monday</span>
-                  <span>9:00 AM - 9:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Tuesday</span>
-                  <span>9:00 AM - 9:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Wednesday</span>
-                  <span>9:00 AM - 9:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Thursday</span>
-                  <span>9:00 AM - 9:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Friday</span>
-                  <span>9:00 AM - 9:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Saturday</span>
+                  <span>Mon-Sat</span>
                   <span>9:00 AM - 9:00 PM</span>
                 </li>
                 <li className="flex justify-between">
@@ -52,18 +31,18 @@ const AppointmentSection = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <a
                 href="tel:+917900139417"
-                className="flex items-center justify-center bg-white text-primary hover:bg-[#06B6D4] hover:text-white py-3 px-6 rounded-md transition duration-300 font-medium"
+                className="flex items-center justify-center bg-white text-primary hover:bg-[#06B6D4] hover:text-white py-2 md:py-3 px-4 md:px-6 rounded-md transition duration-300 font-medium text-sm md:text-base"
               >
-                <i className="fas fa-phone-alt mr-2"></i> +91 79001 39417
+                <i className="fas fa-phone-alt mr-2"></i> Call Clinic
               </a>
               <a
-                href="mailto:info@ekdantclinic.com"
-                className="flex items-center justify-center bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary py-3 px-6 rounded-md transition duration-300 font-medium"
+                href="https://wa.me/918379009320"
+                className="flex items-center justify-center bg-green-500 text-white hover:bg-green-600 py-2 md:py-3 px-4 md:px-6 rounded-md transition duration-300 font-medium text-sm md:text-base"
               >
-                <i className="fas fa-envelope mr-2"></i> Email Us
+                <i className="fab fa-whatsapp mr-2"></i> WhatsApp
               </a>
             </div>
           </div>
