@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
           </h2>
           <p className="text-gray-600">
             Don't just take our word for it. Here's what some of our patients
-            have to say about their experience at Bright Smile Dental.
+            have to say about their experience at Ekdant Dental and ENT Clinic.
           </p>
         </div>
 

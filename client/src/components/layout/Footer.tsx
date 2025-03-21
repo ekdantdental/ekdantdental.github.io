@@ -14,7 +14,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 mb-6">
-              Providing exceptional dental care for patients of all ages in a
+              Providing exceptional dental and ENT care for patients of all ages in a
               comfortable, state-of-the-art environment.
             </p>
             <div className="flex space-x-4">
@@ -93,12 +93,12 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
-                  Dental Implants
+                  ENT Consultations
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300">
-                  Pediatric Dentistry
+                  Sinus Treatments
                 </a>
               </li>
               <li>
@@ -126,7 +126,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-[#06B6D4]" />
-                <span className="text-gray-400">info@brightsmile.com</span>
+                <span className="text-gray-400">info@ekdantclinic.com</span>
               </li>
               <li className="flex items-start">
                 <FaClock className="mt-1 mr-3 text-[#06B6D4]" />

@@ -14,26 +14,26 @@ export const services = [
   },
   {
     id: 3,
+    title: "ENT Consultations",
+    description: "Expert diagnosis and treatment for ear, nose, and throat conditions by specialized ENT doctors.",
+    image: "https://images.unsplash.com/photo-1605615923013-f26a18d5753c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  {
+    id: 4,
+    title: "Sinus Treatments",
+    description: "Advanced solutions for sinus infections, allergies, congestion, and other sinus-related issues.",
+    image: "https://images.unsplash.com/photo-1577896851812-261b1de02011?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  {
+    id: 5,
     title: "Orthodontics",
     description: "Traditional braces, clear aligners, and other treatments to straighten teeth and improve bite.",
     image: "https://images.unsplash.com/photo-1579083578254-4405fe586adf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
-    id: 4,
-    title: "Dental Implants",
-    description: "Permanent tooth replacement solutions that look, feel, and function like natural teeth.",
-    image: "https://images.unsplash.com/photo-1591283261401-c76eba2d641a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
-  },
-  {
-    id: 5,
-    title: "Pediatric Dentistry",
-    description: "Child-friendly dental care in a comfortable environment, focusing on prevention and education.",
-    image: "https://images.unsplash.com/photo-1560250059-6d6d6c83e385?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
-  },
-  {
     id: 6,
-    title: "Emergency Dental Care",
-    description: "Quick response to dental emergencies including toothaches, broken teeth, and other urgent issues.",
+    title: "Emergency Care",
+    description: "Quick response to dental and ENT emergencies including pain, injuries, and other urgent issues.",
     image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   }
 ];
@@ -62,7 +62,7 @@ export const testimonials = [
     id: 1,
     name: "Emily Rodriguez",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
-    text: "I've always been anxious about dental visits, but the team at Bright Smile Dental made me feel completely at ease. Dr. Johnson explained everything thoroughly and the treatment was painless. I'm no longer afraid of the dentist!",
+    text: "I've always been anxious about dental visits, but the team at Ekdant Dental and ENT Clinic made me feel completely at ease. Dr. Johnson explained everything thoroughly and the treatment was painless. I'm no longer afraid of the dentist!",
     rating: 5
   },
   {
@@ -76,7 +76,7 @@ export const testimonials = [
     id: 3,
     name: "Jennifer Wilson",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
-    text: "I came to Bright Smile Dental for a complete smile makeover, and I couldn't be happier with the results. The team was professional from start to finish, and my new veneers look completely natural. Best decision I ever made!",
+    text: "I came to Ekdant Dental and ENT Clinic for a complete smile makeover, and I couldn't be happier with the results. The team was professional from start to finish, and my new veneers look completely natural. Best decision I ever made!",
     rating: 5
   }
 ];
