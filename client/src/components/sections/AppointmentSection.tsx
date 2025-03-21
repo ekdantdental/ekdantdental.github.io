@@ -48,7 +48,7 @@ const AppointmentSection = () => {
                 <i className="fas fa-phone-alt mr-2"></i> (123) 456-7890
               </a>
               <a
-                href="mailto:info@brightsmile.com"
+                href="mailto:info@ekdantclinic.com"
                 className="flex items-center justify-center bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary py-3 px-6 rounded-md transition duration-300 font-medium"
               >
                 <i className="fas fa-envelope mr-2"></i> Email Us
