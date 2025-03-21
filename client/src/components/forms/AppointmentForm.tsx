@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -10,7 +11,8 @@ import { Button } from "@/components/ui/button";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { appointmentSchema } from "@shared/schema";
+import { appointmentSchema, Appointment } from "@shared/schema";
+import AppointmentSuccess from "./AppointmentSuccess";
 
 const formSchema = appointmentSchema.extend({
   consent: z.boolean().refine((val) => val === true, {
@@ -22,6 +24,8 @@ type FormValues = z.infer<typeof formSchema>;
 
 const AppointmentForm = () => {
   const { toast } = useToast();
+  const [submittedAppointment, setSubmittedAppointment] = useState<Appointment | null>(null);
+  const [showSuccessPage, setShowSuccessPage] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -41,12 +45,21 @@ const AppointmentForm = () => {
   const mutation = useMutation({
     mutationFn: (data: z.infer<typeof appointmentSchema>) => 
       apiRequest("POST", "/api/appointments", data),
-    onSuccess: () => {
+    onSuccess: (response: any) => {
+      // Set the submitted appointment data from the response
+      // Our server returns data in a nested 'data' property
+      const appointmentData = response?.data || response;
+      setSubmittedAppointment(appointmentData);
+      setShowSuccessPage(true);
+      
+      // Show a toast notification
       toast({
-        title: "Appointment Requested",
-        description: "We'll contact you shortly to confirm your appointment.",
+        title: "Appointment Confirmed",
+        description: "Your appointment has been successfully booked.",
         variant: "default",
       });
+      
+      // Reset the form
       form.reset();
     },
     onError: (error) => {
@@ -62,7 +75,23 @@ const AppointmentForm = () => {
     const { consent, ...appointmentData } = data;
     mutation.mutate(appointmentData);
   };
+  
+  const closeSuccessPage = () => {
+    setShowSuccessPage(false);
+    setSubmittedAppointment(null);
+  };
 
+  // Show success page if appointment was submitted successfully
+  if (showSuccessPage && submittedAppointment) {
+    return (
+      <AppointmentSuccess 
+        appointment={submittedAppointment} 
+        onClose={closeSuccessPage} 
+      />
+    );
+  }
+  
+  // Otherwise show the form
   return (
     <div className="bg-white rounded-lg shadow-lg p-8">
       <h3 className="font-heading font-semibold text-2xl text-dark mb-6">
