@@ -69,10 +69,16 @@ ${appointment.message ? `Message: ${appointment.message}` : ''}
             </div>
           </div>
 
-          <p className="text-center text-sm text-gray-500 pt-4">
-            We'll contact you shortly to confirm your appointment. 
-            Please check your email for more details.
-          </p>
+          <div className="bg-blue-50 p-4 rounded-md mt-4">
+            <p className="text-center text-sm text-gray-700">
+              We'll contact you shortly to confirm your appointment.
+            </p>
+            <p className="text-center text-sm text-gray-700 mt-2">
+              Click the "Open WhatsApp" button below to send your appointment details 
+              directly to our clinic via WhatsApp. You'll need to click "Send" in WhatsApp 
+              after the app opens.
+            </p>
+          </div>
         </div>
       </CardContent>
       
@@ -82,7 +88,7 @@ ${appointment.message ? `Message: ${appointment.message}` : ''}
           onClick={sendWhatsAppNotification}
         >
           <MessageSquare className="mr-2 h-4 w-4" />
-          Notify via WhatsApp
+          Open WhatsApp to Send Notification
         </Button>
         <Button 
           className="flex-1"

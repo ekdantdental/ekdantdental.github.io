@@ -5,8 +5,8 @@ import { ZodError } from "zod";
 import { appointmentSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 
-// Function to send WhatsApp notification
-async function sendWhatsAppNotification(appointment: any) {
+// Function to log appointment details for potential WhatsApp notification
+async function logAppointmentDetails(appointment: any) {
   try {
     // Format date and time for better readability
     const formattedDate = new Date(appointment.preferredDate).toLocaleDateString('en-IN');
@@ -20,22 +20,16 @@ Date: ${formattedDate}
 Time: ${appointment.preferredTime}
 ${appointment.message ? `Message: ${appointment.message}` : ''}
     `.trim();
-
-    // Encode the message for WhatsApp URL
-    const encodedMessage = encodeURIComponent(appointmentDetails);
     
-    // WhatsApp API URL
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=918379009320&text=${encodedMessage}`;
+    console.log(`New appointment received:`);
+    console.log(`-----------------------------------`);
+    console.log(appointmentDetails);
+    console.log(`-----------------------------------`);
+    console.log(`Patient can use the "Notify via WhatsApp" button to send details to +918379009320`);
     
-    console.log(`WhatsApp notification would be sent to: +918379009320`);
-    console.log(`Message: ${appointmentDetails}`);
-    console.log(`URL for testing: ${whatsappUrl}`);
-    
-    // In a production environment, you would use a proper WhatsApp Business API
-    // This is a simplified version that logs the details
     return true;
   } catch (error) {
-    console.error("Failed to send WhatsApp notification:", error);
+    console.error("Failed to log appointment details:", error);
     return false;
   }
 }
@@ -47,8 +41,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const appointmentData = appointmentSchema.parse(req.body);
       const appointment = await storage.createAppointment(appointmentData);
       
-      // Send WhatsApp notification
-      await sendWhatsAppNotification(appointment);
+      // Log appointment details
+      await logAppointmentDetails(appointment);
       
       return res.status(201).json({
         message: "Appointment request received successfully",
