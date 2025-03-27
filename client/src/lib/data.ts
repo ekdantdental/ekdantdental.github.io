@@ -43,9 +43,16 @@ export const doctors = [
   {
     id: 1,
     name: "Dr. Reshma Rathod",
-    title: "Prosthodontist, MDS, BDS",
-    description: "11 years of experience in prosthodontics and crown bridge procedures.",
+    title: "MDS, BDS (Prosthodontist)",
+    description: "Specialist in dental prosthetics and crown procedures with extensive experience.",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    id: 2,
+    name: "Dr. Sunil Pawar",
+    title: "MBBS, DNB, FNB (Critical Care Medicine)",
+    description: "Specialist in critical care medicine providing comprehensive medical support.",
+    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   }
 ];
 
@@ -93,11 +100,11 @@ export const contactInfo = [
   {
     id: 1,
     title: "Our Location",
-    content: ["18, Shiv Triveni Complex, Sector 7", "Sanpada, Navi Mumbai", "Landmark: Near Chaudhri medical"],
+    content: ["Office No 8 and 9, 1st Floor, Gami Terra", "Sector-6, Sanpada, Navi Mumbai - 400 705"],
     icon: "fas fa-map-marker-alt text-2xl",
     action: {
       text: "Get Directions",
-      url: "https://www.google.com/maps/search/?api=1&query=Ekdant+Dental+Clinic+18+Shiv+Triveni+Complex+Sector+7+Sanpada+Navi+Mumbai"
+      url: "https://www.google.com/maps/search/?api=1&query=Ekdant+Multi+Speciality+and+Implant+Center+Gami+Terra+Sector+6+Sanpada+Navi+Mumbai"
     }
   },
   {

@@ -142,7 +142,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-xs md:text-sm mb-4 md:mb-0 text-center md:text-left">
-              &copy; {new Date().getFullYear()} Ekdant Dental Clinic. All rights reserved.
+              &copy; {new Date().getFullYear()} Ekdant Multi Speciality and Implant Center. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 md:space-x-6">
               <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">

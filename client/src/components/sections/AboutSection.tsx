@@ -10,10 +10,10 @@ const AboutSection = () => {
           <div>
             <div className="mb-6 md:mb-8">
               <h2 className="font-heading font-bold text-2xl md:text-4xl text-dark mb-3 md:mb-4">
-                About Ekdant Dental Clinic
+                About Ekdant Multi Speciality and Implant Center
               </h2>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                Ekdant Dental Clinic is a multi-specialty dental clinic serving the 
+                Ekdant Multi Speciality and Implant Center is a multi-speciality dental clinic serving the 
                 Navi Mumbai community. Our state-of-the-art facility helps you achieve
                 optimal oral health.
               </p>
