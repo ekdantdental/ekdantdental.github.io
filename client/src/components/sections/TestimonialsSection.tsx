@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
           </h2>
           <p className="text-gray-600 text-sm md:text-base px-2 md:px-0">
             Don't just take our word for it. Here's what some of our patients
-            have to say about their experience at Ekdant Dental and ENT Clinic.
+            have to say about their experience at Ekdant Multi Speciality and Implant Center.
           </p>
         </div>
 

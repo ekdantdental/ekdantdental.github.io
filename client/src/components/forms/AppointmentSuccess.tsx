@@ -18,7 +18,7 @@ const AppointmentSuccess = ({ appointment, onClose }: AppointmentSuccessProps) =
   const sendWhatsAppNotification = () => {
     // Format appointment details for WhatsApp
     const message = `
-*New Appointment at Ekdant Dental & ENT Clinic*
+*New Appointment at Ekdant Multi Speciality and Implant Center*
 Name: ${appointment.firstName} ${appointment.lastName}
 Service: ${appointment.service}
 Date: ${formatDate(appointment.preferredDate)}

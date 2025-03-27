@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex items-center mb-4 md:mb-6">
               <FaTooth className="text-xl md:text-2xl text-[#06B6D4] mr-2" />
               <span className="font-heading font-bold text-lg md:text-xl text-white">
-                Ekdant Dental Clinic
+                Ekdant Multi Speciality and Implant Center
               </span>
             </div>
             <p className="text-gray-400 text-sm md:text-base mb-4 md:mb-6">
@@ -117,7 +117,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mt-1 mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
                 <span className="text-gray-400 text-sm md:text-base">
-                  18, Shiv Triveni Complex, Sector 7<br />Sanpada, Navi Mumbai<br />Landmark: Near Chaudhri medical
+                  Office No 8 and 9, 1st Floor, Gami Terra<br />Sector-6, Sanpada, Navi Mumbai - 400 705
                 </span>
               </li>
               <li className="flex items-center">
