@@ -16,9 +16,11 @@ const Footer = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl md:text-2xl text-white tracking-tight">
-                  <span style={{ fontStyle: 'italic' }}>Ek</span>dant
-                </span>
+                <img 
+                  src="/images/brand/logo-ekdant.jpg" 
+                  alt="Ekdant" 
+                  className="h-8 md:h-10 w-auto object-contain bg-white p-1 rounded-sm mb-1" 
+                />
                 <span className="text-xs md:text-sm text-gray-300 font-light">
                   Multi Speciality and Implant Center
                 </span>

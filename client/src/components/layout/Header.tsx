@@ -36,9 +36,11 @@ const Header = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-2xl md:text-3xl tracking-tight" style={{ color: '#3C2A98' }}>
-                  <span style={{ fontStyle: 'italic' }}>Ek</span>dant
-                </span>
+                <img 
+                  src="/images/brand/logo-ekdant.jpg" 
+                  alt="Ekdant" 
+                  className="h-10 md:h-12 w-auto object-contain" 
+                />
                 <span className="font-medium text-xs md:text-sm text-gray-600">
                   Multi Speciality and Implant Center
                 </span>
