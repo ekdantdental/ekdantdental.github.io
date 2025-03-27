@@ -28,11 +28,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-24 md:h-28">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="relative h-16 w-16 mr-3">
+              <div className="relative h-16 w-16 mr-3 flex items-center justify-center bg-white rounded-md">
                 <img 
-                  src="/images/brand/logo.jpg" 
+                  src="/images/brand/logo-ekdant.jpg" 
                   alt="Ekdant Logo" 
-                  className="h-full w-full object-contain rounded-md" 
+                  className="h-14 w-14 object-contain" 
                 />
               </div>
               <div className="flex flex-col">

@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12">
           <div className="mb-2 md:mb-0">
             <div className="flex items-center mb-4 md:mb-6">
-              <div className="relative h-12 w-12 mr-3 bg-white rounded-md p-1 flex items-center justify-center">
+              <div className="relative h-14 w-14 mr-3 bg-white rounded-md p-1 flex items-center justify-center">
                 <img 
-                  src="/images/brand/logo.jpg" 
+                  src="/images/brand/logo-ekdant.jpg" 
                   alt="Ekdant Logo" 
-                  className="h-10 w-10 object-contain" 
+                  className="h-12 w-12 object-contain" 
                 />
               </div>
               <div className="flex flex-col">
