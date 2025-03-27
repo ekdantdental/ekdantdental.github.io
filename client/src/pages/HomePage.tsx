@@ -4,6 +4,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import AppointmentSection from "@/components/sections/AppointmentSection";
 import ContactSection from "@/components/sections/ContactSection";
+import DentalCareRecommendationSection from "@/components/sections/DentalCareRecommendationSection";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <ServicesSection />
       <AboutSection />
       <TestimonialsSection />
+      <DentalCareRecommendationSection />
       <AppointmentSection />
       <ContactSection />
     </>

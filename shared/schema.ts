@@ -1,4 +1,4 @@
-import { pgTable, text, serial, integer, boolean, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, serial, integer, boolean, timestamp, json } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -40,3 +40,32 @@ export const appointmentSchema = createInsertSchema(appointments).omit({
 
 export type InsertAppointment = z.infer<typeof appointmentSchema>;
 export type Appointment = typeof appointments.$inferSelect;
+
+// Dental care recommendation schema
+export const dentalCareRecommendations = pgTable("dental_care_recommendations", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id"),
+  email: text("email").notNull(),
+  name: text("name").notNull(),
+  age: integer("age").notNull(),
+  hasPain: text("has_pain").notNull(), // "yes" or "no"
+  painLevel: integer("pain_level"), // 1-10
+  teethSensitivity: text("teeth_sensitivity").notNull(), // "low", "medium", "high"
+  bleedingGums: text("bleeding_gums").notNull(), // "yes" or "no"
+  lastDentalVisit: text("last_dental_visit").notNull(), // "less_than_6_months", "6_to_12_months", "more_than_12_months", "never"
+  dailyBrushingFrequency: integer("daily_brushing_frequency").notNull(), // 0, 1, 2, or more
+  flossingFrequency: text("flossing_frequency").notNull(), // "daily", "occasionally", "never"
+  concerns: text("concerns").array(), // Array of concerns like "cavities", "gum_disease", etc.
+  recommendations: json("recommendations"), // JSON data for recommendations
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+export const dentalCareRecommendationSchema = createInsertSchema(dentalCareRecommendations).omit({
+  id: true,
+  userId: true,
+  recommendations: true,
+  createdAt: true,
+});
+
+export type InsertDentalCareRecommendation = z.infer<typeof dentalCareRecommendationSchema>;
+export type DentalCareRecommendation = typeof dentalCareRecommendations.$inferSelect;
