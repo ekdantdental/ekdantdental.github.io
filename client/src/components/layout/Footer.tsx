@@ -10,11 +10,11 @@ const Footer = () => {
             <div className="flex items-center mb-4 md:mb-6">
               <FaTooth className="text-xl md:text-2xl text-[#06B6D4] mr-2" />
               <span className="font-heading font-bold text-lg md:text-xl text-white">
-                Ekdant Dental and ENT
+                Ekdant Dental Clinic
               </span>
             </div>
             <p className="text-gray-400 text-sm md:text-base mb-4 md:mb-6">
-              Providing exceptional dental and ENT care for patients of all ages in a
+              Providing exceptional dental care for patients of all ages in a
               comfortable, state-of-the-art environment.
             </p>
             <div className="flex space-x-4">
@@ -88,22 +88,22 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
-                  Ear Treatments
+                  Root Canal Treatment
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
-                  Throat & Voice Treatments
+                  Dental Implants
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
-                  Nasal & Sinus Procedures
+                  Orthodontics
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
-                  Advanced ENT Surgeries
+                  Pediatric Dentistry
                 </a>
               </li>
             </ul>
@@ -142,7 +142,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-xs md:text-sm mb-4 md:mb-0 text-center md:text-left">
-              &copy; {new Date().getFullYear()} Ekdant Dental and ENT Clinic. All rights reserved.
+              &copy; {new Date().getFullYear()} Ekdant Dental Clinic. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 md:space-x-6">
               <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">

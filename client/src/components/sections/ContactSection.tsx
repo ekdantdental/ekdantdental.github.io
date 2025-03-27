@@ -31,7 +31,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-6 md:mb-12">
           <h2 className="font-heading font-bold text-2xl md:text-4xl text-dark mb-2 md:mb-4">
-            Contact Ekdant Dental and ENT Clinic
+            Contact Ekdant Dental Clinic
           </h2>
           <p className="text-gray-600 text-sm md:text-base px-1 md:px-0">
             Have questions or need assistance? Reach out to our team through any
@@ -62,12 +62,12 @@ const ContactSection = () => {
             <Marker position={position}>
               <Popup>
                 <div className="text-xs sm:text-sm md:text-base font-sans">
-                  <strong>Ekdant Dental and ENT Clinic</strong><br />
+                  <strong>Ekdant Dental Clinic</strong><br />
                   18, Shiv Triveni Complex, Sector 7<br />
                   Sanpada, Navi Mumbai<br />
                   Landmark: Near Chaudhri medical<br />
                   <a 
-                    href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Dental+and+ENT+clinic+Sanpada+Navi+Mumbai" 
+                    href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Dental+clinic+Sanpada+Navi+Mumbai" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-primary hover:underline mt-2 inline-block text-sm font-medium"

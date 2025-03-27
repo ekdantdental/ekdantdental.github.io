@@ -10,12 +10,12 @@ const AboutSection = () => {
           <div>
             <div className="mb-6 md:mb-8">
               <h2 className="font-heading font-bold text-2xl md:text-4xl text-dark mb-3 md:mb-4">
-                About Ekdant Multispeciality and Implant Center
+                About Ekdant Dental Clinic
               </h2>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                Ekdant Multispeciality and Implant Center is a multi-speciality clinic serving the 
+                Ekdant Dental Clinic is a multi-specialty dental clinic serving the 
                 Navi Mumbai community. Our state-of-the-art facility helps you achieve
-                optimal oral and ENT health.
+                optimal oral health.
               </p>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
                 We combine latest dental technologies with compassionate care
@@ -37,7 +37,7 @@ const AboutSection = () => {
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="text-primary h-4 w-4 md:h-5 md:w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span className="text-sm md:text-base">Family dental & ENT care</span>
+                  <span className="text-sm md:text-base">Family dental care</span>
                 </li>
               </ul>
             </div>
@@ -53,7 +53,7 @@ const AboutSection = () => {
             <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-50 p-4 md:p-6">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">Visit Our Clinic</h3>
               <p className="text-sm md:text-base mb-3 md:mb-4">
-                Our state-of-the-art facility provides comfortable, high-quality care for all your dental and ENT needs.
+                Our state-of-the-art facility provides comfortable, high-quality care for all your dental needs.
               </p>
               <div className="grid grid-cols-1 gap-4">
                 <div>

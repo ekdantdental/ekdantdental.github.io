@@ -14,27 +14,27 @@ export const services = [
   },
   {
     id: 3,
-    title: "Ear Treatments",
-    description: "Ear wax (cerumen) removal, hearing tests, hearing aids, tympanoplasty, and treatment of ear-related conditions.",
-    image: "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Root Canal Treatment",
+    description: "Expert root canal procedures to treat infected pulp and save your natural tooth while relieving pain.",
+    image: "https://images.unsplash.com/photo-1579684288361-5c1a2957a700?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 4,
-    title: "Throat & Voice Treatments",
-    description: "Tonsillitis treatment, throat pain management, voice problems, cysts and nodules of vocal fold, and microsurgery of the larynx.",
-    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Dental Implants",
+    description: "Permanent tooth replacement solutions that look, feel and function like natural teeth for a complete smile.",
+    image: "https://images.unsplash.com/photo-1581585375036-df878e8c63c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 5,
-    title: "Nasal & Sinus Procedures",
-    description: "Endoscopic sinus surgery, septoplasty, treatment of epistaxis, foreign body removal, and diagnostic nasal endoscopy.",
-    image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Orthodontics",
+    description: "Braces, aligners, and other orthodontic treatments to straighten teeth and correct bite problems.",
+    image: "https://images.unsplash.com/photo-1600170384787-dbdd13eb3b17?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 6,
-    title: "Advanced ENT Surgeries",
-    description: "Head and neck tumor/cancer surgery, thyroid surgery, parotid surgery, DCR surgery, and laser surgeries for head and neck lesions.",
-    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Pediatric Dentistry",
+    description: "Gentle and friendly dental care specifically designed for children to build good oral health habits early.",
+    image: "https://images.unsplash.com/photo-1588776814735-7e6e2a74b868?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   }
 ];
 
@@ -97,7 +97,7 @@ export const contactInfo = [
     icon: "fas fa-map-marker-alt text-2xl",
     action: {
       text: "Get Directions",
-      url: "https://www.google.com/maps/search/?api=1&query=Ekdant+Dental+and+ENT+Clinic+18+Shiv+Triveni+Complex+Sector+7+Sanpada+Navi+Mumbai"
+      url: "https://www.google.com/maps/search/?api=1&query=Ekdant+Dental+Clinic+18+Shiv+Triveni+Complex+Sector+7+Sanpada+Navi+Mumbai"
     }
   },
   {
