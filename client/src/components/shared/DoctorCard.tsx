@@ -10,14 +10,14 @@ interface DoctorProps {
 }
 
 const DoctorCard = ({ doctor, isVisitingConsultant = false }: DoctorProps) => {
-  // Check if description contains "Visiting Consultant" text
-  const isVisiting = isVisitingConsultant || doctor.description.includes("Visiting Consultant");
+  // Use the isVisitingConsultant prop to determine if this is a visiting doctor
+  const isVisiting = isVisitingConsultant;
   
   return (
     <div className={`bg-white rounded-lg shadow-md p-4 md:p-6 h-full flex flex-col ${isVisiting ? 'border-l-4 border-primary/50' : ''}`}>
       {isVisiting && (
-        <div className="mb-2 -mt-1">
-          <span className="bg-primary/10 text-primary text-xs py-1 px-2 rounded-full font-medium">Visiting Consultant</span>
+        <div className="mb-2 -mt-1 flex justify-center">
+          <span className="bg-primary/10 text-primary text-xs py-1 px-2 rounded-full font-medium">Consultant</span>
         </div>
       )}
       <div className="flex flex-col items-center text-center h-full">
@@ -34,10 +34,7 @@ const DoctorCard = ({ doctor, isVisitingConsultant = false }: DoctorProps) => {
           </h3>
           <p className="text-primary text-xs md:text-sm mb-2 md:mb-3 font-medium">{doctor.title}</p>
           <p className="text-gray-600 text-xs md:text-sm">
-            {isVisiting 
-              ? doctor.description.replace("Visiting Consultant - ", "")
-              : doctor.description
-            }
+            {doctor.description}
           </p>
         </div>
       </div>

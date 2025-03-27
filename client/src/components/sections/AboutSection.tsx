@@ -59,7 +59,7 @@ const AboutSection = () => {
             
             {doctors.length > 4 && (
               <div className="mt-8">
-                <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Visiting Consultants</h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Our Visiting Consultants</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                   {doctors.slice(4).map((doctor) => (
                     <DoctorCard key={doctor.id} doctor={doctor} isVisitingConsultant={true} />
