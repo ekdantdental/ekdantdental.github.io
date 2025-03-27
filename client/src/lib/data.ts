@@ -49,6 +49,13 @@ export const doctors = [
   },
   {
     id: 2,
+    name: "Dr. Sonali J Patil",
+    title: "MDS, BDS (Prosthodontist)",
+    description: "Expert in prosthodontics providing comprehensive dental treatments with precision.",
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    id: 3,
     name: "Dr. Sunil Pawar",
     title: "MBBS, DNB, FNB (Critical Care Medicine)",
     description: "Specialist in critical care medicine providing comprehensive medical support.",
