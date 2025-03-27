@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { FaTooth, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -8,10 +8,19 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12">
           <div className="mb-2 md:mb-0">
             <div className="flex items-center mb-4 md:mb-6">
-              <FaTooth className="text-xl md:text-2xl text-[#06B6D4] mr-2" />
-              <span className="font-heading font-bold text-lg md:text-xl text-white">
-                Ekdant Multi Speciality and Implant Center
-              </span>
+              <img 
+                src="/images/brand/logo.jpg" 
+                alt="Ekdant Logo" 
+                className="h-10 md:h-12 mr-2 bg-white rounded-full p-1" 
+              />
+              <div className="flex flex-col">
+                <span className="font-heading font-bold text-lg md:text-xl text-white">
+                  Ekdant
+                </span>
+                <span className="text-xs md:text-sm text-gray-300">
+                  Multi Speciality and Implant Center
+                </span>
+              </div>
             </div>
             <p className="text-gray-400 text-sm md:text-base mb-4 md:mb-6">
               Providing exceptional dental care for patients of all ages in a

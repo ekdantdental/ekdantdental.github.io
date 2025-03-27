@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { FaTooth } from "react-icons/fa";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,9 +28,16 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <FaTooth className="text-3xl text-primary mr-2" />
-              <span className="font-heading font-bold text-xl md:text-2xl text-primary">
-                Ekdant Multi Speciality
+              <img 
+                src="/images/brand/logo.jpg" 
+                alt="Ekdant Logo" 
+                className="h-12 mr-2" 
+              />
+              <span className="font-heading font-bold text-xl md:text-2xl" style={{ color: '#3C2A98' }}>
+                Ekdant
+              </span>
+              <span className="font-medium text-sm md:text-base text-gray-700 ml-1 hidden md:inline-block">
+                Multi Speciality and Implant Center
               </span>
             </Link>
           </div>
