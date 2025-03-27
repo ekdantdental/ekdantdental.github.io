@@ -29,9 +29,21 @@ const DoctorCard = ({ doctor, isVisitingConsultant = false }: DoctorProps) => {
         </div>
         
         <div className="mb-3">
-          <p className="text-primary text-xs md:text-sm font-medium">
-            {doctor.title}
-          </p>
+          {/* Parse and format the title */}
+          {doctor.title.includes('(') ? (
+            <>
+              <p className="text-primary text-xs md:text-sm font-medium">
+                {doctor.title.split('(')[0].trim()}
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                {doctor.title.includes('(') ? `(${doctor.title.split('(')[1]}` : ''}
+              </p>
+            </>
+          ) : (
+            <p className="text-primary text-xs md:text-sm font-medium">
+              {doctor.title}
+            </p>
+          )}
         </div>
         
         <div>
