@@ -28,17 +28,21 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <img 
-                src="/images/brand/logo.jpg" 
-                alt="Ekdant Logo" 
-                className="h-12 mr-2" 
-              />
-              <span className="font-heading font-bold text-xl md:text-2xl" style={{ color: '#3C2A98' }}>
-                Ekdant
-              </span>
-              <span className="font-medium text-sm md:text-base text-gray-700 ml-1 hidden md:inline-block">
-                Multi Speciality and Implant Center
-              </span>
+              <div className="relative h-14 w-14 mr-3">
+                <img 
+                  src="/images/brand/logo.jpg" 
+                  alt="Ekdant Logo" 
+                  className="h-full w-full object-contain rounded-md" 
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-heading font-bold text-2xl md:text-3xl tracking-tight" style={{ color: '#3C2A98' }}>
+                  Ekdant
+                </span>
+                <span className="font-medium text-xs md:text-sm text-gray-600">
+                  Multi Speciality and Implant Center
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -90,7 +94,7 @@ const Header = () => {
 
           <div className="hidden md:block">
             <Button 
-              className="bg-[#06B6D4] hover:bg-primary text-white font-semibold py-2 px-6 rounded-md transition duration-300"
+              className="bg-primary hover:bg-opacity-90 text-white font-semibold py-2 px-6 rounded-md transition duration-300 shadow-sm"
               onClick={() => scrollToSection('book-appointment')}
             >
               Book Appointment
@@ -134,7 +138,7 @@ const Header = () => {
           </a>
           <a 
             onClick={() => scrollToSection('book-appointment')} 
-            className="block px-3 py-2 rounded-md text-base font-medium bg-[#06B6D4] text-white hover:bg-primary text-center mt-4 cursor-pointer"
+            className="block px-3 py-2 rounded-md text-base font-medium bg-primary text-white hover:bg-opacity-90 text-center mt-4 cursor-pointer shadow-sm"
           >
             Book Appointment
           </a>

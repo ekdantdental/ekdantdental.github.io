@@ -8,16 +8,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12">
           <div className="mb-2 md:mb-0">
             <div className="flex items-center mb-4 md:mb-6">
-              <img 
-                src="/images/brand/logo.jpg" 
-                alt="Ekdant Logo" 
-                className="h-10 md:h-12 mr-2 bg-white rounded-full p-1" 
-              />
+              <div className="relative h-12 w-12 mr-3 bg-white rounded-md p-1 flex items-center justify-center">
+                <img 
+                  src="/images/brand/logo.jpg" 
+                  alt="Ekdant Logo" 
+                  className="h-10 w-10 object-contain" 
+                />
+              </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-lg md:text-xl text-white">
+                <span className="font-heading font-bold text-xl md:text-2xl text-white tracking-tight">
                   Ekdant
                 </span>
-                <span className="text-xs md:text-sm text-gray-300">
+                <span className="text-xs md:text-sm text-gray-300 font-light">
                   Multi Speciality and Implant Center
                 </span>
               </div>
@@ -27,16 +29,16 @@ const Footer = () => {
               comfortable, state-of-the-art environment.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
+              <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
                 <FaFacebookF />
               </a>
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
+              <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
                 <FaTwitter />
               </a>
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
+              <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
                 <FaInstagram />
               </a>
-              <a href="#" className="text-white hover:text-[#06B6D4] transition duration-300 text-lg md:text-xl">
+              <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
                 <FaYoutube />
               </a>
             </div>
@@ -48,32 +50,32 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/#home" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <Link href="/#home" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <Link href="/#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/#about" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <Link href="/#about" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/#testimonials" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <Link href="/#testimonials" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <Link href="/#contact" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/#book-appointment" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <Link href="/#book-appointment" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Book Appointment
                 </Link>
               </li>
