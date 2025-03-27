@@ -14,9 +14,9 @@ export const services = [
   },
   {
     id: 3,
-    title: "Root Canal Treatment",
-    description: "Expert root canal procedures to treat infected pulp and save your natural tooth while relieving pain.",
-    image: "https://images.unsplash.com/photo-1579684288361-5c1a2957a700?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    title: "Restorative and Root Canal Treatment",
+    description: "Expert restorative dental work and root canal procedures to treat infected pulp, saving your natural teeth while relieving pain.",
+    image: "/images/services/root-canal.jpg"
   },
   {
     id: 4,

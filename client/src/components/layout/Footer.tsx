@@ -88,7 +88,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
-                  Root Canal Treatment
+                  Restorative and Root Canal Treatment
                 </a>
               </li>
               <li>

@@ -178,7 +178,7 @@ const AppointmentForm = () => {
                   <SelectContent className="text-sm md:text-base">
                     <SelectItem value="general">General Dentistry</SelectItem>
                     <SelectItem value="cosmetic">Cosmetic Dentistry</SelectItem>
-                    <SelectItem value="root-canal">Root Canal Treatment</SelectItem>
+                    <SelectItem value="root-canal">Restorative and Root Canal Treatment</SelectItem>
                     <SelectItem value="dental-implants">Dental Implants</SelectItem>
                     <SelectItem value="orthodontics">Orthodontics</SelectItem>
                     <SelectItem value="pediatric">Pediatric Dentistry</SelectItem>
