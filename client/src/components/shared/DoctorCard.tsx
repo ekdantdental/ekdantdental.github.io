@@ -14,18 +14,27 @@ const DoctorCard = ({ doctor, isVisitingConsultant = false }: DoctorProps) => {
   const isVisiting = isVisitingConsultant;
   
   return (
-    <div className={`bg-white rounded-lg shadow-md p-4 md:p-6 h-full flex flex-col ${isVisiting ? 'border-l-4 border-primary/50' : ''}`}>
-      {isVisiting && (
-        <div className="mb-2 -mt-1 flex justify-center">
-          <span className="bg-primary/10 text-primary text-xs py-1 px-2 rounded-full font-medium">Consultant</span>
-        </div>
-      )}
-      <div className="flex flex-col items-center text-center h-full">
-        <div className="text-center">
-          <h3 className="font-heading font-semibold text-base md:text-lg text-dark mb-1">
+    <div className={`bg-white rounded-lg shadow-md p-5 md:p-6 h-full flex flex-col ${isVisiting ? 'border-l-4 border-primary/50' : ''}`}>
+      <div className="flex flex-col h-full">
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="font-heading font-semibold text-base md:text-lg text-dark">
             {doctor.name}
           </h3>
-          <p className="text-primary text-xs md:text-sm mb-2 md:mb-3 font-medium">{doctor.title}</p>
+          
+          {isVisiting && (
+            <span className="bg-primary/10 text-primary text-xs py-1 px-2 rounded-full font-medium">
+              Consultant
+            </span>
+          )}
+        </div>
+        
+        <div className="mb-3">
+          <p className="text-primary text-xs md:text-sm font-medium">
+            {doctor.title}
+          </p>
+        </div>
+        
+        <div>
           <p className="text-gray-600 text-xs md:text-sm">
             {doctor.description}
           </p>
