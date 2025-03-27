@@ -28,8 +28,9 @@ const HeroSection = () => {
             Ekdant Multi Speciality and Implant Center
           </h1>
           <p className="text-base md:text-lg mb-6 md:mb-8 text-light/90">
-            Exceptional dental care in Navi Mumbai. Our multi-speciality clinic
-            combines latest technology with compassionate care for all your dental needs.
+            Experience exceptional dental care that puts you first. At Ekdant, we combine advanced 
+            techniques with genuine compassion to transform your dental experience. Your comfort, 
+            health, and satisfaction are our highest priorities.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button

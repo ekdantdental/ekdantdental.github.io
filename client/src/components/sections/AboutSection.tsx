@@ -13,14 +13,20 @@ const AboutSection = () => {
                 About Ekdant Multi Speciality and Implant Center
               </h2>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                Ekdant Multi Speciality and Implant Center is a multi-speciality dental clinic serving the 
-                Navi Mumbai community. Our state-of-the-art facility helps you achieve
-                optimal oral health.
+                At Ekdant Multi Speciality and Implant Center, we've reimagined dental care around you - the patient. 
+                Our philosophy places your comfort and well-being at the center of everything we do, creating a 
+                dental experience that feels different from the moment you walk through our doors.
               </p>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                We combine latest dental technologies with compassionate care
-                to deliver effective and comfortable treatments. Our team listens to your concerns
-                and creates personalized treatment plans for your needs.
+                We combine cutting-edge dental technologies with genuine compassion to transform routine 
+                procedures into comfortable experiences. Our dedicated team takes the time to listen to your 
+                concerns, understand your unique needs, and develop personalized treatment plans that respect 
+                your preferences and goals.
+              </p>
+              <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
+                From preventive care to advanced implant procedures, we're committed to providing exceptional 
+                dentistry in an environment of trust and respect. Experience the difference that patient-centered 
+                care makes at Ekdant - where advanced techniques meet compassionate service.
               </p>
               <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
                 <li className="flex items-start">
