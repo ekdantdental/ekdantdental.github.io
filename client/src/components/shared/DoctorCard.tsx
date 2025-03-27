@@ -10,21 +10,21 @@ interface DoctorProps {
 
 const DoctorCard = ({ doctor }: DoctorProps) => {
   return (
-    <div className="bg-light rounded-lg shadow-md p-4 md:p-6">
-      <div className="flex items-center md:flex-col md:items-center md:text-center">
-        <div className="w-16 h-16 md:w-24 md:h-24 mr-4 md:mr-0 md:mb-4 rounded-full overflow-hidden flex-shrink-0">
+    <div className="bg-white rounded-lg shadow-md p-4 md:p-6 h-full flex flex-col">
+      <div className="flex flex-col items-center text-center h-full">
+        <div className="w-20 h-20 sm:w-24 sm:h-24 mb-3 sm:mb-4 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/10">
           <img
             src={doctor.image}
             alt={doctor.name}
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="md:text-center">
-          <h3 className="font-heading font-semibold text-base md:text-lg text-dark">
+        <div className="text-center">
+          <h3 className="font-heading font-semibold text-base md:text-lg text-dark mb-1">
             {doctor.name}
           </h3>
-          <p className="text-primary text-xs md:text-sm mb-1 md:mb-2">{doctor.title}</p>
-          <p className="text-gray-600 text-xs md:text-sm line-clamp-2 md:line-clamp-none">{doctor.description}</p>
+          <p className="text-primary text-xs md:text-sm mb-2 md:mb-3 font-medium">{doctor.title}</p>
+          <p className="text-gray-600 text-xs md:text-sm">{doctor.description}</p>
         </div>
       </div>
     </div>

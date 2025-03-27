@@ -56,6 +56,13 @@ export const doctors = [
   },
   {
     id: 3,
+    name: "Dr. Manisha Sahani",
+    title: "BDS",
+    description: "Skilled dental professional providing quality general dentistry services with a gentle approach.",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    id: 4,
     name: "Dr. Sunil Pawar",
     title: "MBBS, DNB, FNB (Critical Care Medicine)",
     description: "Specialist in critical care medicine providing comprehensive medical support.",
