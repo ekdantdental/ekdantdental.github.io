@@ -25,10 +25,10 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative">
         <div className="max-w-2xl">
           <h1 className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-6">
-            Ekdant Dental and ENT Clinic
+            Ekdant Multispeciality and Implant Center
           </h1>
           <p className="text-base md:text-lg mb-6 md:mb-8 text-light/90">
-            Exceptional dental and ENT care in Navi Mumbai. Our multi-speciality clinic
+            Exceptional dental care in Navi Mumbai. Our multi-speciality clinic
             combines latest technology with compassionate care for all your dental and ENT needs.
           </p>
           <div className="flex flex-wrap gap-4">
