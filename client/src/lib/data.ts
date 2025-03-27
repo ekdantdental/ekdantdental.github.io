@@ -77,10 +77,17 @@ export const doctors = [
   },
   {
     id: 6,
-    name: "Dr. Vikram Shetty",
+    name: "Dr. Vikram",
     title: "MDS, BDS (Orthodontist)",
     description: "Visiting Consultant - Specialist in orthodontic treatments focusing on teeth alignment and jaw corrections.",
     image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    id: 7,
+    name: "Dr. Trisha Patel",
+    title: "MDS, BDS (Pediatric Dentist)",
+    description: "Visiting Consultant - Specialized in providing dental care for children, with expertise in creating a comfortable environment for young patients.",
+    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   }
 ];
 
