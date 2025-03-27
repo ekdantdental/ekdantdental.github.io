@@ -52,10 +52,21 @@ const AboutSection = () => {
           <div className="space-y-8">
             <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Our Expert Team</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-              {doctors.map((doctor) => (
+              {doctors.slice(0, 4).map((doctor) => (
                 <DoctorCard key={doctor.id} doctor={doctor} />
               ))}
             </div>
+            
+            {doctors.length > 4 && (
+              <div className="mt-8">
+                <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Visiting Consultants</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                  {doctors.slice(4).map((doctor) => (
+                    <DoctorCard key={doctor.id} doctor={doctor} isVisitingConsultant={true} />
+                  ))}
+                </div>
+              </div>
+            )}
             
             <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-50 p-4 md:p-6 mt-8">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">Visit Our Clinic</h3>
