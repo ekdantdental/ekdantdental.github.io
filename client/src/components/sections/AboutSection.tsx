@@ -13,9 +13,9 @@ const AboutSection = () => {
                 About Ekdant Multi Speciality and Implant Center
               </h2>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                At Ekdant Multi Speciality and Implant Center, we've reimagined dental care around you - the patient. 
-                Our philosophy places your comfort and well-being at the center of everything we do, creating a 
-                dental experience that feels different from the moment you walk through our doors.
+                At EKDANT, we are committed to revolutionizing the dental experience through our patient centric approach. 
+                Our mission is to provide personalised, compassionate care that educates, motivates and inspires individuals 
+                to achieve and maintain optimal oral health, resulting in vibrant, healthy smiles that illuminates their lives.
               </p>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
                 We combine cutting-edge dental technologies with genuine compassion to transform routine 

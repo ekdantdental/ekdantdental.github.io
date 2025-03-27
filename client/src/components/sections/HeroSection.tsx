@@ -28,9 +28,9 @@ const HeroSection = () => {
             Ekdant Multi Speciality and Implant Center
           </h1>
           <p className="text-base md:text-lg mb-6 md:mb-8 text-light/90">
-            Experience exceptional dental care that puts you first. At Ekdant, we combine advanced 
-            techniques with genuine compassion to transform your dental experience. Your comfort, 
-            health, and satisfaction are our highest priorities.
+            At EKDANT, we are committed to revolutionizing the dental experience through our patient centric approach. 
+            Our mission is to provide personalised, compassionate care that educates, motivates and inspires individuals 
+            to achieve and maintain optimal oral health, resulting in vibrant, healthy smiles that illuminates their lives.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button
