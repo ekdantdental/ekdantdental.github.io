@@ -37,7 +37,7 @@ const Header = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-2xl md:text-3xl tracking-tight" style={{ color: '#3C2A98' }}>
-                  Ekdant
+                  <span style={{ fontStyle: 'italic' }}>Ek</span>dant
                 </span>
                 <span className="font-medium text-xs md:text-sm text-gray-600">
                   Multi Speciality and Implant Center
@@ -53,8 +53,13 @@ const Header = () => {
               size="icon"
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
+              className="text-primary hover:bg-primary/10 transition-colors"
             >
-              <i className="fas fa-bars text-2xl text-gray-600 hover:text-primary"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="4" x2="20" y1="12" y2="12"/>
+                <line x1="4" x2="20" y1="6" y2="6"/>
+                <line x1="4" x2="20" y1="18" y2="18"/>
+              </svg>
             </Button>
           </div>
 

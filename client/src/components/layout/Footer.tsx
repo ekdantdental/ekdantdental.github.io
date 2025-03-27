@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-xl md:text-2xl text-white tracking-tight">
-                  Ekdant
+                  <span style={{ fontStyle: 'italic' }}>Ek</span>dant
                 </span>
                 <span className="text-xs md:text-sm text-gray-300 font-light">
                   Multi Speciality and Implant Center
@@ -88,32 +88,32 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   General Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Cosmetic Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Restorative and Root Canal Treatment
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Dental Implants
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Orthodontics
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#06B6D4] transition duration-300 text-sm md:text-base">
+                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Pediatric Dentistry
                 </a>
               </li>
@@ -126,21 +126,21 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3 md:space-y-4">
               <li className="flex items-start">
-                <FaMapMarkerAlt className="mt-1 mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <FaMapMarkerAlt className="mt-1 mr-2 md:mr-3 text-primary text-base md:text-lg flex-shrink-0" />
                 <span className="text-gray-400 text-sm md:text-base">
                   Office No 8 and 9, 1st Floor, Gami Terra<br />Sector-6, Sanpada, Navi Mumbai - 400 705
                 </span>
               </li>
               <li className="flex items-center">
-                <FaPhoneAlt className="mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <FaPhoneAlt className="mr-2 md:mr-3 text-primary text-base md:text-lg flex-shrink-0" />
                 <span className="text-gray-400 text-sm md:text-base">+91 79001 39417</span>
               </li>
               <li className="flex items-center">
-                <FaEnvelope className="mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <FaEnvelope className="mr-2 md:mr-3 text-primary text-base md:text-lg flex-shrink-0" />
                 <span className="text-gray-400 text-sm md:text-base">info@ekdantclinic.com</span>
               </li>
               <li className="flex items-start">
-                <FaClock className="mt-1 mr-2 md:mr-3 text-[#06B6D4] text-base md:text-lg flex-shrink-0" />
+                <FaClock className="mt-1 mr-2 md:mr-3 text-primary text-base md:text-lg flex-shrink-0" />
                 <div className="text-gray-400 text-sm md:text-base">
                   <p>Mon-Sat: 9AM - 9PM</p>
                   <p>Sun: 10AM - 2PM</p>
@@ -156,13 +156,13 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Ekdant Multi Speciality and Implant Center. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 md:space-x-6">
-              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">
+              <a href="#" className="text-gray-500 hover:text-primary text-xs md:text-sm transition duration-300">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">
+              <a href="#" className="text-gray-500 hover:text-primary text-xs md:text-sm transition duration-300">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#06B6D4] text-xs md:text-sm transition duration-300">
+              <a href="#" className="text-gray-500 hover:text-primary text-xs md:text-sm transition duration-300">
                 Accessibility
               </a>
             </div>
