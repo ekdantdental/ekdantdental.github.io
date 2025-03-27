@@ -45,7 +45,7 @@ export const doctors = [
     name: "Dr. Reshma Rathod",
     title: "MDS, BDS (Prosthodontist)",
     description: "Specialist in dental prosthetics and crown procedures with extensive experience.",
-    image: "/attached_assets/pic resh.jpg"
+    image: "/images/doctors/reshma-rathod.jpg"
   },
   {
     id: 2,
