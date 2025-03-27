@@ -48,6 +48,13 @@ export const doctors = [
     image: "/images/doctors/reshma-rathod.jpg"
   },
   {
+    id: 4,
+    name: "Dr. Sunil Pawar",
+    title: "MBBS, DNB, FNB (Critical Care Medicine)",
+    description: "Specialist in critical care medicine providing comprehensive medical support.",
+    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
     id: 2,
     name: "Dr. Sonali J Patil",
     title: "MDS, BDS (Prosthodontist)",
@@ -60,13 +67,6 @@ export const doctors = [
     title: "BDS",
     description: "Skilled dental professional providing quality general dentistry services with a gentle approach.",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
-  },
-  {
-    id: 4,
-    name: "Dr. Sunil Pawar",
-    title: "MBBS, DNB, FNB (Critical Care Medicine)",
-    description: "Specialist in critical care medicine providing comprehensive medical support.",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   },
   {
     id: 5,
