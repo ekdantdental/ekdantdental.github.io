@@ -28,7 +28,7 @@ const HeroSection = () => {
             Ekdant Multi Speciality and Implant Center
           </h1>
           <p className="text-base md:text-lg mb-6 md:mb-8 text-light/90">
-            At EKDANT, we are committed to revolutionizing the dental experience through our patient centric approach. 
+            At <span className="font-semibold text-white">Ekdant Multi Speciality and Implant Center</span>, we are committed to revolutionizing the dental experience through our patient centric approach. 
             Our mission is to provide personalised, compassionate care that educates, motivates and inspires individuals 
             to achieve and maintain optimal oral health, resulting in vibrant, healthy smiles that illuminates their lives.
           </p>
