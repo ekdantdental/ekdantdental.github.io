@@ -25,10 +25,10 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24 md:h-28">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="relative h-14 w-14 mr-3">
+              <div className="relative h-16 w-16 mr-3">
                 <img 
                   src="/images/brand/logo.jpg" 
                   alt="Ekdant Logo" 
@@ -39,7 +39,7 @@ const Header = () => {
                 <img 
                   src="/images/brand/logo-ekdant.jpg" 
                   alt="Ekdant" 
-                  className="h-10 md:h-12 w-auto object-contain" 
+                  className="h-14 md:h-16 w-auto object-contain" 
                 />
                 <span className="font-medium text-xs md:text-sm text-gray-600">
                   Multi Speciality and Implant Center

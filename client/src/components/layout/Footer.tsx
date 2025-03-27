@@ -19,7 +19,7 @@ const Footer = () => {
                 <img 
                   src="/images/brand/logo-ekdant.jpg" 
                   alt="Ekdant" 
-                  className="h-8 md:h-10 w-auto object-contain bg-white p-1 rounded-sm mb-1" 
+                  className="h-12 md:h-14 w-auto object-contain bg-white p-1 rounded-sm mb-1" 
                 />
                 <span className="text-xs md:text-sm text-gray-300 font-light">
                   Multi Speciality and Implant Center
