@@ -2,7 +2,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
@@ -13,6 +13,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { appointmentSchema, Appointment } from "@shared/schema";
 import AppointmentSuccess from "./AppointmentSuccess";
+import { Link } from "wouter";
 
 const formSchema = appointmentSchema.extend({
   consent: z.boolean().refine((val) => val === true, {
@@ -37,6 +38,8 @@ const AppointmentForm = () => {
       service: "",
       preferredDate: "",
       preferredTime: "",
+      anxietyLevel: "",
+      anxietyAccommodations: [],
       message: "",
       consent: false,
     },
@@ -232,6 +235,101 @@ const AppointmentForm = () => {
             />
           </div>
 
+          <div className="space-y-4">
+            <h4 className="text-sm md:text-base font-medium text-gray-700">Dental Anxiety Support</h4>
+            <div className="bg-blue-50 p-4 rounded-md border border-blue-100">
+              <p className="text-sm text-blue-700 mb-2">
+                We understand that dental visits can cause anxiety. Help us make your visit more comfortable by sharing your anxiety level and preferences.
+              </p>
+              <p className="text-xs text-blue-600">
+                Not sure about your anxiety level? <Link href="/dental-anxiety-resources" className="underline">Take our anxiety assessment</Link>
+              </p>
+            </div>
+
+            <FormField
+              control={form.control}
+              name="anxietyLevel"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-sm md:text-base">Dental Anxiety Level</FormLabel>
+                  <Select 
+                    onValueChange={field.onChange} 
+                    defaultValue={field.value}
+                  >
+                    <FormControl>
+                      <SelectTrigger className="text-sm md:text-base">
+                        <SelectValue placeholder="Select your anxiety level" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent className="text-sm md:text-base">
+                      <SelectItem value="">None/Minimal</SelectItem>
+                      <SelectItem value="mild">Mild anxiety</SelectItem>
+                      <SelectItem value="moderate">Moderate anxiety</SelectItem>
+                      <SelectItem value="severe">Severe anxiety</SelectItem>
+                      <SelectItem value="phobia">Dental phobia</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  <FormMessage className="text-xs md:text-sm" />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="anxietyAccommodations"
+              render={() => (
+                <FormItem>
+                  <div className="mb-2">
+                    <FormLabel className="text-sm md:text-base">Preferred Accommodations</FormLabel>
+                    <FormDescription className="text-xs text-gray-500">
+                      Select any accommodations that would help you feel more comfortable
+                    </FormDescription>
+                  </div>
+                  {[
+                    { value: "extra_time", label: "Extra time during appointment" },
+                    { value: "detailed_explanations", label: "Detailed explanations of procedures" },
+                    { value: "signal", label: "Hand signal to take breaks" },
+                    { value: "headphones", label: "Using headphones/music" },
+                    { value: "sedation", label: "Discussion about sedation options" }
+                  ].map((item) => (
+                    <FormField
+                      key={item.value}
+                      control={form.control}
+                      name="anxietyAccommodations"
+                      render={({ field }) => {
+                        return (
+                          <FormItem
+                            key={item.value}
+                            className="flex flex-row items-start space-x-2 space-y-0 my-1"
+                          >
+                            <FormControl>
+                              <Checkbox
+                                checked={field.value?.includes(item.value)}
+                                onCheckedChange={(checked) => {
+                                  const currentValues = field.value || [];
+                                  if (checked) {
+                                    field.onChange([...currentValues, item.value]);
+                                  } else {
+                                    field.onChange(
+                                      currentValues.filter((value) => value !== item.value)
+                                    );
+                                  }
+                                }}
+                              />
+                            </FormControl>
+                            <FormLabel className="text-sm font-normal cursor-pointer">
+                              {item.label}
+                            </FormLabel>
+                          </FormItem>
+                        );
+                      }}
+                    />
+                  ))}
+                </FormItem>
+              )}
+            />
+          </div>
+
           <FormField
             control={form.control}
             name="message"
@@ -247,6 +345,7 @@ const AppointmentForm = () => {
                     name={field.name}
                     ref={field.ref}
                     className="text-sm md:text-base" 
+                    placeholder="Please share any other concerns, questions, or special requirements"
                   />
                 </FormControl>
                 <FormMessage className="text-xs md:text-sm" />

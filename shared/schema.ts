@@ -27,6 +27,8 @@ export const appointments = pgTable("appointments", {
   service: text("service").notNull(),
   preferredDate: text("preferred_date").notNull(),
   preferredTime: text("preferred_time").notNull(),
+  anxietyLevel: text("anxiety_level"),
+  anxietyAccommodations: text("anxiety_accommodations").array(),
   message: text("message"),
   createdAt: timestamp("created_at").defaultNow(),
   status: text("status").default("pending"),

@@ -61,12 +61,16 @@ export class MemStorage implements IStorage {
     const id = this.appointmentId++;
     const now = new Date();
     
-    // Ensure message is null if it's undefined
+    // Ensure optional fields are null if undefined
     const message = insertAppointment.message === undefined ? null : insertAppointment.message;
+    const anxietyLevel = insertAppointment.anxietyLevel === undefined ? null : insertAppointment.anxietyLevel;
+    const anxietyAccommodations = insertAppointment.anxietyAccommodations === undefined ? null : insertAppointment.anxietyAccommodations;
     
     const appointment: Appointment = { 
       ...insertAppointment, 
       message,
+      anxietyLevel,
+      anxietyAccommodations,
       id, 
       createdAt: now,
       status: "pending" 
