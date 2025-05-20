@@ -49,7 +49,7 @@ export const services = [
     id: 2,
     title: "Hypertension Management",
     description: "Comprehensive high blood pressure management through medication, lifestyle changes, regular monitoring, and preventive care.",
-    image: "/images/services/hypertension-management.jpg",
+    image: "/images/services/hypertension.jpg",
     detailedDescription: {
       sections: [
         {
