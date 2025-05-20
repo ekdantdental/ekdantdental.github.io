@@ -15,13 +15,12 @@ const Footer = () => {
                   className="h-12 w-12 object-contain" 
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-lg text-white">
-                  Ekdant
-                </span>
-                <span className="text-xs md:text-sm text-gray-300 font-light">
-                  Multi Speciality and Implant Center
-                </span>
+              <div className="h-14 bg-white p-1 rounded-md">
+                <img 
+                  src="/images/brand/ekdant-text-styling.png" 
+                  alt="Ekdant Multi Speciality and Implant Center" 
+                  className="h-full object-contain" 
+                />
               </div>
             </div>
             <p className="text-gray-400 text-sm md:text-base mb-4 md:mb-6">

@@ -35,13 +35,12 @@ const Header = () => {
                   className="h-14 w-14 object-contain" 
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-lg md:text-xl text-primary">
-                  Ekdant
-                </span>
-                <span className="font-medium text-xs md:text-sm text-gray-600">
-                  Multi Speciality and Implant Center
-                </span>
+              <div className="h-14">
+                <img 
+                  src="/images/brand/ekdant-text-styling.png" 
+                  alt="Ekdant Multi Speciality and Implant Center" 
+                  className="h-full object-contain" 
+                />
               </div>
             </Link>
           </div>
