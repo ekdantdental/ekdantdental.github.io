@@ -533,6 +533,13 @@ export const testimonials = [
     image: "https://randomuser.me/api/portraits/women/53.jpg",
     text: "Dr. Reshma was very thorough and explained each step of the procedure clearly, which put me at ease. The appointments were always on time, and the staff was efficient in getting me through my treatment smoothly.",
     rating: 5
+  },
+  {
+    id: 7,
+    name: "Jay Kamble",
+    image: "https://randomuser.me/api/portraits/men/42.jpg",
+    text: "I wanted to express my gratitude for the wonderful experience during my recent visit. As it was my first time seeing a dentist, I was pleasantly surprised by how painless the treatment was. You treated me exceptionally well and provided clear and helpful information. I will definitely recommend your services to others with dental issues.",
+    rating: 5
   }
 ];
 
