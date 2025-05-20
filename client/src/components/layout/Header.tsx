@@ -30,17 +30,15 @@ const Header = () => {
             <Link href="/" className="flex items-center">
               <div className="relative h-16 w-16 mr-3 flex items-center justify-center bg-white rounded-md">
                 <img 
-                  src="/images/brand/logo-ekdant.jpg" 
+                  src="/images/brand/logo-ekdant-new.jpg" 
                   alt="Ekdant Logo" 
                   className="h-14 w-14 object-contain" 
                 />
               </div>
               <div className="flex flex-col">
-                <img 
-                  src="/images/brand/logo-ekdant.jpg" 
-                  alt="Ekdant" 
-                  className="h-14 md:h-16 w-auto object-contain" 
-                />
+                <span className="font-bold text-lg md:text-xl text-primary">
+                  EKDANT
+                </span>
                 <span className="font-medium text-xs md:text-sm text-gray-600">
                   Multi Speciality and Implant Center
                 </span>

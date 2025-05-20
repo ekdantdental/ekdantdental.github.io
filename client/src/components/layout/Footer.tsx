@@ -10,17 +10,15 @@ const Footer = () => {
             <div className="flex items-center mb-4 md:mb-6">
               <div className="relative h-14 w-14 mr-3 bg-white rounded-md p-1 flex items-center justify-center">
                 <img 
-                  src="/images/brand/logo-ekdant.jpg" 
+                  src="/images/brand/logo-ekdant-new.jpg" 
                   alt="Ekdant Logo" 
                   className="h-12 w-12 object-contain" 
                 />
               </div>
               <div className="flex flex-col">
-                <img 
-                  src="/images/brand/logo-ekdant.jpg" 
-                  alt="Ekdant" 
-                  className="h-12 md:h-14 w-auto object-contain bg-white p-1 rounded-sm mb-1" 
-                />
+                <span className="font-bold text-lg text-white">
+                  EKDANT
+                </span>
                 <span className="text-xs md:text-sm text-gray-300 font-light">
                   Multi Speciality and Implant Center
                 </span>
