@@ -498,8 +498,8 @@ export const doctors = [
   {
     id: 4,
     name: "Dr. Sunil Pawar",
-    title: "MBBS, DNB, FNB (Critical Care Medicine)",
-    description: "Specialist in critical care medicine providing comprehensive medical support.",
+    title: "MBBS, DNB, FNB, PGDGM, CCD",
+    description: "Specialist in critical care medicine, Diabetes Care and Geriatric Medicine, providing comprehensive medical support.",
     image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   },
   {
