@@ -28,9 +28,9 @@ const HeroSection = () => {
             Ekdant Multi Speciality and Implant Center
           </h1>
           <p className="text-base md:text-lg mb-6 md:mb-8 text-light/90">
-            At <span className="font-semibold text-white">Ekdant Multi Speciality and Implant Center</span>, we are committed to revolutionizing the dental experience through our patient centric approach. 
+            At <span className="font-semibold text-white">Ekdant Multi Speciality and Implant Center</span>, we are committed to revolutionizing both medical and dental healthcare through our patient centric approach. 
             Our mission is to provide personalised, compassionate care that educates, motivates and inspires individuals 
-            to achieve and maintain optimal oral health, resulting in vibrant, healthy smiles that illuminates their lives.
+            to achieve and maintain optimal health and wellbeing, delivering comprehensive care for all your medical and dental needs.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button
@@ -89,10 +89,10 @@ const HeroSection = () => {
               </div>
               <div>
                 <h3 className="font-heading font-semibold text-sm md:text-base text-dark">
-                  Expert Specialists
+                  Medical & Dental Specialists
                 </h3>
                 <p className="text-xs md:text-sm text-gray-600">
-                  Experienced professionals
+                  Comprehensive healthcare experts
                 </p>
               </div>
             </div>
