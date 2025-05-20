@@ -34,6 +34,18 @@ const AboutSection = () => {
                 healthcare in an environment of trust and respect.
               </p>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
+                <span className="font-semibold">Specialized Medical Care:</span> Our diabetes care program offers personalized management plans, 
+                including blood sugar monitoring, medication management, nutrition counseling, and education on lifestyle modifications 
+                to effectively control diabetes and prevent complications. Our certified diabetes specialists work closely with each 
+                patient to develop tailored treatment strategies.
+              </p>
+              <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
+                <span className="font-semibold">Geriatric Health Services:</span> We understand the unique healthcare needs of older adults. 
+                Our geriatric care focuses on comprehensive assessments, management of age-related conditions, preventative care, 
+                and maintaining quality of life. We take a holistic approach that considers physical, mental, and social aspects 
+                of aging to help our senior patients maintain independence and well-being for as long as possible.
+              </p>
+              <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
                 Experience the difference that patient-centered care makes at <span className="font-semibold">Ekdant Multi Speciality and Implant Center</span> - 
                 where advanced techniques meet compassionate service for all your medical and dental needs.
               </p>
@@ -48,11 +60,15 @@ const AboutSection = () => {
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="text-primary h-4 w-4 md:h-5 md:w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span className="text-sm md:text-base">Compassionate medical and dental specialists</span>
+                  <span className="text-sm md:text-base">Specialized diabetes care and management</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="text-primary h-4 w-4 md:h-5 md:w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span className="text-sm md:text-base">Comprehensive family healthcare</span>
+                  <span className="text-sm md:text-base">Comprehensive geriatric healthcare services</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="text-primary h-4 w-4 md:h-5 md:w-5 mt-0.5 mr-2 flex-shrink-0" />
+                  <span className="text-sm md:text-base">Compassionate medical and dental specialists</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="text-primary h-4 w-4 md:h-5 md:w-5 mt-0.5 mr-2 flex-shrink-0" />
