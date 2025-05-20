@@ -107,7 +107,7 @@ const Header = () => {
             Contact
           </a>
           <Button 
-            className="bg-primary hover:bg-opacity-90 text-white font-semibold py-3 px-8 text-lg rounded-md transition duration-300 shadow-sm"
+            className="bg-primary hover:bg-opacity-90 text-white font-semibold py-4 px-10 text-2xl rounded-md transition duration-300 shadow-md"
             onClick={() => scrollToSection('book-appointment')}
           >
             Book Appointment
