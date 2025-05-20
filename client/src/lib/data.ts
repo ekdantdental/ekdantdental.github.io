@@ -204,7 +204,59 @@ export const services = [
     id: 6,
     title: "Pediatric Dentistry",
     description: "Gentle and friendly dental care specifically designed for children to build good oral health habits early.",
-    image: "/images/services/pediatric-dentistry.jpg"
+    image: "/images/services/pediatric-dentistry.jpg",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Pediatric Dentistry?",
+          content: [
+            "Pediatric dentistry is a specialized branch of dentistry focused on providing oral health care for infants, children, and adolescents from birth to age 18. Pediatric dentists are trained to address the unique dental needs of growing children and are equipped to handle the psychological aspects of treating young patients, making dental visits comfortable and positive experiences."
+          ]
+        },
+        {
+          title: "What a Pediatric Dentist Does",
+          content: [
+            "Routine Care: Pediatric dentists provide comprehensive care, including regular check-ups, cleanings, fluoride treatments, and dental sealants to protect against cavities.",
+            "Diagnosis and Treatment: They diagnose and treat a wide range of oral health issues, from common tooth decay to more serious conditions.",
+            "Developmental Monitoring: Pediatric dentists assess a child's oral development and address any concerns or delays.",
+            "Family Support: They work closely with families, providing guidance on various aspects of child oral health and development.",
+            "Preventative Care: They focus on preventative care, such as early detection of dental problems and education on proper oral hygiene."
+          ]
+        },
+        {
+          title: "Pediatric Dental Services",
+          content: [
+            "Preventive care including regular check-ups, cleanings, fluoride treatments, and dental sealants to protect against cavities",
+            "Early detection and management of dental issues such as tooth decay, gum disease, and developmental problems",
+            "Guidance on proper oral hygiene habits, nutrition, and preventing habits that may affect dental development",
+            "Treatment for dental injuries and emergencies, which are common in active children",
+            "Management of dental issues related to various childhood conditions and diseases",
+            "Monitoring of dental development and early intervention for orthodontic problems"
+          ]
+        },
+        {
+          title: "Child-Friendly Approach",
+          content: [
+            "Specially designed offices with colorful décor, toys, and sometimes themed spaces to create a welcoming environment",
+            "Use of age-appropriate language to explain procedures and treatments",
+            "Extra patience and understanding when working with anxious or special needs children",
+            "Behavior management techniques to help children feel comfortable and cooperative during dental visits",
+            "Prevention-focused care that emphasizes education and building positive associations with dental care from an early age"
+          ]
+        },
+        {
+          title: "Why Pediatric Dentistry is Important",
+          content: [
+            "Unique Needs: Children have different dental needs than adults, specific to their age and developmental stage.",
+            "Preventative Care: Early dental care helps prevent serious problems through regular check-ups and early intervention.",
+            "Promoting Healthy Development: Pediatric dentists play a crucial role in promoting healthy oral development.",
+            "Family Education: They provide education and guidance to families on proper oral hygiene, nutrition, and safety.",
+            "Establishing good oral hygiene habits early in life that can last a lifetime",
+            "Creating positive dental experiences that help children grow into adults who regularly seek dental care"
+          ]
+        }
+      ]
+    }
   },
   {
     id: 7,
