@@ -16,10 +16,10 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <h2 className="font-heading font-bold text-2xl md:text-4xl text-dark mb-2 md:mb-4">
-            Our Dental & ENT Services
+            Our Medical & Dental Services
           </h2>
           <p className="text-gray-600 text-sm md:text-base px-2 md:px-0">
-            Comprehensive care for all your dental and ENT needs in one location, 
+            Comprehensive care for all your medical and dental needs in one location, 
             using the latest techniques and technology.
           </p>
         </div>
