@@ -34,7 +34,7 @@ export const services = [
     id: 6,
     title: "Pediatric Dentistry",
     description: "Gentle and friendly dental care specifically designed for children to build good oral health habits early.",
-    image: "https://images.unsplash.com/photo-1588776814735-7e6e2a74b868?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "/images/services/pediatric-dentistry.jpg"
   },
   {
     id: 7,
