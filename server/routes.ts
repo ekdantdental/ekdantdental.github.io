@@ -34,6 +34,11 @@ ${appointment.message ? `Message: ${appointment.message}` : ''}
   }
 }
 
+async function logBlogPostAccess(blogPost: any) {
+  const { id, title, slug } = blogPost;
+  console.log(`Blog post accessed: ID ${id}, Title: ${title}, Slug: ${slug}`);
+}
+
 export async function registerRoutes(app: Express): Promise<Server> {
   // Appointment API endpoints
   app.post("/api/appointments", async (req, res) => {
@@ -138,6 +143,67 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       return res.status(500).json({
         message: "Failed to retrieve dental care recommendations",
+        error: (error as Error).message,
+      });
+    }
+  });
+
+  // Blog Posts API endpoints
+  app.get("/api/blog-posts", async (req, res) => {
+    try {
+      const posts = await storage.listBlogPosts();
+      return res.json(posts);
+    } catch (error) {
+      return res.status(500).json({
+        message: "Failed to fetch blog posts",
+        error: (error as Error).message,
+      });
+    }
+  });
+
+  app.get("/api/blog-posts/category/:category", async (req, res) => {
+    try {
+      const { category } = req.params;
+      const posts = await storage.listBlogPostsByCategory(category);
+      return res.json(posts);
+    } catch (error) {
+      return res.status(500).json({
+        message: "Failed to fetch blog posts by category",
+        error: (error as Error).message,
+      });
+    }
+  });
+
+  app.get("/api/blog-posts/tag/:tag", async (req, res) => {
+    try {
+      const { tag } = req.params;
+      const posts = await storage.listBlogPostsByTag(tag);
+      return res.json(posts);
+    } catch (error) {
+      return res.status(500).json({
+        message: "Failed to fetch blog posts by tag",
+        error: (error as Error).message,
+      });
+    }
+  });
+
+  app.get("/api/blog-posts/slug/:slug", async (req, res) => {
+    try {
+      const { slug } = req.params;
+      const post = await storage.getBlogPostBySlug(slug);
+      
+      if (!post) {
+        return res.status(404).json({
+          message: "Blog post not found",
+        });
+      }
+      
+      await logBlogPostAccess(post);
+      
+      return res.json(post);
+    } catch (error) {
+      return res.status(500).json({
+        message: "Failed to fetch blog post",
         error: (error as Error).message,
       });
     }

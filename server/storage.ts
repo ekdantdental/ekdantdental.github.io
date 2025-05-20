@@ -152,12 +152,24 @@ export class MemStorage implements IStorage {
     samplePosts.forEach(post => {
       const id = this.blogPostId++;
       const now = new Date();
+      
+      // Handle optional fields to match the schema
+      const imageUrl = post.imageUrl || null;
+      const tags = post.tags || null;
+      const authorTitle = post.authorTitle || null;
+      const isPublished = post.isPublished === undefined ? true : post.isPublished;
+      
       const blogPost: BlogPost = {
         ...post,
+        imageUrl,
+        tags,
+        authorTitle,
+        isPublished,
         id,
         publishedAt: now,
         updatedAt: now
       };
+      
       this.blogPosts.set(id, blogPost);
     });
   }
@@ -254,8 +266,18 @@ export class MemStorage implements IStorage {
     const id = this.blogPostId++;
     const now = new Date();
     
+    // Handle optional fields properly
+    const imageUrl = insertBlogPost.imageUrl || null;
+    const tags = insertBlogPost.tags || null;
+    const authorTitle = insertBlogPost.authorTitle || null;
+    const isPublished = insertBlogPost.isPublished === undefined ? true : insertBlogPost.isPublished;
+    
     const blogPost: BlogPost = {
       ...insertBlogPost,
+      imageUrl,
+      tags,
+      authorTitle,
+      isPublished,
       id,
       publishedAt: now,
       updatedAt: now
@@ -278,19 +300,19 @@ export class MemStorage implements IStorage {
   async listBlogPosts(): Promise<BlogPost[]> {
     return Array.from(this.blogPosts.values())
       .filter(post => post.isPublished)
-      .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }
   
   async listBlogPostsByCategory(category: string): Promise<BlogPost[]> {
     return Array.from(this.blogPosts.values())
       .filter(post => post.isPublished && post.category === category)
-      .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }
   
   async listBlogPostsByTag(tag: string): Promise<BlogPost[]> {
     return Array.from(this.blogPosts.values())
       .filter(post => post.isPublished && post.tags && post.tags.includes(tag))
-      .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }
 
   private generateRecommendations(data: InsertDentalCareRecommendation): any {
