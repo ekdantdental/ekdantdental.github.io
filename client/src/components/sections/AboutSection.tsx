@@ -13,20 +13,24 @@ const AboutSection = () => {
                 About Ekdant Multi Speciality and Implant Center
               </h2>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                At <span className="font-semibold">Ekdant Multi Speciality and Implant Center</span>, we are committed to revolutionizing the dental experience through our patient centric approach. 
+                At <span className="font-semibold">Ekdant Multi Speciality and Implant Center</span>, we are committed to revolutionizing both medical and dental healthcare through our patient centric approach. 
                 Our mission is to provide personalised, compassionate care that educates, motivates and inspires individuals 
-                to achieve and maintain optimal oral health, resulting in vibrant, healthy smiles that illuminates their lives.
+                to achieve and maintain optimal health and well-being, resulting in healthier and happier lives.
               </p>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                We combine cutting-edge dental technologies with genuine compassion to transform routine 
+                We combine cutting-edge medical and dental technologies with genuine compassion to transform routine 
                 procedures into comfortable experiences. Our dedicated team takes the time to listen to your 
                 concerns, understand your unique needs, and develop personalized treatment plans that respect 
                 your preferences and goals.
               </p>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                From preventive care to advanced implant procedures, we're committed to providing exceptional 
-                dentistry in an environment of trust and respect. Experience the difference that patient-centered 
-                care makes at <span className="font-semibold">Ekdant Multi Speciality and Implant Center</span> - where advanced techniques meet compassionate service.
+                Our center provides comprehensive healthcare services including both medical and dental care. From diabetes 
+                and hypertension management to advanced implant procedures, we're committed to providing exceptional 
+                healthcare in an environment of trust and respect.
+              </p>
+              <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
+                Experience the difference that patient-centered care makes at <span className="font-semibold">Ekdant Multi Speciality and Implant Center</span> - 
+                where advanced techniques meet compassionate service for all your medical and dental needs.
               </p>
               <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
                 <li className="flex items-start">
