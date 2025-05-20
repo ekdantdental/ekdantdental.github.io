@@ -390,46 +390,46 @@ export const services = [
   },
   {
     id: 10,
-    title: "Personalized Medical Care Recommendations",
-    description: "Customized healthcare guidance designed specifically for your unique needs, health status, and personal goals.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+    title: "Pediatric Dentistry",
+    description: "Gentle and friendly dental care specifically designed for children to build good oral health habits early.",
+    image: "/images/services/pediatric-dentistry.jpg",
     detailedDescription: {
       sections: [
         {
-          title: "What are Personalized Medical Care Recommendations?",
+          title: "What is Pediatric Dentistry?",
           content: [
-            "Personalized Medical Care Recommendations are tailored healthcare guidance based on your individual health profile, needs, and goals. At Ekdant Multi Speciality and Implant Center, we believe that healthcare is not one-size-fits-all, and each patient deserves customized care that addresses their specific situation."
+            "Pediatric dentistry is a specialized branch of dentistry focused on providing oral health care for infants, children, and adolescents from birth to age 18. Pediatric dentists are trained to address the unique dental needs of growing children and are equipped to handle the psychological aspects of treating young patients, making dental visits comfortable and positive experiences."
           ]
         },
         {
-          title: "Our Approach to Personalized Care",
+          title: "What a Pediatric Dentist Does",
           content: [
-            "Comprehensive Assessment: We conduct thorough evaluations of your medical history, current health status, lifestyle, and personal health goals.",
-            "Individualized Treatment Plans: Based on your assessment, we develop customized treatment plans that address your specific health concerns.",
-            "Preventive Health Strategies: We provide personalized recommendations for preventive care, including screenings, vaccinations, and lifestyle modifications.",
-            "Collaborative Decision-Making: We work with you to make informed decisions about your health care, involving you at every step of the process.",
-            "Ongoing Support: We provide continuous support and monitoring to adjust your care plan as your health needs evolve."
+            "Routine Care: Pediatric dentists provide comprehensive care, including regular check-ups, cleanings, fluoride treatments, and dental sealants to protect against cavities.",
+            "Diagnosis and Treatment: They diagnose and treat a wide range of oral health issues, from common tooth decay to more serious conditions.",
+            "Developmental Monitoring: Pediatric dentists assess a child's oral development and address any concerns or delays.",
+            "Family Support: They work closely with families, providing guidance on various aspects of child oral health and development.",
+            "Preventative Care: They focus on preventative care, such as early detection of dental problems and education on proper oral hygiene."
           ]
         },
         {
-          title: "Benefits of Personalized Medical Care",
+          title: "Pediatric Dental Services",
           content: [
-            "Improved Health Outcomes: Tailored care plans address your specific health needs, leading to better outcomes.",
-            "Enhanced Patient Satisfaction: Being involved in your care decisions leads to greater satisfaction with your healthcare experience.",
-            "Efficient Use of Resources: Personalized care focuses on services that are most beneficial for your specific situation.",
-            "Better Adherence to Treatment: When recommendations align with your personal circumstances and preferences, you're more likely to follow through with them.",
-            "Long-term Health Promotion: Our approach emphasizes not just treating current issues but preventing future health problems."
+            "Preventive care including regular check-ups, cleanings, fluoride treatments, and dental sealants to protect against cavities",
+            "Early detection and management of dental issues such as tooth decay, gum disease, and developmental problems",
+            "Guidance on proper oral hygiene habits, nutrition, and preventing habits that may affect dental development",
+            "Treatment for dental injuries and emergencies, which are common in active children",
+            "Management of dental issues related to various childhood conditions and diseases",
+            "Monitoring of dental development and early intervention for orthodontic problems"
           ]
         },
         {
-          title: "When to Seek Personalized Medical Care Recommendations",
+          title: "Child-Friendly Approach",
           content: [
-            "When managing chronic health conditions",
-            "After receiving a new diagnosis",
-            "When trying to improve overall health and wellness",
-            "Before making significant lifestyle changes",
-            "When standard treatments haven't been effective",
-            "For preventive care tailored to your specific risk factors"
+            "Specially designed offices with colorful décor, toys, and sometimes themed spaces to create a welcoming environment",
+            "Use of age-appropriate language to explain procedures and treatments",
+            "Extra patience and understanding when working with anxious or special needs children",
+            "Behavior management techniques to help children feel comfortable and cooperative during dental visits",
+            "Prevention-focused care that emphasizes education and building positive associations with dental care from an early age"
           ]
         }
       ]
