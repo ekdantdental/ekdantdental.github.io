@@ -4,7 +4,7 @@ export const services = [
     id: 1,
     title: "Diabetes Management",
     description: "Comprehensive diabetes management including blood sugar monitoring, medication management, lifestyle modifications, and complication prevention.",
-    image: "/images/services/diabetes-management.jpg",
+    image: "/images/services/glucometer.jpg",
     detailedDescription: {
       sections: [
         {
