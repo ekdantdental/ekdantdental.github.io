@@ -63,7 +63,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-6">
             <a 
               onClick={() => scrollToSection('home')} 
               className="font-medium text-primary hover:text-secondary transition duration-300 cursor-pointer"
@@ -88,6 +88,12 @@ const Header = () => {
             >
               Testimonials
             </a>
+            <Link 
+              href="/dental-anxiety-resources" 
+              className="font-medium text-gray-600 hover:text-primary transition duration-300"
+            >
+              Anxiety Support
+            </Link>
             <a 
               onClick={() => scrollToSection('contact')} 
               className="font-medium text-gray-600 hover:text-primary transition duration-300 cursor-pointer"
@@ -134,6 +140,13 @@ const Header = () => {
           >
             Testimonials
           </a>
+          <Link 
+            href="/dental-anxiety-resources"
+            onClick={closeMobileMenu}
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary"
+          >
+            Anxiety Support
+          </Link>
           <a 
             onClick={() => scrollToSection('contact')} 
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"

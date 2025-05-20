@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import HomePage from "@/pages/HomePage";
 import DentalCareAssessmentPage from "@/pages/DentalCareAssessmentPage";
+import DentalAnxietyResourcesPage from "@/pages/DentalAnxietyResourcesPage";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import StructuredData from "@/components/layout/StructuredData";
@@ -14,6 +15,7 @@ function Router() {
     <Switch>
       <Route path="/" component={HomePage} />
       <Route path="/dental-care-assessment" component={DentalCareAssessmentPage} />
+      <Route path="/dental-anxiety-resources" component={DentalAnxietyResourcesPage} />
       <Route component={NotFound} />
     </Switch>
   );
