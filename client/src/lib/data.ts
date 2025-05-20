@@ -10,7 +10,40 @@ export const services = [
     id: 2,
     title: "Aesthetic Dentistry",
     description: "Teeth whitening, veneers, bonding, and smile makeovers to enhance the appearance of your smile.",
-    image: "/images/services/aesthetic-dentistry.jpg"
+    image: "/images/services/aesthetic-dentistry.jpg",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Aesthetic Dentistry?",
+          content: [
+            "Aesthetic dentistry, also known as cosmetic dentistry, focuses on enhancing the appearance of teeth, gums, and the overall smile. It aims to improve the aesthetic look of a patient's teeth and oral tissues, often correcting issues like discoloration, chipped teeth, or gaps between teeth."
+          ]
+        },
+        {
+          title: "Key Concepts",
+          content: [
+            "Focus on Appearance: Aesthetic dentistry is primarily concerned with improving the visual aspect of a smile.",
+            "Beyond Function: While aesthetic procedures may sometimes incidentally improve functionality, the main goal is to enhance the aesthetics of the smile.",
+            "Importance of Natural Look: Aesthetic dentistry strives to create a natural-looking smile that complements the individual's facial features and overall appearance."
+          ]
+        },
+        {
+          title: "Common Procedures",
+          content: [
+            "Teeth Whitening: Brightening teeth through chemical or laser treatments.",
+            "Dental Bonding: Using composite resin to repair chipped or cracked teeth or fill gaps.",
+            "Veneers: Thin, custom-made shells placed over teeth to improve their shape, color, and alignment.",
+            "Dental Implants: Replacing missing teeth with artificial roots and crowns."
+          ]
+        },
+        {
+          title: "Benefits",
+          content: [
+            "Aesthetic dentistry can significantly improve a person's self-esteem and confidence by enhancing their smile."
+          ]
+        }
+      ]
+    }
   },
   {
     id: 3,
