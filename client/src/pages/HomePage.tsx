@@ -6,6 +6,7 @@ import AppointmentSection from "@/components/sections/AppointmentSection";
 import ContactSection from "@/components/sections/ContactSection";
 import DentalCareRecommendationSection from "@/components/sections/DentalCareRecommendationSection";
 import PatientJourneySection from "@/components/sections/PatientJourneySection";
+import PhotoGallerySection from "@/components/sections/PhotoGallerySection";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <ServicesSection />
       <AboutSection />
       <PatientJourneySection />
+      <PhotoGallerySection />
       <TestimonialsSection />
       <DentalCareRecommendationSection />
       <AppointmentSection />
