@@ -163,7 +163,7 @@ const Header = () => {
           </a>
           <a 
             onClick={() => scrollToSection('book-appointment')} 
-            className="block px-4 py-4 rounded-md text-xl font-bold bg-primary text-white hover:bg-opacity-90 text-center mt-6 cursor-pointer shadow-md"
+            className="block px-6 py-6 rounded-md text-3xl font-bold bg-primary text-white hover:bg-opacity-90 text-center mt-8 cursor-pointer shadow-lg"
           >
             Book Appointment
           </a>
