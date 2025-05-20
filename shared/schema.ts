@@ -71,3 +71,29 @@ export const dentalCareRecommendationSchema = createInsertSchema(dentalCareRecom
 
 export type InsertDentalCareRecommendation = z.infer<typeof dentalCareRecommendationSchema>;
 export type DentalCareRecommendation = typeof dentalCareRecommendations.$inferSelect;
+
+// Blog posts schema
+export const blogPosts = pgTable("blog_posts", {
+  id: serial("id").primaryKey(),
+  title: text("title").notNull(),
+  slug: text("slug").notNull().unique(),
+  summary: text("summary").notNull(),
+  content: text("content").notNull(),
+  imageUrl: text("image_url"),
+  category: text("category").notNull(),
+  tags: text("tags").array(),
+  authorName: text("author_name").notNull(),
+  authorTitle: text("author_title"),
+  publishedAt: timestamp("published_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  isPublished: boolean("is_published").default(true).notNull(),
+});
+
+export const blogPostSchema = createInsertSchema(blogPosts).omit({
+  id: true,
+  publishedAt: true,
+  updatedAt: true,
+});
+
+export type InsertBlogPost = z.infer<typeof blogPostSchema>;
+export type BlogPost = typeof blogPosts.$inferSelect;
