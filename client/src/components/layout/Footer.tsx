@@ -34,7 +34,28 @@ const Footer = () => {
               <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
                 <FaTwitter />
               </a>
-              <a href="https://www.instagram.com/ekdantmultispecialitysanpada/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
+              <a 
+                href="https://www.instagram.com/ekdantmultispecialitysanpada"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white hover:text-primary transition duration-300 text-lg md:text-xl cursor-pointer"
+                onClick={(e) => {
+                  // Try to handle mobile app deep linking
+                  const userAgent = navigator.userAgent || navigator.vendor;
+                  if (/android/i.test(userAgent)) {
+                    e.preventDefault();
+                    window.location.href = 'intent://instagram.com/_u/ekdantmultispecialitysanpada#Intent;package=com.instagram.android;scheme=https;end';
+                  } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+                    e.preventDefault();
+                    window.location.href = 'instagram://user?username=ekdantmultispecialitysanpada';
+                    // Fallback for iOS after a timeout
+                    setTimeout(() => {
+                      window.location.href = 'https://www.instagram.com/ekdantmultispecialitysanpada';
+                    }, 2000);
+                  }
+                  // Desktop browsers will just follow the href
+                }}
+              >
                 <FaInstagram />
               </a>
               <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
