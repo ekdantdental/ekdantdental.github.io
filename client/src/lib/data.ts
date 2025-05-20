@@ -2,41 +2,44 @@
 export const services = [
   {
     id: 1,
-    title: "General Dentistry",
-    description: "Comprehensive dental exams, cleanings, fillings, and preventive care to maintain your oral health.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+    title: "Diabetes Management",
+    description: "Comprehensive diabetes management including blood sugar monitoring, medication management, lifestyle modifications, and complication prevention.",
+    image: "/images/services/diabetes-management.jpg",
     detailedDescription: {
       sections: [
         {
-          title: "What is General Dentistry?",
+          title: "What is Diabetes Management?",
           content: [
-            "General dentistry encompasses the routine and preventive dental care that keeps your mouth healthy and functional. It involves diagnosing, preventing, and treating oral health conditions. General dentists are your primary care providers for issues like cavities, gum disease, and tooth loss, and they may refer you to specialists if more advanced treatment is needed."
+            "Diabetes management is a comprehensive approach to controlling blood sugar levels and preventing complications in patients with diabetes mellitus. It involves medication management, regular monitoring, lifestyle modifications, and education about the condition to help patients maintain optimal health and quality of life."
           ]
         },
         {
-          title: "Key Aspects of General Dentistry",
+          title: "Key Aspects of Diabetes Management",
           content: [
-            "Preventive care: This includes regular exams, cleanings, X-rays, and fluoride treatments to prevent dental problems.",
-            "Routine care: General dentists handle common issues like fillings, crowns, bridges, and simple extractions.",
-            "Restorative dentistry: They repair damaged teeth with fillings or crowns, and may replace missing teeth with dentures or implants.",
-            "Diagnosis and treatment: General dentists can diagnose and treat early signs of gum disease, oral infections, and even some cosmetic issues.",
-            "Referrals: If a more specialized procedure is needed (like root canals, orthodontics, or gum surgery), general dentists will refer you to the appropriate specialist."
+            "Blood Sugar Monitoring: Regular checking of blood glucose levels using glucometers or continuous glucose monitoring systems to understand patterns and make treatment adjustments.",
+            "Medication Management: Proper administration of insulin or oral medications as prescribed to help regulate blood sugar levels.",
+            "Diet Planning: Following a balanced diet with appropriate carbohydrate intake, focusing on low glycemic index foods, and portion control.",
+            "Regular Physical Activity: Engaging in appropriate exercise routines to improve insulin sensitivity and help maintain healthy weight.",
+            "Regular Health Check-ups: Routine visits to healthcare providers to monitor overall health, adjust treatment plans, and screen for complications.",
+            "Complication Prevention: Regular screening for and management of potential complications such as cardiovascular disease, neuropathy, nephropathy, and retinopathy.",
+            "Education and Self-Management: Learning about diabetes and developing skills to make informed decisions about daily care."
           ]
         },
         {
-          title: "Common General Dentistry Procedures",
+          title: "Types of Diabetes and Management",
           content: [
-            "Teeth cleaning and scaling: Removing plaque and tartar from the teeth and gums.",
-            "Fillings: Repairing cavities caused by tooth decay.",
-            "Dental crowns: Restoring the shape, size, and strength of a tooth.",
-            "Dental bridges: Replacing missing teeth by bridging the gap with artificial teeth.",
-            "Dental extractions: Removing damaged or impacted teeth.",
-            "Dental implants: Replacing missing teeth with artificial roots and restorations.",
-            "Root canal therapy: Removing the infected pulp inside a tooth and sealing the space.",
-            "Sealants: Applying a protective coating to the chewing surfaces of teeth to prevent cavities.",
-            "Orthodontic treatment: Straightening crooked teeth and correcting bite misalignment.",
-            "TMJ treatment: Addressing jaw pain and dysfunction.",
-            "Oral cancer screening: Detecting early signs of oral cancer."
+            "Type 1 Diabetes: Requires insulin therapy, precise carbohydrate counting, and regular monitoring of blood glucose levels.",
+            "Type 2 Diabetes: May be managed through lifestyle changes, oral medications, and possibly insulin depending on the severity.",
+            "Gestational Diabetes: Temporary condition during pregnancy requiring monitoring and sometimes insulin to protect both mother and baby."
+          ]
+        },
+        {
+          title: "Importance of Diabetes Management",
+          content: [
+            "Preventing Complications: Proper management significantly reduces the risk of serious complications like heart disease, kidney failure, and vision loss.",
+            "Improving Quality of Life: Good control of diabetes helps maintain energy levels, mood stability, and overall wellbeing.",
+            "Longer, Healthier Life: Effective management can extend life expectancy and improve the quality of those years.",
+            "Cost Reduction: Prevents costly hospitalizations and treatments for complications."
           ]
         }
       ]
@@ -44,38 +47,44 @@ export const services = [
   },
   {
     id: 2,
-    title: "Aesthetic Dentistry",
-    description: "Teeth whitening, veneers, bonding, and smile makeovers to enhance the appearance of your smile.",
-    image: "/images/services/aesthetic-dentistry.jpg",
+    title: "Hypertension Management",
+    description: "Comprehensive high blood pressure management through medication, lifestyle changes, regular monitoring, and preventive care.",
+    image: "/images/services/hypertension-management.jpg",
     detailedDescription: {
       sections: [
         {
-          title: "What is Aesthetic Dentistry?",
+          title: "What is Hypertension Management?",
           content: [
-            "Aesthetic dentistry, also known as cosmetic dentistry, focuses on enhancing the appearance of teeth, gums, and the overall smile. It aims to improve the aesthetic look of a patient's teeth and oral tissues, often correcting issues like discoloration, chipped teeth, or gaps between teeth."
+            "Hypertension, or high blood pressure, is managed through a combination of lifestyle modifications and medication therapy. Our approach focuses on personalized treatment plans to control blood pressure, reduce risk factors, and prevent complications like heart disease and stroke. We provide ongoing monitoring, medication adjustments, and education to help patients maintain optimal blood pressure levels."
           ]
         },
         {
-          title: "Key Concepts",
+          title: "Lifestyle Modifications",
           content: [
-            "Focus on Appearance: Aesthetic dentistry is primarily concerned with improving the visual aspect of a smile.",
-            "Beyond Function: While aesthetic procedures may sometimes incidentally improve functionality, the main goal is to enhance the aesthetics of the smile.",
-            "Importance of Natural Look: Aesthetic dentistry strives to create a natural-looking smile that complements the individual's facial features and overall appearance."
+            "Dietary Approaches: Following a heart-healthy diet low in sodium, saturated fats, and cholesterol, while rich in fruits, vegetables, whole grains, and lean proteins.",
+            "Regular Physical Activity: Engaging in appropriate exercise routines to improve cardiovascular health and maintain healthy weight.",
+            "Weight Management: Achieving and maintaining a healthy weight through balanced nutrition and regular physical activity.",
+            "Limiting Alcohol Consumption: Reducing alcohol intake to moderate levels to help lower blood pressure.",
+            "Smoking Cessation: Quitting smoking to reduce cardiovascular risks and improve overall health.",
+            "Stress Management: Implementing techniques such as meditation, deep breathing, and adequate sleep to reduce stress levels.",
+            "Medication Adherence: Taking prescribed blood pressure medications as directed by healthcare providers."
           ]
         },
         {
-          title: "Common Procedures",
+          title: "Ongoing Monitoring and Follow-up",
           content: [
-            "Teeth Whitening: Brightening teeth through chemical or laser treatments.",
-            "Dental Bonding: Using composite resin to repair chipped or cracked teeth or fill gaps.",
-            "Veneers: Thin, custom-made shells placed over teeth to improve their shape, color, and alignment.",
-            "Dental Implants: Replacing missing teeth with artificial roots and crowns."
+            "Regular Blood Pressure Monitoring: Checking blood pressure at home and during clinical visits to track progress and make necessary adjustments.",
+            "Periodic Health Assessments: Regular check-ups to evaluate medication effectiveness, side effects, and overall health status.",
+            "Risk Factor Management: Addressing other cardiovascular risk factors such as high cholesterol, diabetes, and obesity."
           ]
         },
         {
-          title: "Benefits",
+          title: "Importance of Early Detection and Management",
           content: [
-            "Aesthetic dentistry can significantly improve a person's self-esteem and confidence by enhancing their smile."
+            "Preventing Complications: Proper management significantly reduces the risk of heart disease, stroke, kidney disease, and other serious health problems.",
+            "Improving Quality of Life: Good control of blood pressure helps maintain energy levels, reduce symptoms, and enhance overall wellbeing.",
+            "Extending Life Expectancy: Effective management can add years to life and improve the quality of those years.",
+            "Cost-Effective Care: Prevents costly hospitalizations and treatments for complications related to uncontrolled hypertension."
           ]
         }
       ]
@@ -83,39 +92,43 @@ export const services = [
   },
   {
     id: 3,
-    title: "Restorative and Root Canal Treatment",
-    description: "Expert restorative dental work like fillings, crowns, bridges, implants, and dentures. Root canal procedures to treat infected pulp, saving your natural teeth while relieving pain.",
-    image: "/images/services/root-canal.jpg",
+    title: "General Medical Consultation",
+    description: "Comprehensive medical evaluations, diagnosis, and treatment planning for various health conditions, focused on overall wellness and preventive care.",
+    image: "/images/services/general-consultation.jpg",
     detailedDescription: {
       sections: [
         {
-          title: "Key Concepts of Restorative Dentistry",
+          title: "What is a General Medical Consultation?",
           content: [
-            "Repairing Damaged Teeth: This includes filling cavities, treating root canals, and repairing chipped or fractured teeth.",
-            "Replacing Missing Teeth: Bridges, dental implants, and dentures are used to restore missing teeth and the surrounding structures.",
-            "Restoring Function: Restorative procedures help improve chewing ability, speaking, and overall oral function.",
-            "Improving Aesthetics: Many restorative procedures also contribute to a more natural-looking smile.",
-            "Preventing Future Issues: Restorative treatments can help prevent further damage or decay, as well as help maintain proper bite and alignment of teeth."
+            "A general medical consultation is a meeting between a patient and a healthcare professional, like a physician, to discuss health concerns, conduct examinations, make diagnoses, and develop treatment plans. These consultations are essential for preventive care, managing chronic conditions, addressing acute illnesses, and maintaining overall health."
           ]
         },
         {
-          title: "Common Restorative Dental Procedures",
+          title: "Purpose and Goals",
           content: [
-            "Fillings: Used to repair small to medium-sized cavities by filling the void with materials like composite, silver amalgam, or glass ionomer.",
-            "Crowns (Caps): Cover teeth that have been significantly damaged or weakened to restore strength, shape, and alignment.",
-            "Bridges: Replace missing teeth by bridging the gap with artificial teeth anchored to adjacent natural teeth or implants.",
-            "Implants: Involve surgically placing a titanium post into the jawbone to act as a root for a replacement tooth, often with a crown or bridge attached.",
-            "Dentures: Removable appliances that replace missing teeth, often supported by gums or implants.",
-            "Root Canal Therapy: Addresses infection or inflammation in the pulp of a tooth, often followed by a crown for restoration."
+            "Comprehensive Health Assessment: Evaluating your overall health status, including physical, mental, and social well-being.",
+            "Preventive Care: Identifying risk factors and providing guidance on preventing potential health issues.",
+            "Diagnosis and Treatment: Identifying the cause of symptoms or health issues and determining appropriate treatment options.",
+            "Health Education: Providing information and resources to help you better understand your health and make informed decisions.",
+            "Continuity of Care: Establishing or maintaining a relationship with a healthcare provider for ongoing care and management of chronic conditions."
           ]
         },
         {
-          title: "Why is Restorative Dentistry Important?",
+          title: "Key Elements of a Consultation",
           content: [
-            "Maintains Oral Health: Restorative procedures help prevent further decay, infection, and other oral health problems.",
-            "Improves Chewing and Speaking: Restoring damaged or missing teeth allows for more comfortable and effective chewing and speaking.",
-            "Enhances Confidence: A more natural-looking smile can significantly improve self-esteem and confidence.",
-            "Supports Overall Health: Oral health is linked to overall health, and restorative dentistry helps maintain a healthy mouth."
+            "Medical History: Gathering information about your past and current health status, including previous illnesses, surgeries, and family history of diseases.",
+            "Physical Examination: Conducting a thorough examination to assess your current health status and identify any abnormalities.",
+            "Diagnostic Tests: Ordering appropriate laboratory tests, imaging studies, or other diagnostic procedures when needed.",
+            "Treatment Planning: Developing a comprehensive plan to address identified health issues, which may include medications, lifestyle modifications, or referrals to specialists.",
+            "Follow-up Care: Scheduling follow-up appointments to monitor progress, adjust treatments as needed, and address any new concerns."
+          ]
+        },
+        {
+          title: "What to Expect at Ekdant Multi Speciality",
+          content: [
+            "At our center, we provide thorough general medical consultations in a comfortable and supportive environment. Our skilled physicians take the time to listen to your concerns, conduct comprehensive examinations, and work with you to develop personalized care plans that address your unique health needs and goals.",
+            "Our consultations typically include a detailed review of your medical history, a physical examination, and a discussion of any health concerns you may have. We may also order diagnostic tests if needed and provide guidance on preventive care and lifestyle modifications to improve your overall health.",
+            "We believe in a patient-centered approach to care, where you are an active participant in your healthcare decisions. We encourage open communication and strive to ensure that you fully understand your health conditions and treatment options."
           ]
         }
       ]
