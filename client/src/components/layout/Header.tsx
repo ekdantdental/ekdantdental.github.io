@@ -25,17 +25,17 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 md:h-28">
+        <div className="flex justify-between items-center h-28 md:h-32">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="relative h-16 w-16 mr-3 flex items-center justify-center bg-white rounded-md">
+              <div className="relative h-20 w-20 mr-3 flex items-center justify-center bg-white rounded-md">
                 <img 
                   src="/images/brand/logo-ekdant-new.jpg" 
                   alt="Ekdant Logo" 
-                  className="h-14 w-14 object-contain" 
+                  className="h-18 w-18 object-contain" 
                 />
               </div>
-              <div className="h-14">
+              <div className="h-16">
                 <img 
                   src="/images/brand/ekdant-text-styling.png" 
                   alt="Ekdant Multi Speciality and Implant Center" 
