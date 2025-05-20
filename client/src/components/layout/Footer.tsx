@@ -8,12 +8,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12">
           <div className="mb-2 md:mb-0">
             <div className="flex items-center mb-4 md:mb-6">
-              <div className="bg-white p-2 rounded-md">
+              <div className="relative h-14 w-14 mr-3 bg-white rounded-md p-1 flex items-center justify-center">
                 <img 
-                  src="/images/brand/logo-ekdant-text.png" 
-                  alt="Ekdant Multi Speciality Clinic and Implant Center" 
-                  className="h-14 object-contain" 
+                  src="/images/brand/logo-ekdant-new.jpg" 
+                  alt="Ekdant Logo" 
+                  className="h-12 w-12 object-contain" 
                 />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-bold text-lg text-white">
+                  Ekdant
+                </span>
+                <span className="text-xs md:text-sm text-gray-300 font-light">
+                  Multi Speciality and Implant Center
+                </span>
               </div>
             </div>
             <p className="text-gray-400 text-sm md:text-base mb-4 md:mb-6">
