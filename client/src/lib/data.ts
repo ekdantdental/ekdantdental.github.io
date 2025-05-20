@@ -15,7 +15,7 @@ export const services = [
   {
     id: 3,
     title: "Restorative and Root Canal Treatment",
-    description: "Expert restorative dental work like cavities, tooth decay, chipped teeth, or missing teeth, using a variety of treatments like fillings, crowns, bridges, implants, and dentures. Root canal procedures to treat infected pulp, saving your natural teeth while relieving pain.",
+    description: "Expert restorative dental work for cavities, tooth decay, chipped teeth, or missing teeth, using a variety of treatments like fillings, crowns, bridges, implants, and dentures. Root canal procedures to treat infected pulp, saving your natural teeth while relieving pain.",
     image: "/images/services/root-canal.jpg"
   },
   {
