@@ -104,36 +104,64 @@ const Footer = () => {
 
           <div className="mb-2 md:mb-0">
             <h3 className="font-heading font-semibold text-base md:text-lg text-white mb-3 md:mb-6">
-              Services
+              Medical Services
             </h3>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                  Diabetes Management
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                  Hypertension Management
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                  General Medical Consultation
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                  Personalized Medical Care
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="mb-2 md:mb-0">
+            <h3 className="font-heading font-semibold text-base md:text-lg text-white mb-3 md:mb-6">
+              Dental Services
+            </h3>
+            <ul className="space-y-2 md:space-y-3">
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   General Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Aesthetic Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Restorative and Root Canal Treatment
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Dental Implants
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Orthodontics
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
+                <a href="#services" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
                   Pediatric Dentistry
                 </a>
               </li>
