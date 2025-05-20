@@ -7,6 +7,7 @@ import HomePage from "@/pages/HomePage";
 import DentalCareAssessmentPage from "@/pages/DentalCareAssessmentPage";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import StructuredData from "@/components/layout/StructuredData";
 
 function Router() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Footer />
       </div>
       <Toaster />
+      <StructuredData />
     </QueryClientProvider>
   );
 }

@@ -46,6 +46,47 @@ const ContactSection = () => {
         </div>
 
         {/* Map */}
+        <div className="mb-8">
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+            <a 
+              href="https://g.page/ekdant-dental-clinic-sanpada" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white text-gray-800 hover:bg-gray-100 transition-colors font-medium py-2 px-4 rounded-md shadow-sm border flex items-center gap-2 w-full md:w-auto text-center justify-center"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" className="text-primary">
+                <path fill="#4CAF50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z" />
+                <path fill="#1E88E5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z" />
+                <polygon fill="#FFB300" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17" />
+                <path fill="#D32F2F" d="M3,16.2v-4c0-1.657,1.343-3,3-3h36c1.657,0,3,1.343,3,3v4L24,27.95L3,16.2z" />
+              </svg>
+              Visit Our Google Business Page
+            </a>
+            <a 
+              href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Multi+Speciality+and+Implant+Center+Sanpada+Navi+Mumbai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-primary text-white hover:bg-primary/90 transition-colors font-medium py-2 px-4 rounded-md shadow-sm border flex items-center gap-2 w-full md:w-auto text-center justify-center"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="10" r="3" />
+                <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
+              </svg>
+              Get Directions on Google Maps
+            </a>
+            <a 
+              href="#" 
+              onClick={(e) => {e.preventDefault(); window.open('https://search.google.com/local/writereview?placeid=ChIJxxxxxxxxxxxxxxx', '_blank')}}
+              className="bg-white text-gray-800 hover:bg-gray-100 transition-colors font-medium py-2 px-4 rounded-md shadow-sm border flex items-center gap-2 w-full md:w-auto text-center justify-center"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              Leave a Google Review
+            </a>
+          </div>
+        </div>
+        
         <div className="h-64 md:h-96 rounded-lg overflow-hidden shadow-lg">
           <MapContainer 
             style={{ height: "100%", width: "100%" }}
@@ -65,14 +106,25 @@ const ContactSection = () => {
                   <strong>Ekdant Multi Speciality and Implant Center</strong><br />
                   Office No 8 and 9, 1st Floor, Gami Terra<br />
                   Sector-6, Sanpada, Navi Mumbai - 400 705<br />
-                  <a 
-                    href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Multi+Speciality+and+Implant+Center+Sanpada+Navi+Mumbai" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline mt-2 inline-block text-sm font-medium"
-                  >
-                    Get Directions
-                  </a>
+                  <div className="flex gap-2 mt-2">
+                    <a 
+                      href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Multi+Speciality+and+Implant+Center+Sanpada+Navi+Mumbai" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline text-sm font-medium"
+                    >
+                      Get Directions
+                    </a>
+                    <span className="text-gray-400">|</span>
+                    <a 
+                      href="https://g.page/ekdant-dental-clinic-sanpada" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline text-sm font-medium"
+                    >
+                      Google Maps
+                    </a>
+                  </div>
                 </div>
               </Popup>
             </Marker>
