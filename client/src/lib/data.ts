@@ -271,40 +271,39 @@ export const services = [
   {
     id: 7,
     title: "Restorative and Root Canal Treatment",
-    description: "Comprehensive care for diabetes patients including monitoring, medication management, dietary guidance, and preventive measures to avoid complications.",
-    image: "/images/services/glucometer.jpg",
+    description: "Expert restorative dental work like fillings, crowns, bridges, implants, and dentures. Root canal procedures to treat infected pulp, saving your natural teeth while relieving pain.",
+    image: "/images/services/root-canal.jpg",
     detailedDescription: {
       sections: [
         {
-          title: "What is Diabetes Management?",
+          title: "Key Concepts of Restorative Dentistry",
           content: [
-            "Diabetes management involves a multifaceted approach to keep blood sugar levels within a healthy range and prevent complications. This includes lifestyle modifications like healthy eating, regular exercise, and maintaining a healthy weight, as well as medication management when necessary. Blood sugar monitoring is also crucial for tracking progress and adjusting treatment plans."
+            "Repairing Damaged Teeth: This includes filling cavities, treating root canals, and repairing chipped or fractured teeth.",
+            "Replacing Missing Teeth: Bridges, dental implants, and dentures are used to restore missing teeth and the surrounding structures.",
+            "Restoring Function: Restorative procedures help improve chewing ability, speaking, and overall oral function.",
+            "Improving Aesthetics: Many restorative procedures also contribute to a more natural-looking smile.",
+            "Preventing Future Issues: Restorative treatments can help prevent further damage or decay, as well as help maintain proper bite and alignment of teeth."
           ]
         },
         {
-          title: "Key Aspects of Diabetes Management",
+          title: "Common Restorative Dental Procedures",
           content: [
-            "Blood Sugar Monitoring: Regular testing with a glucose meter or continuous glucose monitor helps track blood sugar levels and identify trends.",
-            "Medication: Depending on the type of diabetes, medication may be necessary to manage blood sugar. This can include insulin, oral medications, or other therapies.",
-            "Healthy Eating: A balanced diet that focuses on whole foods, limiting processed foods and sugary drinks, is essential for managing blood sugar.",
-            "Regular Exercise: Physical activity helps improve insulin sensitivity and helps lower blood sugar levels.",
-            "Weight Management: Maintaining a healthy weight can improve insulin sensitivity and overall health.",
-            "Diabetes Education: Learning about diabetes and how to manage it is crucial for long-term success.",
-            "Regular Checkups: Working closely with a healthcare team to monitor overall health and manage any complications is vital."
+            "Fillings: Used to repair small to medium-sized cavities by filling the void with materials like composite, silver amalgam, or glass ionomer.",
+            "Crowns (Caps): Cover teeth that have been significantly damaged or weakened to restore strength, shape, and alignment.",
+            "Bridges: Replace missing teeth by bridging the gap with artificial teeth anchored to adjacent natural teeth or implants.",
+            "Implants: Involve surgically placing a titanium post into the jawbone to act as a root for a replacement tooth, often with a crown or bridge attached.",
+            "Dentures: Removable appliances that replace missing teeth, often supported by gums or implants.",
+            "Root Canal Therapy: Addresses infection or inflammation in the pulp of a tooth, often followed by a crown for restoration."
           ]
         },
         {
-          title: "Types of Diabetes and Management",
+          title: "Why is Restorative Dentistry Important?",
           content: [
-            "Type 1 Diabetes: Requires insulin therapy through injections or an insulin pump.",
-            "Type 2 Diabetes: May be managed through lifestyle changes, oral medications, and sometimes insulin.",
-            "Gestational Diabetes: Often managed through diet and exercise, but may require medication in some cases."
-          ]
-        },
-        {
-          title: "Importance of Diabetes Management",
-          content: [
-            "Diabetes management is crucial for preventing serious health complications such as heart disease, kidney disease, eye damage, and nerve damage. By effectively managing blood sugar levels and addressing other health factors, individuals with diabetes can live long and healthy lives."
+            "Maintains Oral Health: Restorative procedures help prevent further decay, infection, and other oral health problems.",
+            "Improves Chewing and Speaking: Restoring damaged or missing teeth allows for more comfortable and effective chewing and speaking.",
+            "Enhances Confidence: A more natural-looking smile can significantly improve self-esteem and confidence.",
+            "Supports Overall Health: Oral health is linked to overall health, and restorative dentistry helps maintain a healthy mouth.",
+            "Pain Relief: Many restorative procedures, particularly root canals, provide relief from dental pain and discomfort."
           ]
         }
       ]
@@ -312,40 +311,43 @@ export const services = [
   },
   {
     id: 8,
-    title: "Hypertension Management",
-    description: "Expert monitoring and treatment of high blood pressure through personalized care plans, lifestyle modifications, and medication management.",
-    image: "/images/services/hypertension.jpg",
+    title: "Dental Implants",
+    description: "Permanent tooth replacement solutions that look, feel and function like natural teeth for a complete smile.",
+    image: "/images/services/dental-implants.jpg",
     detailedDescription: {
       sections: [
         {
-          title: "What is Hypertension Management?",
+          title: "What are Dental Implants?",
           content: [
-            "Hypertension, or high blood pressure, is managed through a combination of lifestyle modifications and, if necessary, medication. Lifestyle changes like a heart-healthy diet, regular exercise, weight management, and quitting smoking are crucial for blood pressure control. Medications like ACE inhibitors, calcium channel blockers, and thiazide diuretics may be used to lower blood pressure."
+            "Dental implant work involves replacing missing teeth by inserting a titanium post into the jawbone, acting as a tooth root. A crown (artificial tooth) is then attached to the post to restore appearance and function. The process involves surgery, a healing period, and the attachment of the artificial tooth."
           ]
         },
         {
-          title: "Lifestyle Modifications",
+          title: "Components of Dental Implants",
           content: [
-            "Diet: Adopting a heart-healthy diet, such as the DASH eating plan, which emphasizes fruits, vegetables, and lean protein, while limiting salt, saturated fat, and cholesterol, is essential.",
-            "Exercise: Regular physical activity, like brisk walking or jogging, can help lower blood pressure.",
-            "Weight Management: Maintaining a healthy weight or losing weight can significantly reduce blood pressure.",
-            "Quit Smoking: Smoking damages blood vessels and raises blood pressure. Quitting smoking is crucial for managing hypertension.",
-            "Limit Alcohol: Excessive alcohol consumption can raise blood pressure. Limiting alcohol or avoiding it altogether is recommended."
-          ]
-        },
-
-        {
-          title: "Ongoing Monitoring and Follow-up",
-          content: [
-            "Regular Blood Pressure Checks: It's crucial to monitor blood pressure regularly to track progress and ensure that medications are effective.",
-            "Follow-up with Healthcare Provider: Regular follow-up appointments with a healthcare provider are important to adjust treatment plans and address any concerns."
+            "1. The Implant: A small, screw-like post made of titanium (a biocompatible metal). It is surgically placed into the jawbone to replace the missing tooth's root. The jawbone fuses with the implant over time, creating a strong foundation.",
+            "2. The Abutment: A connecting piece that attaches to the implant post. It extends through the gums to support the crown or other prosthetic tooth replacement.",
+            "3. The Crown: An artificial tooth made of porcelain, composite resin, or metal, designed to match the natural teeth. It is placed on top of the abutment to restore the missing tooth's appearance and function."
           ]
         },
         {
-          title: "Importance of Early Detection and Management",
+          title: "Procedure Overview",
           content: [
-            "Screening: Regular blood pressure screening is recommended to detect hypertension early and prevent complications.",
-            "Early Intervention: Early intervention with lifestyle modifications and medication can prevent or delay the development of serious complications, such as heart disease and stroke."
+            "1. Initial Consultation and Planning: A dentist or oral surgeon will assess your jawbone, gums, and overall health to determine if you are a good candidate for implants.",
+            "2. Surgery: The dentist will make a small incision in the gums to expose the jawbone. A hole is drilled into the bone to accommodate the implant. The implant is placed into the bone, and the gums are sutured closed.",
+            "3. Healing Period: The implant needs time to fuse with the bone (a process called osseointegration), typically taking several months.",
+            "4. Abutment Placement: Once the healing is complete, the dentist will place the abutment on top of the implant.",
+            "5. Crown Placement: The crown is then attached to the abutment, completing the implant restoration."
+          ]
+        },
+        {
+          title: "Benefits of Dental Implants",
+          content: [
+            "Improved Function: They restore the ability to chew, speak, and smile with confidence.",
+            "Enhanced Aesthetics: They look and feel like natural teeth.",
+            "Improved Oral Health: They help prevent bone loss and gum disease by stimulating the jawbone.",
+            "Long-lasting: Implants can last for many years, even a lifetime with proper care.",
+            "No Need for Adjacent Tooth Preparation: Unlike bridges, implants don't require altering the teeth next to the missing tooth."
           ]
         }
       ]
@@ -353,45 +355,34 @@ export const services = [
   },
   {
     id: 9,
-    title: "General Medical Consultation",
-    description: "Comprehensive medical check-ups, health screenings, and preventive care to ensure your overall wellbeing.",
-    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+    title: "Orthodontics",
+    description: "Braces, aligners, and other orthodontic treatments to straighten teeth and correct bite problems.",
+    image: "/images/services/orthodontics.jpg",
     detailedDescription: {
       sections: [
         {
-          title: "What is a General Medical Consultation?",
+          title: "What is Orthodontics?",
           content: [
-            "A general medical consultation is a meeting between a patient and a healthcare professional, like a doctor or nurse, to discuss health concerns, symptoms, diagnoses, or treatment options. It's a process of sharing information, evaluating a patient's condition, and making decisions about their care."
+            "Orthodontics is a specialized branch of dentistry focused on aligning teeth and jaws, improving bite, and enhancing the overall appearance of a patient's smile. It involves using various appliances, like braces and clear aligners, to gradually move teeth into their desired positions. Orthodontic treatment aims to improve not only aesthetics but also the function of the mouth, making chewing, speaking, and other oral functions easier and more efficient."
           ]
         },
         {
-          title: "Purpose and Goals",
+          title: "Orthodontic Treatment Process",
           content: [
-            "Diagnosis and Treatment: The primary goal is to identify a patient's medical condition and determine the best course of treatment.",
-            "Information Sharing: The consultation allows for the exchange of information between the patient and the healthcare provider, ensuring the patient understands their condition and treatment options.",
-            "Problem Solving: The consultation helps patients understand their health issues, address concerns, and work towards better health outcomes.",
-            "Building a Relationship: A consultation can foster a trusting and collaborative relationship between the patient and the healthcare provider."
+            "1. Diagnosis and Treatment Planning: Orthodontists conduct thorough examinations, including taking x-rays and impressions of the teeth and jaws, to diagnose the problem and create a personalized treatment plan. This plan outlines the specific steps needed to achieve the desired outcome, including the type of appliances to be used and the anticipated duration of treatment.",
+            "2. Appliance Placement and Adjustment: Traditional braces involve attaching brackets to each tooth and then connecting them with wires that apply gentle pressure, causing the teeth to move. Clear aligners, like Invisalign, are custom-made trays that are worn for a specific period and then replaced with new ones, gradually shifting teeth into place. The orthodontist will adjust the appliances during regular follow-up appointments to ensure that the teeth are moving as planned.",
+            "3. The Movement Process: When pressure is applied to the teeth, the bone surrounding the teeth remodels, allowing them to move into their new positions. This is a gradual process that can take several months or even years, depending on the complexity of the case.",
+            "4. Post-Treatment: Once the treatment is complete, a retainer, or a similar device, is usually worn to maintain the new alignment and prevent the teeth from shifting back. Regular check-ups with the orthodontist are important to ensure that the results are stable and that any potential problems are addressed."
           ]
         },
         {
-          title: "Key Elements of a Consultation",
+          title: "Benefits of Orthodontic Treatment",
           content: [
-            "Patient History: A detailed account of the patient's symptoms, medical history, and any relevant information about their lifestyle and health.",
-            "Physical Examination: A thorough assessment of the patient's physical condition, which may involve checking vital signs, listening to the heart and lungs, and performing other tests.",
-            "Questioning: The healthcare provider will ask specific questions to understand the patient's concerns and gather relevant information.",
-            "Diagnosis: Based on the information gathered, the healthcare provider will formulate a diagnosis or suggest further tests.",
-            "Treatment Plan: The healthcare provider will discuss potential treatment options with the patient and develop a plan to address their condition.",
-            "Follow-up: A consultation often includes a plan for follow-up care, including additional appointments, tests, or referrals."
-          ]
-        },
-        {
-          title: "What to Expect at Ekdant Multi Speciality",
-          content: [
-            "Patient-Centered Care: We focus on your individual needs and concerns, providing personalized attention.",
-            "Comprehensive Approach: Our consultations address not only your immediate health concerns but also preventative care and overall wellness.",
-            "State-of-the-Art Facilities: We use modern medical equipment and techniques to ensure the highest quality of care.",
-            "Collaborative Healthcare Team: Our doctors work together, consulting with specialists when needed, to provide the best possible care.",
-            "Clear Communication: We explain medical terms and conditions in easy-to-understand language, making sure you are fully informed."
+            "Improved aesthetics, including a straighter smile.",
+            "Enhanced oral health, including improved bite alignment and easier cleaning.",
+            "Improved function, including better chewing, speaking, and swallowing.",
+            "Increased confidence and self-esteem.",
+            "Prevention of future dental problems associated with misalignment, such as cavities and gum disease."
           ]
         }
       ]
