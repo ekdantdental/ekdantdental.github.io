@@ -3,7 +3,7 @@ export const services = [
   {
     id: 1,
     title: "Diabetes Management",
-    description: "Comprehensive diabetes management including blood sugar monitoring, medication management, lifestyle modifications, and complication prevention.",
+    description: "The Diabetes Management services at EKDANT MULTI SPECIALITY AND IMPLANT CENTER includes diagnosis & monitoring, medication management, diet & nutrition guidance, lifestyle modification, complication prevention, patient education, and regular follow-ups.",
     image: "/images/services/glucometer.jpg",
     detailedDescription: {
       sections: [
@@ -14,15 +14,21 @@ export const services = [
           ]
         },
         {
-          title: "Key Aspects of Diabetes Management",
+          title: "Our Diabetes Management Services",
           content: [
-            "Blood Sugar Monitoring: Regular checking of blood glucose levels using glucometers or continuous glucose monitoring systems to understand patterns and make treatment adjustments.",
-            "Medication Management: Proper administration of insulin or oral medications as prescribed to help regulate blood sugar levels.",
-            "Diet Planning: Following a balanced diet with appropriate carbohydrate intake, focusing on low glycemic index foods, and portion control.",
-            "Regular Physical Activity: Engaging in appropriate exercise routines to improve insulin sensitivity and help maintain healthy weight.",
-            "Regular Health Check-ups: Routine visits to healthcare providers to monitor overall health, adjust treatment plans, and screen for complications.",
-            "Complication Prevention: Regular screening for and management of potential complications such as cardiovascular disease, neuropathy, nephropathy, and retinopathy.",
-            "Education and Self-Management: Learning about diabetes and developing skills to make informed decisions about daily care."
+            "Diagnosis & Monitoring: Expert blood sugar level assessment using advanced testing methods.",
+            "Medication Management: Personalized medication plans tailored to your specific condition.",
+            "Diet & Nutrition Guidance: Customized meal planning and nutritional counseling.",
+            "Lifestyle Modification: Exercise recommendations and daily habit adjustments.",
+            "Complication Prevention: Regular screenings to detect and prevent diabetes-related complications.",
+            "Patient Education: Comprehensive guidance on self-management techniques.",
+            "Regular Follow-ups: Ongoing care to track progress and adjust treatment as needed."
+          ]
+        },
+        {
+          title: "Our Approach",
+          content: [
+            "At EKDANT MULTI SPECIALITY AND IMPLANT CENTER, our experienced medical team provides compassionate care to help you effectively manage diabetes and maintain optimal health. We take a holistic approach to diabetes management, considering all aspects of your health and lifestyle to create a personalized treatment plan."
           ]
         },
         {
