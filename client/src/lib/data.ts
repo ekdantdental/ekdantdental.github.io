@@ -346,6 +346,53 @@ export const services = [
     title: "General Medical Consultation",
     description: "Comprehensive medical check-ups, health screenings, and preventive care to ensure your overall wellbeing.",
     image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  {
+    id: 10,
+    title: "Personalized Medical Care Recommendations",
+    description: "Customized healthcare guidance designed specifically for your unique needs, health status, and personal goals.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What are Personalized Medical Care Recommendations?",
+          content: [
+            "Personalized Medical Care Recommendations are tailored healthcare guidance based on your individual health profile, needs, and goals. At Ekdant Multi Speciality and Implant Center, we believe that healthcare is not one-size-fits-all, and each patient deserves customized care that addresses their specific situation."
+          ]
+        },
+        {
+          title: "Our Approach to Personalized Care",
+          content: [
+            "Comprehensive Assessment: We conduct thorough evaluations of your medical history, current health status, lifestyle, and personal health goals.",
+            "Individualized Treatment Plans: Based on your assessment, we develop customized treatment plans that address your specific health concerns.",
+            "Preventive Health Strategies: We provide personalized recommendations for preventive care, including screenings, vaccinations, and lifestyle modifications.",
+            "Collaborative Decision-Making: We work with you to make informed decisions about your health care, involving you at every step of the process.",
+            "Ongoing Support: We provide continuous support and monitoring to adjust your care plan as your health needs evolve."
+          ]
+        },
+        {
+          title: "Benefits of Personalized Medical Care",
+          content: [
+            "Improved Health Outcomes: Tailored care plans address your specific health needs, leading to better outcomes.",
+            "Enhanced Patient Satisfaction: Being involved in your care decisions leads to greater satisfaction with your healthcare experience.",
+            "Efficient Use of Resources: Personalized care focuses on services that are most beneficial for your specific situation.",
+            "Better Adherence to Treatment: When recommendations align with your personal circumstances and preferences, you're more likely to follow through with them.",
+            "Long-term Health Promotion: Our approach emphasizes not just treating current issues but preventing future health problems."
+          ]
+        },
+        {
+          title: "When to Seek Personalized Medical Care Recommendations",
+          content: [
+            "When managing chronic health conditions",
+            "After receiving a new diagnosis",
+            "When trying to improve overall health and wellness",
+            "Before making significant lifestyle changes",
+            "When standard treatments haven't been effective",
+            "For preventive care tailored to your specific risk factors"
+          ]
+        }
+      ]
+    }
   }
 ];
 
