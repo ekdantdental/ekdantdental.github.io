@@ -40,7 +40,7 @@ export const services = [
     id: 7,
     title: "Diabetes Management",
     description: "Comprehensive care for diabetes patients including monitoring, medication management, dietary guidance, and preventive measures to avoid complications.",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   },
   {
     id: 8,
