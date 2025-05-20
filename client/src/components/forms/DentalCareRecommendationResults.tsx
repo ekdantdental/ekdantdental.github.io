@@ -302,40 +302,46 @@ const DentalCareRecommendationResults = ({ data }: DentalCareRecommendationResul
             )}
 
             {homeCareTips && homeCareTips.length > 0 && (
-              <div className="mb-8">
+              <div className="mb-8 p-4 border border-green-100 rounded-lg bg-green-50">
                 <div className="flex items-center mb-4">
                   <div className="bg-green-100 p-2 rounded-full mr-3">
                     <Home className="h-5 w-5 text-green-600" />
                   </div>
-                  <h3 className="text-lg font-semibold">Home Care Tips</h3>
+                  <h3 className="text-lg font-semibold">Daily Home Care Tips</h3>
                 </div>
-                <ul className="ml-12 space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 ml-12">
                   {homeCareTips.map((tip, index) => (
-                    <li key={index} className="flex items-start">
+                    <div key={index} className="flex items-start bg-white p-3 rounded-md shadow-sm border border-green-100">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>{tip}</span>
-                    </li>
+                      <span className="text-gray-800">{tip}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
+                <p className="ml-12 mt-4 text-sm text-green-700">
+                  Following these home care practices will help maintain your dental health between professional visits.
+                </p>
               </div>
             )}
 
             {generalAdvice && generalAdvice.length > 0 && (
-              <div className="mb-8">
+              <div className="mb-8 p-4 border border-purple-100 rounded-lg bg-purple-50">
                 <div className="flex items-center mb-4">
                   <div className="bg-purple-100 p-2 rounded-full mr-3">
                     <Lightbulb className="h-5 w-5 text-purple-600" />
                   </div>
-                  <h3 className="text-lg font-semibold">General Advice</h3>
+                  <h3 className="text-lg font-semibold">Important Dental Health Advice</h3>
                 </div>
-                <ul className="ml-12 space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 ml-12">
                   {generalAdvice.map((advice, index) => (
-                    <li key={index} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>{advice}</span>
-                    </li>
+                    <div key={index} className="flex items-start bg-white p-3 rounded-md shadow-sm border border-purple-100">
+                      <CheckCircle className="h-5 w-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-800">{advice}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
+                <p className="ml-12 mt-4 text-sm text-purple-700">
+                  These insights will help you better understand and maintain your long-term oral health.
+                </p>
               </div>
             )}
           </>
