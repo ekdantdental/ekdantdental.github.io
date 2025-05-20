@@ -33,7 +33,26 @@ export const services = [
           title: "Common Restorative Dental Procedures",
           content: [
             "Fillings: Used to repair small to medium-sized cavities by filling the void with materials like composite, silver amalgam, or glass ionomer.",
-            "Crowns (Caps): Cover teeth that have been significantly damaged or weakened to restore strength, shape, and alignment."
+            "Crowns (Caps): Cover teeth that have been significantly damaged or weakened to restore strength, shape, and alignment.",
+            "Bridges: Replace missing teeth by bridging the gap with artificial teeth anchored to adjacent natural teeth or implants.",
+            "Implants: Involve surgically placing a titanium post into the jawbone to act as a root for a replacement tooth, often with a crown or bridge attached.",
+            "Dentures: Removable appliances that replace missing teeth, often supported by gums or implants.",
+            "Root Canal Therapy: Addresses infection or inflammation in the pulp of a tooth, often followed by a crown for restoration."
+          ]
+        },
+        {
+          title: "Why is Restorative Dentistry Important?",
+          content: [
+            "Maintains Oral Health: Restorative procedures help prevent further decay, infection, and other oral health problems.",
+            "Improves Chewing and Speaking: Restoring damaged or missing teeth allows for more comfortable and effective chewing and speaking.",
+            "Enhances Confidence: A more natural-looking smile can significantly improve self-esteem and confidence.",
+            "Supports Overall Health: Oral health is linked to overall health, and restorative dentistry helps maintain a healthy mouth."
+          ]
+        },
+        {
+          title: "Where to Find Restorative Dentistry",
+          content: [
+            "Restorative dentistry is typically performed by general dentists, but specialized dentists like endodontists (root canal specialists) or periodontists (gum and bone specialists) may also be involved."
           ]
         }
       ]

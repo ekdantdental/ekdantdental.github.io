@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
 import { Button } from "../ui/button";
 
 interface DetailedDescription {
@@ -32,6 +32,9 @@ const ServiceDetailDialog = ({
       <DialogContent className="sm:max-w-[600px] max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-xl md:text-2xl font-bold text-center">{title}</DialogTitle>
+          <DialogDescription className="text-center">
+            Detailed information about {title}
+          </DialogDescription>
         </DialogHeader>
         <div className="mt-4 space-y-6">
           {detailedDescription.sections.map((section, idx) => (
