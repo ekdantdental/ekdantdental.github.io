@@ -28,20 +28,12 @@ const Header = () => {
         <div className="flex justify-between items-center h-24 md:h-28">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="relative h-16 w-16 mr-3 flex items-center justify-center bg-white rounded-md">
+              <div className="relative h-20 mr-2 flex items-center justify-center">
                 <img 
-                  src="/images/brand/logo-ekdant-new.jpg" 
-                  alt="Ekdant Logo" 
-                  className="h-14 w-14 object-contain" 
+                  src="/images/brand/logo-ekdant-text.png" 
+                  alt="Ekdant Multi Speciality Clinic and Implant Center" 
+                  className="h-16 object-contain" 
                 />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-lg md:text-xl text-primary">
-                  EKDANT
-                </span>
-                <span className="font-medium text-xs md:text-sm text-gray-600">
-                  Multi Speciality and Implant Center
-                </span>
               </div>
             </Link>
           </div>
