@@ -22,7 +22,7 @@ export const services = [
     id: 4,
     title: "Dental Implants",
     description: "Permanent tooth replacement solutions that look, feel and function like natural teeth for a complete smile.",
-    image: "https://images.unsplash.com/photo-1581585375036-df878e8c63c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "/images/services/dental-implant.jpg"
   },
   {
     id: 5,
