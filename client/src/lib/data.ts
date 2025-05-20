@@ -526,6 +526,13 @@ export const testimonials = [
     image: "https://randomuser.me/api/portraits/women/45.jpg",
     text: "Dr Reshma is very experienced, knowledgeable and proficient in her work. She makes the patient very much comfortable during entire treatment. Clinic is very neat, hygienic and organized. Dr Manisha is also very efficient. Sanjyota tai is also co-operative and friendly. They all take every single measure to make you comfortable during treatment.",
     rating: 5
+  },
+  {
+    id: 6,
+    name: "Satisfied Patient",
+    image: "https://randomuser.me/api/portraits/women/53.jpg",
+    text: "Dr. Reshma was very thorough and explained each step of the procedure clearly, which put me at ease. The appointments were always on time, and the staff was efficient in getting me through my treatment smoothly.",
+    rating: 5
   }
 ];
 
