@@ -94,7 +94,7 @@ export const services = [
     id: 3,
     title: "General Medical Consultation",
     description: "Comprehensive medical evaluations, diagnosis, and treatment planning for various health conditions, focused on overall wellness and preventive care.",
-    image: "/images/services/general-consultation.jpg",
+    image: "/images/services/general-medicine.png",
     detailedDescription: {
       sections: [
         {
