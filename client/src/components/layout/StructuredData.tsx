@@ -46,7 +46,7 @@ const StructuredData = () => {
     "sameAs": [
       "https://g.page/ekdant-multi-speciality-implant-center",
       "https://www.facebook.com/ekdantclinic",
-      "https://www.instagram.com/ekdantclinic"
+      "https://www.instagram.com/ekdantmultispecialitysanpada?igsh=MTVpMDIyd2FrM2EyYw=="
     ]
   };
 
