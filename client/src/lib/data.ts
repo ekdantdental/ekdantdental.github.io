@@ -10,7 +10,7 @@ export const services = [
     id: 2,
     title: "Cosmetic Dentistry",
     description: "Teeth whitening, veneers, bonding, and smile makeovers to enhance the appearance of your smile.",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "/images/services/cosmetic-dentistry.jpg"
   },
   {
     id: 3,
