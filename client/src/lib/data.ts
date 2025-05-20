@@ -304,7 +304,51 @@ export const services = [
     id: 8,
     title: "Hypertension Management",
     description: "Expert monitoring and treatment of high blood pressure through personalized care plans, lifestyle modifications, and medication management.",
-    image: "/images/services/hypertension.jpg"
+    image: "/images/services/hypertension.jpg",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Hypertension Management?",
+          content: [
+            "Hypertension, or high blood pressure, is managed through a combination of lifestyle modifications and, if necessary, medication. Lifestyle changes like a heart-healthy diet, regular exercise, weight management, and quitting smoking are crucial for blood pressure control. Medications like ACE inhibitors, calcium channel blockers, and thiazide diuretics may be used to lower blood pressure."
+          ]
+        },
+        {
+          title: "Lifestyle Modifications",
+          content: [
+            "Diet: Adopting a heart-healthy diet, such as the DASH eating plan, which emphasizes fruits, vegetables, and lean protein, while limiting salt, saturated fat, and cholesterol, is essential.",
+            "Exercise: Regular physical activity, like brisk walking or jogging, can help lower blood pressure.",
+            "Weight Management: Maintaining a healthy weight or losing weight can significantly reduce blood pressure.",
+            "Quit Smoking: Smoking damages blood vessels and raises blood pressure. Quitting smoking is crucial for managing hypertension.",
+            "Limit Alcohol: Excessive alcohol consumption can raise blood pressure. Limiting alcohol or avoiding it altogether is recommended."
+          ]
+        },
+        {
+          title: "Medication Options",
+          content: [
+            "ACE Inhibitors: These medications block an enzyme that narrows blood vessels, allowing them to relax and dilate.",
+            "Calcium Channel Blockers: These medications prevent calcium from entering the heart and artery muscles, which also helps relax blood vessels.",
+            "Thiazide Diuretics: These medications help the body get rid of excess salt and water, which can lower blood pressure.",
+            "Other Medications: Other medications may be used, depending on the individual's needs and medical history.",
+            "Combination Therapy: In some cases, a combination of medications may be necessary to effectively manage hypertension."
+          ]
+        },
+        {
+          title: "Ongoing Monitoring and Follow-up",
+          content: [
+            "Regular Blood Pressure Checks: It's crucial to monitor blood pressure regularly to track progress and ensure that medications are effective.",
+            "Follow-up with Healthcare Provider: Regular follow-up appointments with a healthcare provider are important to adjust treatment plans and address any concerns."
+          ]
+        },
+        {
+          title: "Importance of Early Detection and Management",
+          content: [
+            "Screening: Regular blood pressure screening is recommended to detect hypertension early and prevent complications.",
+            "Early Intervention: Early intervention with lifestyle modifications and medication can prevent or delay the development of serious complications, such as heart disease and stroke."
+          ]
+        }
+      ]
+    }
   },
   {
     id: 9,
