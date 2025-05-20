@@ -34,7 +34,7 @@ const Footer = () => {
               <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
                 <FaTwitter />
               </a>
-              <a href="https://www.instagram.com/ekdantmultispecialitysanpada?igsh=MTVpMDIyd2FrM2EyYw==" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
+              <a href="https://www.instagram.com/ekdantmultispecialitysanpada/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
                 <FaInstagram />
               </a>
               <a href="#" className="text-white hover:text-primary transition duration-300 text-lg md:text-xl">
