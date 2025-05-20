@@ -125,12 +125,28 @@ export class MemStorage implements IStorage {
 
   private generateRecommendations(data: InsertDentalCareRecommendation): any {
     // Initialize recommendation object with personalized categories
-    const recommendations = {
-      generalAdvice: [] as string[],
-      specificTreatments: [] as string[],
-      homeCareTips: [] as string[],
-      urgency: "normal" as "urgent" | "normal" | "routine",
-      followUp: "6_months" as "immediate" | "1_month" | "3_months" | "6_months"
+    const recommendations: {
+      generalAdvice: string[];
+      specificTreatments: string[];
+      homeCareTips: string[];
+      urgency: "urgent" | "normal" | "routine";
+      followUp: "immediate" | "1_month" | "3_months" | "6_months";
+      riskScore?: number;
+      riskCategory?: "high" | "moderate" | "low";
+      componentScores?: {
+        pain: number;
+        hygiene: number;
+        periodontal: number;
+        age: number;
+        careHistory: number;
+        concerns: number;
+      };
+    } = {
+      generalAdvice: [],
+      specificTreatments: [],
+      homeCareTips: [],
+      urgency: "normal",
+      followUp: "6_months"
     };
 
     // Calculate overall oral health risk score (0-100) with weighted factors
@@ -542,7 +558,42 @@ export class MemStorage implements IStorage {
     recommendations.homeCareTips = recommendations.homeCareTips.filter((item, index) => 
       recommendations.homeCareTips.indexOf(item) === index);
 
-    return recommendations;
+    // Add risk score to recommendations for UI visualization
+    const scoredRecommendations = recommendations as typeof recommendations & { 
+      riskScore: number;
+      riskCategory: "high" | "moderate" | "low";
+      componentScores: {
+        pain: number;
+        hygiene: number;
+        periodontal: number;
+        age: number;
+        careHistory: number;
+        concerns: number;
+      };
+    };
+    
+    scoredRecommendations.riskScore = Math.min(100, riskScore);
+    
+    // Add risk category based on score
+    if (riskScore >= 70) {
+      scoredRecommendations.riskCategory = "high";
+    } else if (riskScore >= 40) {
+      scoredRecommendations.riskCategory = "moderate";
+    } else {
+      scoredRecommendations.riskCategory = "low";
+    }
+    
+    // Add component scores for detailed breakdown
+    scoredRecommendations.componentScores = {
+      pain: painScore,
+      hygiene: hygieneScore,
+      periodontal: periodontalScore,
+      age: ageRiskScore,
+      careHistory: careHistoryScore,
+      concerns: concernScore
+    };
+    
+    return scoredRecommendations;
   }
 }
 
