@@ -46,7 +46,7 @@ export const services = [
     id: 8,
     title: "Hypertension Management",
     description: "Expert monitoring and treatment of high blood pressure through personalized care plans, lifestyle modifications, and medication management.",
-    image: "https://images.unsplash.com/photo-1595565312451-23051f49c42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "/images/services/hypertension.jpg"
   },
   {
     id: 9,
