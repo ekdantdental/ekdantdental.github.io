@@ -18,10 +18,26 @@ const CATEGORIES = {
 
 type Category = keyof typeof CATEGORIES;
 
+interface BlogPost {
+  id: number;
+  title: string;
+  slug: string;
+  summary: string;
+  content: string;
+  imageUrl: string | null;
+  category: string;
+  tags: string[] | null;
+  authorName: string;
+  authorTitle: string | null;
+  publishedAt: string;
+  updatedAt: string;
+  isPublished: boolean;
+}
+
 const BlogPostPage = () => {
   const { slug } = useParams();
   
-  const { data: post, isLoading, error } = useQuery({
+  const { data: post, isLoading, error } = useQuery<BlogPost>({
     queryKey: [`/api/blog-posts/slug/${slug}`],
     enabled: !!slug
   });
@@ -72,6 +88,23 @@ const BlogPostPage = () => {
       </div>
     );
   }
+  
+  // Define post with fallback empty values to make TypeScript happy
+  const blogPost: BlogPost = post || {
+    id: 0,
+    title: '',
+    slug: '',
+    summary: '',
+    content: '',
+    imageUrl: null,
+    category: '',
+    tags: null,
+    authorName: '',
+    authorTitle: null,
+    publishedAt: '',
+    updatedAt: '',
+    isPublished: false,
+  };
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -89,32 +122,32 @@ const BlogPostPage = () => {
         {/* Category badge */}
         <div className="mb-4">
           <Badge variant="outline" className="bg-primary/10 text-primary">
-            {CATEGORIES[post.category as Category] || post.category}
+            {CATEGORIES[blogPost.category as Category] || blogPost.category}
           </Badge>
         </div>
 
         {/* Post title */}
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">{post.title}</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">{blogPost.title}</h1>
 
         {/* Post metadata */}
         <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-8">
           <div className="flex items-center">
             <CalendarDays className="h-4 w-4 mr-1" />
-            <span>{formatDate(post.publishedAt)}</span>
+            <span>{formatDate(blogPost.publishedAt)}</span>
           </div>
           <div className="flex items-center">
             <User className="h-4 w-4 mr-1" />
-            <span>{post.authorName}</span>
-            {post.authorTitle && (
-              <span className="ml-1 text-gray-400">({post.authorTitle})</span>
+            <span>{blogPost.authorName}</span>
+            {blogPost.authorTitle && (
+              <span className="ml-1 text-gray-400">({blogPost.authorTitle})</span>
             )}
           </div>
-          {post.tags && post.tags.length > 0 && (
+          {blogPost.tags && blogPost.tags.length > 0 && (
             <div className="flex items-center flex-wrap gap-1">
               <Tag className="h-4 w-4 mr-1" />
-              {post.tags.map((tag: string, index: number) => (
+              {blogPost.tags.map((tag: string, index: number) => (
                 <span key={index} className="text-primary hover:underline cursor-pointer">
-                  #{tag}{index < post.tags.length - 1 && ", "}
+                  #{tag}{index < (blogPost.tags?.length || 0) - 1 ? ", " : ""}
                 </span>
               ))}
             </div>
@@ -122,11 +155,11 @@ const BlogPostPage = () => {
         </div>
 
         {/* Featured image */}
-        {post.imageUrl && (
+        {blogPost.imageUrl && (
           <div className="mb-8 rounded-lg overflow-hidden">
             <img 
-              src={post.imageUrl} 
-              alt={post.title} 
+              src={blogPost.imageUrl} 
+              alt={blogPost.title} 
               className="w-full h-auto object-cover"
             />
           </div>
@@ -135,7 +168,7 @@ const BlogPostPage = () => {
         {/* Post content */}
         <div 
           className="prose prose-lg max-w-none prose-headings:text-primary prose-a:text-primary prose-a:no-underline hover:prose-a:underline"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: blogPost.content }}
         />
 
         <Separator className="my-8" />

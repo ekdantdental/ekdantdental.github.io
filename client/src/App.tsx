@@ -6,6 +6,8 @@ import NotFound from "@/pages/not-found";
 import HomePage from "@/pages/HomePage";
 import DentalCareAssessmentPage from "@/pages/DentalCareAssessmentPage";
 import DentalAnxietyResourcesPage from "@/pages/DentalAnxietyResourcesPage";
+import BlogPage from "@/pages/BlogPage";
+import BlogPostPage from "@/pages/BlogPostPage";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import StructuredData from "@/components/layout/StructuredData";
@@ -16,6 +18,8 @@ function Router() {
       <Route path="/" component={HomePage} />
       <Route path="/dental-care-assessment" component={DentalCareAssessmentPage} />
       <Route path="/dental-anxiety-resources" component={DentalAnxietyResourcesPage} />
+      <Route path="/blog" component={BlogPage} />
+      <Route path="/blog/:slug" component={BlogPostPage} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -23,9 +23,8 @@ type Category = keyof typeof CATEGORIES;
 
 const BlogPage = () => {
   const [activeCategory, setActiveCategory] = useState<Category | "all">("all");
-  const [, setParams] = useParams();
 
-  const { data: blogPosts, isLoading, error } = useQuery({
+  const { data: blogPosts = [], isLoading, error } = useQuery<any[]>({
     queryKey: ['/api/blog-posts'],
     enabled: true
   });
@@ -33,7 +32,7 @@ const BlogPage = () => {
   // Filter posts by category if a category is selected
   const filteredPosts = activeCategory === "all" 
     ? blogPosts 
-    : blogPosts?.filter((post: any) => post.category === activeCategory);
+    : blogPosts.filter((post: any) => post.category === activeCategory);
 
   const handleCategoryChange = (category: Category | "all") => {
     setActiveCategory(category);

@@ -94,6 +94,12 @@ const Header = () => {
           >
             Anxiety Support
           </Link>
+          <Link 
+            href="/blog" 
+            className="font-medium text-lg text-gray-600 hover:text-primary transition duration-300"
+          >
+            Dental Health Tips
+          </Link>
           <a 
             onClick={() => scrollToSection('dental-care-recommendation')} 
             className="font-medium text-lg text-gray-600 hover:text-primary transition duration-300 cursor-pointer"
@@ -148,6 +154,13 @@ const Header = () => {
             className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary"
           >
             Anxiety Support
+          </Link>
+          <Link 
+            href="/blog"
+            onClick={closeMobileMenu}
+            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary"
+          >
+            Dental Health Tips
           </Link>
           <a 
             onClick={() => scrollToSection('dental-care-recommendation')} 
