@@ -10,10 +10,10 @@ const AboutSection = () => {
           <div>
             <div className="mb-6 md:mb-8">
               <h2 className="font-heading font-bold text-2xl md:text-4xl text-dark mb-3 md:mb-4">
-                About Ekdant Multi Speciality and Implant Center
+                About <span className="text-primary">Ekdant</span> <span className="text-blue-500">Multi Speciality Clinic and Implant Center</span>
               </h2>
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-                At <span className="font-semibold">Ekdant Multi Speciality and Implant Center</span>, we are committed to revolutionizing the dental experience through our patient centric approach. 
+                At <span className="font-semibold"><span className="text-primary">Ekdant</span> <span className="text-blue-500">Multi Speciality Clinic and Implant Center</span></span>, we are committed to revolutionizing the dental experience through our patient centric approach. 
                 Our mission is to provide personalised, compassionate care that educates, motivates and inspires individuals 
                 to achieve and maintain optimal oral health, resulting in vibrant, healthy smiles that illuminates their lives.
               </p>
@@ -26,7 +26,7 @@ const AboutSection = () => {
               <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
                 From preventive care to advanced implant procedures, we're committed to providing exceptional 
                 dentistry in an environment of trust and respect. Experience the difference that patient-centered 
-                care makes at <span className="font-semibold">Ekdant Multi Speciality and Implant Center</span> - where advanced techniques meet compassionate service.
+                care makes at <span className="font-semibold"><span className="text-primary">Ekdant</span> <span className="text-blue-500">Multi Speciality Clinic and Implant Center</span></span> - where advanced techniques meet compassionate service.
               </p>
               <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
                 <li className="flex items-start">
