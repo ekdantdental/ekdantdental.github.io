@@ -49,7 +49,7 @@ const ContactSection = () => {
         <div className="mb-8">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
             <a 
-              href="https://g.page/ekdant-dental-clinic-sanpada" 
+              href="https://g.page/ekdant-multi-speciality-implant-center" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white text-gray-800 hover:bg-gray-100 transition-colors font-medium py-2 px-4 rounded-md shadow-sm border flex items-center gap-2 w-full md:w-auto text-center justify-center"
@@ -117,7 +117,7 @@ const ContactSection = () => {
                     </a>
                     <span className="text-gray-400">|</span>
                     <a 
-                      href="https://g.page/ekdant-dental-clinic-sanpada" 
+                      href="https://g.page/ekdant-multi-speciality-implant-center" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-primary hover:underline text-sm font-medium"
