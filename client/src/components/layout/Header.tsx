@@ -45,16 +45,16 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
-        <div className="md:hidden absolute top-12 right-6">
+        {/* Mobile menu button - much larger */}
+        <div className="md:hidden absolute top-16 right-8">
           <Button
             variant="ghost"
             size="icon"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
-            className="text-primary hover:bg-primary/10 transition-colors"
+            className="text-primary hover:bg-primary/10 transition-colors p-4"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="4" x2="20" y1="12" y2="12"/>
               <line x1="4" x2="20" y1="6" y2="6"/>
               <line x1="4" x2="20" y1="18" y2="18"/>
