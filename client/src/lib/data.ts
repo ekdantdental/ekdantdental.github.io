@@ -89,7 +89,45 @@ export const services = [
     id: 4,
     title: "Dental Implants",
     description: "Permanent tooth replacement solutions that look, feel and function like natural teeth for a complete smile.",
-    image: "/images/services/dental-implants.jpg"
+    image: "/images/services/dental-implants.jpg",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What are Dental Implants?",
+          content: [
+            "Dental implant work involves replacing missing teeth by inserting a titanium post into the jawbone, acting as a tooth root. A crown (artificial tooth) is then attached to the post to restore appearance and function. The process involves surgery, a healing period, and the attachment of the artificial tooth."
+          ]
+        },
+        {
+          title: "Components of Dental Implants",
+          content: [
+            "1. The Implant: A small, screw-like post made of titanium (a biocompatible metal). It is surgically placed into the jawbone to replace the missing tooth's root. The jawbone fuses with the implant over time, creating a strong foundation.",
+            "2. The Abutment: A connecting piece that attaches to the implant post. It extends through the gums to support the crown or other prosthetic tooth replacement.",
+            "3. The Crown: An artificial tooth made of porcelain, composite resin, or metal, designed to match the natural teeth. It is placed on top of the abutment to restore the missing tooth's appearance and function."
+          ]
+        },
+        {
+          title: "Procedure Overview",
+          content: [
+            "1. Initial Consultation and Planning: A dentist or oral surgeon will assess your jawbone, gums, and overall health to determine if you are a good candidate for implants.",
+            "2. Surgery: The dentist will make a small incision in the gums to expose the jawbone. A hole is drilled into the bone to accommodate the implant. The implant is placed into the bone, and the gums are sutured closed.",
+            "3. Healing Period: The implant needs time to fuse with the bone (a process called osseointegration), typically taking several months.",
+            "4. Abutment Placement: Once the healing is complete, the dentist will place the abutment on top of the implant.",
+            "5. Crown Placement: The crown is then attached to the abutment, completing the implant restoration."
+          ]
+        },
+        {
+          title: "Benefits of Dental Implants",
+          content: [
+            "Improved Function: They restore the ability to chew, speak, and smile with confidence.",
+            "Enhanced Aesthetics: They look and feel like natural teeth.",
+            "Improved Oral Health: They help prevent bone loss and gum disease by stimulating the jawbone.",
+            "Long-lasting: Implants can last for many years, even a lifetime with proper care.",
+            "No Need for Adjacent Tooth Preparation: Unlike bridges, implants don't require altering the teeth next to the missing tooth."
+          ]
+        }
+      ]
+    }
   },
   {
     id: 5,
