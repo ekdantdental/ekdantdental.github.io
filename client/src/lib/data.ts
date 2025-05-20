@@ -28,7 +28,7 @@ export const services = [
     id: 5,
     title: "Orthodontics",
     description: "Braces, aligners, and other orthodontic treatments to straighten teeth and correct bite problems.",
-    image: "https://images.unsplash.com/photo-1600170384787-dbdd13eb3b17?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "/images/services/orthodontics.jpg"
   },
   {
     id: 6,
