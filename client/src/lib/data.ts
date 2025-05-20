@@ -48,12 +48,6 @@ export const services = [
             "Enhances Confidence: A more natural-looking smile can significantly improve self-esteem and confidence.",
             "Supports Overall Health: Oral health is linked to overall health, and restorative dentistry helps maintain a healthy mouth."
           ]
-        },
-        {
-          title: "Where to Find Restorative Dentistry",
-          content: [
-            "Restorative dentistry is typically performed by general dentists, but specialized dentists like endodontists (root canal specialists) or periodontists (gum and bone specialists) may also be involved."
-          ]
         }
       ]
     }
