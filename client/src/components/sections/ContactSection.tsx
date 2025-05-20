@@ -24,7 +24,7 @@ const ContactSection = () => {
     L.Marker.prototype.options.icon = DefaultIcon;
   }, []);
 
-  const position: [number, number] = [19.067876, 73.014271]; // Ekdant Multi Speciality and Implant Center - Exact Coordinates in Sanpada, Navi Mumbai
+  const position: [number, number] = [19.0601, 73.0140]; // Ekdant Multi Speciality and Implant Center - Exact Coordinates in Sanpada, Navi Mumbai
 
   return (
     <section id="contact" className="py-12 md:py-24 bg-white">
