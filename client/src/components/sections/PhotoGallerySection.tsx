@@ -25,42 +25,36 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 3,
-    image: "/images/gallery/clinic-logo.jpg",
-    alt: "Ekdant Clinic Logo",
-    category: 'facility'
-  },
-  {
-    id: 4,
     image: "/images/gallery/treatment-room.jpg",
     alt: "Aesthetic Dentistry",
     category: 'treatment'
   },
   {
-    id: 5,
+    id: 4,
     image: "/images/gallery/orthodontics.jpg",
     alt: "Orthodontics Treatment",
     category: 'treatment'
   },
   {
-    id: 6,
+    id: 5,
     image: "/images/gallery/pediatric-dentistry.jpg",
     alt: "Pediatric Dentistry",
     category: 'treatment'
   },
   {
-    id: 7,
+    id: 6,
     image: "/images/gallery/dental-implant.jpg",
     alt: "Dental Implant Procedure",
     category: 'treatment'
   },
   {
-    id: 8,
+    id: 7,
     image: "/images/gallery/glucometer.jpg",
     alt: "Diabetes Management",
     category: 'treatment'
   },
   {
-    id: 9,
+    id: 8,
     image: "/images/gallery/hypertension.jpg",
     alt: "Hypertension Management",
     category: 'treatment'
