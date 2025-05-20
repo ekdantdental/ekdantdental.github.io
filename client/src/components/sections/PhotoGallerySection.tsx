@@ -13,48 +13,54 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
+    image: "/images/gallery/clinic-team.jpg",
+    alt: "Our Dedicated Clinic Team",
+    category: 'team'
+  },
+  {
+    id: 2,
     image: "/images/gallery/clinic-exterior.jpg",
     alt: "Ekdant Multi Speciality and Implant Center",
     category: 'facility'
   },
   {
-    id: 2,
+    id: 3,
     image: "/images/gallery/clinic-logo.jpg",
     alt: "Ekdant Clinic Logo",
     category: 'facility'
   },
   {
-    id: 3,
+    id: 4,
     image: "/images/gallery/treatment-room.jpg",
     alt: "Aesthetic Dentistry",
     category: 'treatment'
   },
   {
-    id: 4,
+    id: 5,
     image: "/images/gallery/orthodontics.jpg",
     alt: "Orthodontics Treatment",
     category: 'treatment'
   },
   {
-    id: 5,
+    id: 6,
     image: "/images/gallery/pediatric-dentistry.jpg",
     alt: "Pediatric Dentistry",
     category: 'treatment'
   },
   {
-    id: 6,
+    id: 7,
     image: "/images/gallery/dental-implant.jpg",
     alt: "Dental Implant Procedure",
     category: 'treatment'
   },
   {
-    id: 7,
+    id: 8,
     image: "/images/gallery/glucometer.jpg",
     alt: "Diabetes Management",
     category: 'treatment'
   },
   {
-    id: 8,
+    id: 9,
     image: "/images/gallery/hypertension.jpg",
     alt: "Hypertension Management",
     category: 'treatment'
