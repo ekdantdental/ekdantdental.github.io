@@ -345,7 +345,47 @@ export const services = [
     id: 9,
     title: "General Medical Consultation",
     description: "Comprehensive medical check-ups, health screenings, and preventive care to ensure your overall wellbeing.",
-    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is a General Medical Consultation?",
+          content: [
+            "A general medical consultation is a meeting between a patient and a healthcare professional, like a doctor or nurse, to discuss health concerns, symptoms, diagnoses, or treatment options. It's a process of sharing information, evaluating a patient's condition, and making decisions about their care."
+          ]
+        },
+        {
+          title: "Purpose and Goals",
+          content: [
+            "Diagnosis and Treatment: The primary goal is to identify a patient's medical condition and determine the best course of treatment.",
+            "Information Sharing: The consultation allows for the exchange of information between the patient and the healthcare provider, ensuring the patient understands their condition and treatment options.",
+            "Problem Solving: The consultation helps patients understand their health issues, address concerns, and work towards better health outcomes.",
+            "Building a Relationship: A consultation can foster a trusting and collaborative relationship between the patient and the healthcare provider."
+          ]
+        },
+        {
+          title: "Key Elements of a Consultation",
+          content: [
+            "Patient History: A detailed account of the patient's symptoms, medical history, and any relevant information about their lifestyle and health.",
+            "Physical Examination: A thorough assessment of the patient's physical condition, which may involve checking vital signs, listening to the heart and lungs, and performing other tests.",
+            "Questioning: The healthcare provider will ask specific questions to understand the patient's concerns and gather relevant information.",
+            "Diagnosis: Based on the information gathered, the healthcare provider will formulate a diagnosis or suggest further tests.",
+            "Treatment Plan: The healthcare provider will discuss potential treatment options with the patient and develop a plan to address their condition.",
+            "Follow-up: A consultation often includes a plan for follow-up care, including additional appointments, tests, or referrals."
+          ]
+        },
+        {
+          title: "What to Expect at Ekdant Multi Speciality",
+          content: [
+            "Patient-Centered Care: We focus on your individual needs and concerns, providing personalized attention.",
+            "Comprehensive Approach: Our consultations address not only your immediate health concerns but also preventative care and overall wellness.",
+            "State-of-the-Art Facilities: We use modern medical equipment and techniques to ensure the highest quality of care.",
+            "Collaborative Healthcare Team: Our doctors work together, consulting with specialists when needed, to provide the best possible care.",
+            "Clear Communication: We explain medical terms and conditions in easy-to-understand language, making sure you are fully informed."
+          ]
+        }
+      ]
+    }
   },
   {
     id: 10,
