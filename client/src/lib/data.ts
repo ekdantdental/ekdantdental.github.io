@@ -145,7 +145,7 @@ export const contactInfo = [
   {
     id: 2,
     title: "Phone",
-    content: ["Main: +91 79001 39417"],
+    content: ["Main: +91 79001 39417", "Landline: 022-31439081"],
     icon: "fas fa-phone-alt text-2xl",
     action: {
       text: "Call Now",
