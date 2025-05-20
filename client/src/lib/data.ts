@@ -16,7 +16,28 @@ export const services = [
     id: 3,
     title: "Restorative and Root Canal Treatment",
     description: "Expert restorative dental work like fillings, crowns, bridges, implants, and dentures. Root canal procedures to treat infected pulp, saving your natural teeth while relieving pain.",
-    image: "/images/services/root-canal.jpg"
+    image: "/images/services/root-canal.jpg",
+    detailedDescription: {
+      sections: [
+        {
+          title: "Key Concepts of Restorative Dentistry",
+          content: [
+            "Repairing Damaged Teeth: This includes filling cavities, treating root canals, and repairing chipped or fractured teeth.",
+            "Replacing Missing Teeth: Bridges, dental implants, and dentures are used to restore missing teeth and the surrounding structures.",
+            "Restoring Function: Restorative procedures help improve chewing ability, speaking, and overall oral function.",
+            "Improving Aesthetics: Many restorative procedures also contribute to a more natural-looking smile.",
+            "Preventing Future Issues: Restorative treatments can help prevent further damage or decay, as well as help maintain proper bite and alignment of teeth."
+          ]
+        },
+        {
+          title: "Common Restorative Dental Procedures",
+          content: [
+            "Fillings: Used to repair small to medium-sized cavities by filling the void with materials like composite, silver amalgam, or glass ionomer.",
+            "Crowns (Caps): Cover teeth that have been significantly damaged or weakened to restore strength, shape, and alignment."
+          ]
+        }
+      ]
+    }
   },
   {
     id: 4,

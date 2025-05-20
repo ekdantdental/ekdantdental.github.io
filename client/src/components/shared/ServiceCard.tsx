@@ -1,9 +1,19 @@
+import ServiceDetailDialog from "./ServiceDetailDialog";
+
+interface DetailedDescription {
+  sections: {
+    title: string;
+    content: string[];
+  }[];
+}
+
 interface ServiceProps {
   service: {
     id: number;
     title: string;
     description: string;
     image: string;
+    detailedDescription?: DetailedDescription;
   };
 }
 
@@ -20,12 +30,21 @@ const ServiceCard = ({ service }: ServiceProps) => {
           {service.title}
         </h3>
         <p className="text-gray-600 text-sm md:text-base mb-3 md:mb-4 line-clamp-3 md:line-clamp-none">{service.description}</p>
-        <a
-          href="#"
-          className="text-primary hover:text-secondary font-medium text-sm md:text-base inline-flex items-center"
-        >
-          Learn More <i className="fas fa-chevron-right ml-1 md:ml-2 text-xs md:text-sm"></i>
-        </a>
+        
+        {service.detailedDescription ? (
+          <ServiceDetailDialog 
+            serviceId={service.id} 
+            title={service.title}
+            detailedDescription={service.detailedDescription}
+          />
+        ) : (
+          <a
+            href="#"
+            className="text-primary hover:text-secondary font-medium text-sm md:text-base inline-flex items-center"
+          >
+            Learn More <span className="ml-1 md:ml-2 text-xs md:text-sm">→</span>
+          </a>
+        )}
       </div>
     </div>
   );
