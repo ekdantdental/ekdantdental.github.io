@@ -32,7 +32,7 @@ const Header = () => {
                 <img 
                   src="/images/brand/logo-ekdant-new.jpg" 
                   alt="Ekdant Logo" 
-                  className="h-18 w-18 object-contain" 
+                  className="h-16 w-16 object-contain" 
                 />
               </div>
               <div className="h-16">
