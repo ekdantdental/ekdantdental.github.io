@@ -323,16 +323,7 @@ export const services = [
             "Limit Alcohol: Excessive alcohol consumption can raise blood pressure. Limiting alcohol or avoiding it altogether is recommended."
           ]
         },
-        {
-          title: "Medication Options",
-          content: [
-            "ACE Inhibitors: These medications block an enzyme that narrows blood vessels, allowing them to relax and dilate.",
-            "Calcium Channel Blockers: These medications prevent calcium from entering the heart and artery muscles, which also helps relax blood vessels.",
-            "Thiazide Diuretics: These medications help the body get rid of excess salt and water, which can lower blood pressure.",
-            "Other Medications: Other medications may be used, depending on the individual's needs and medical history.",
-            "Combination Therapy: In some cases, a combination of medications may be necessary to effectively manage hypertension."
-          ]
-        },
+
         {
           title: "Ongoing Monitoring and Follow-up",
           content: [
