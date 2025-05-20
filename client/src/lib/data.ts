@@ -4,7 +4,43 @@ export const services = [
     id: 1,
     title: "General Dentistry",
     description: "Comprehensive dental exams, cleanings, fillings, and preventive care to maintain your oral health.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is General Dentistry?",
+          content: [
+            "General dentistry encompasses the routine and preventive dental care that keeps your mouth healthy and functional. It involves diagnosing, preventing, and treating oral health conditions. General dentists are your primary care providers for issues like cavities, gum disease, and tooth loss, and they may refer you to specialists if more advanced treatment is needed."
+          ]
+        },
+        {
+          title: "Key Aspects of General Dentistry",
+          content: [
+            "Preventive care: This includes regular exams, cleanings, X-rays, and fluoride treatments to prevent dental problems.",
+            "Routine care: General dentists handle common issues like fillings, crowns, bridges, and simple extractions.",
+            "Restorative dentistry: They repair damaged teeth with fillings or crowns, and may replace missing teeth with dentures or implants.",
+            "Diagnosis and treatment: General dentists can diagnose and treat early signs of gum disease, oral infections, and even some cosmetic issues.",
+            "Referrals: If a more specialized procedure is needed (like root canals, orthodontics, or gum surgery), general dentists will refer you to the appropriate specialist."
+          ]
+        },
+        {
+          title: "Common General Dentistry Procedures",
+          content: [
+            "Teeth cleaning and scaling: Removing plaque and tartar from the teeth and gums.",
+            "Fillings: Repairing cavities caused by tooth decay.",
+            "Dental crowns: Restoring the shape, size, and strength of a tooth.",
+            "Dental bridges: Replacing missing teeth by bridging the gap with artificial teeth.",
+            "Dental extractions: Removing damaged or impacted teeth.",
+            "Dental implants: Replacing missing teeth with artificial roots and restorations.",
+            "Root canal therapy: Removing the infected pulp inside a tooth and sealing the space.",
+            "Sealants: Applying a protective coating to the chewing surfaces of teeth to prevent cavities.",
+            "Orthodontic treatment: Straightening crooked teeth and correcting bite misalignment.",
+            "TMJ treatment: Addressing jaw pain and dysfunction.",
+            "Oral cancer screening: Detecting early signs of oral cancer."
+          ]
+        }
+      ]
+    }
   },
   {
     id: 2,
