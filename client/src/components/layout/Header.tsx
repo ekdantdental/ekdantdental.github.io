@@ -154,6 +154,12 @@ const Header = () => {
             Anxiety Support
           </Link>
           <a 
+            onClick={() => scrollToSection('dental-care-recommendation')} 
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
+          >
+            Dental Care Assessment
+          </a>
+          <a 
             onClick={() => scrollToSection('contact')} 
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
           >
