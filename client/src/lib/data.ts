@@ -138,7 +138,7 @@ export const services = [
     id: 4,
     title: "Personalized Medical Care Recommendations",
     description: "Tailored healthcare recommendations based on your unique health profile, lifestyle, and medical history for optimal health outcomes.",
-    image: "/images/services/personalized-care.jpg",
+    image: "/images/services/personalized-medical.png",
     detailedDescription: {
       sections: [
         {
