@@ -63,7 +63,7 @@ const ContactSection = () => {
               Visit Our Google Business Page
             </a>
             <a 
-              href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Multi+Speciality+and+Implant+Center+Sanpada+Navi+Mumbai" 
+              href="https://www.google.com/maps/dir/?api=1&destination=Gami+Terra+Sector+6+Sanpada+Navi+Mumbai" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-primary text-white hover:bg-primary/90 transition-colors font-medium py-2 px-4 rounded-md shadow-sm border flex items-center gap-2 w-full md:w-auto text-center justify-center"
@@ -108,7 +108,7 @@ const ContactSection = () => {
                   Sector-6, Sanpada, Navi Mumbai - 400 705<br />
                   <div className="flex gap-2 mt-2">
                     <a 
-                      href="https://www.google.com/maps/dir/?api=1&destination=Ekdant+Multi+Speciality+and+Implant+Center+Sanpada+Navi+Mumbai" 
+                      href="https://www.google.com/maps/dir/?api=1&destination=Gami+Terra+Sector+6+Sanpada+Navi+Mumbai" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-primary hover:underline text-sm font-medium"
