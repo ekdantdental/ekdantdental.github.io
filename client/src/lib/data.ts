@@ -185,7 +185,7 @@ export const services = [
     id: 5,
     title: "General Dentistry",
     description: "Comprehensive dental exams, cleanings, fillings, and preventive care to maintain your oral health.",
-    image: "/images/services/general-dentistry.jpg",
+    image: "/images/services/general-dentistry.png",
     detailedDescription: {
       sections: [
         {
