@@ -133,42 +133,176 @@ export class MemStorage implements IStorage {
       followUp: "6_months" as "immediate" | "1_month" | "3_months" | "6_months"
     };
 
-    // Calculate overall oral health risk score (0-100)
+    // Calculate overall oral health risk score (0-100) with weighted factors
     let riskScore = 0;
+    let painScore = 0;
+    let hygieneScore = 0;
+    let periodontalScore = 0;
+    let ageRiskScore = 0;
+    let careHistoryScore = 0;
+    let concernScore = 0;
     
-    // RISK FACTORS ASSESSMENT
+    // COMPREHENSIVE RISK ASSESSMENT SYSTEM
     
-    // 1. Age-related risk
-    if (data.age < 12) riskScore += 10; // Children have higher cavity risk
-    if (data.age > 60) riskScore += 15; // Seniors have higher periodontal risk
+    // 1. Age-specific risk factors (weighted by clinical relevance)
+    if (data.age < 6) {
+      ageRiskScore += 15; // Very young children have higher cavity risk and need early intervention
+      recommendations.generalAdvice.push("Early childhood dental visits are crucial for establishing good habits and preventing cavities");
+    } 
+    else if (data.age >= 6 && data.age < 12) {
+      ageRiskScore += 10; // School-age children have high cavity risk due to diet and developing habits
+      recommendations.generalAdvice.push("Children's dental health sets the foundation for a lifetime of good oral health");
+    } 
+    else if (data.age >= 12 && data.age < 18) {
+      ageRiskScore += 8; // Teenagers often have orthodontic needs and changing habits
+      recommendations.generalAdvice.push("Teenage years are critical for addressing alignment issues and reinforcing good habits");
+    } 
+    else if (data.age >= 60) {
+      ageRiskScore += 15; // Seniors have higher risk for periodontal disease, root decay, and medication effects
+      recommendations.generalAdvice.push("Dental health needs often change with age due to medications, systemic health conditions, and lifetime wear");
+    } 
+    else if (data.age >= 40 && data.age < 60) {
+      ageRiskScore += 8; // Middle-aged adults often show first signs of long-term dental issues
+      recommendations.generalAdvice.push("Middle age is when many dental issues from earlier in life may begin requiring more attention");
+    }
+
+    riskScore += ageRiskScore;
     
-    // 2. Oral hygiene habits
-    if (data.dailyBrushingFrequency < 2) riskScore += 25;
-    if (data.flossingFrequency === "never") riskScore += 20;
-    if (data.flossingFrequency === "occasionally") riskScore += 10;
+    // 2. Oral hygiene practices (major risk determinant)
+    if (data.dailyBrushingFrequency === 0) {
+      hygieneScore += 35; // No brushing is a severe risk factor
+      recommendations.generalAdvice.push("Regular brushing is the foundation of dental health and cavity prevention");
+    } 
+    else if (data.dailyBrushingFrequency === 1) {
+      hygieneScore += 25; // Once daily is insufficient for most people
+      recommendations.generalAdvice.push("Brushing twice daily significantly reduces plaque buildup and cavity risk");
+    } 
+    else if (data.dailyBrushingFrequency >= 4) {
+      hygieneScore += 5; // Over-brushing can indicate abrasion issues
+      recommendations.generalAdvice.push("Be careful not to brush too aggressively as this can damage enamel and gums");
+    }
+
+    if (data.flossingFrequency === "never") {
+      hygieneScore += 20; // No flossing significantly increases interproximal decay and gum disease
+      recommendations.generalAdvice.push("Areas between teeth can only be properly cleaned with floss or interdental cleaners");
+    } 
+    else if (data.flossingFrequency === "occasionally") {
+      hygieneScore += 10; // Occasional flossing leaves periods of bacterial growth
+      recommendations.generalAdvice.push("Consistent daily flossing is necessary for preventing gum disease and cavities between teeth");
+    }
+
+    riskScore += hygieneScore;
     
-    // 3. Current dental issues
+    // 3. Pain assessment (critical factor requiring immediate attention)
     if (data.hasPain === "yes") {
-      riskScore += 30;
-      // Add pain level if provided (1-10 scale)
-      if (data.painLevel) riskScore += Math.min(data.painLevel * 2, 20);
+      painScore += 25; // Pain is always a significant concern requiring evaluation
+      
+      // Pain level severity analysis (using pain scale standard)
+      if (data.painLevel) {
+        if (data.painLevel >= 8) {
+          painScore += 25; // Severe pain often indicates serious infection or injury
+          recommendations.generalAdvice.push("Severe dental pain can indicate a serious infection that may require urgent treatment");
+        } 
+        else if (data.painLevel >= 5) {
+          painScore += 15; // Moderate pain suggests active problems requiring treatment
+          recommendations.generalAdvice.push("Moderate pain usually indicates active dental problems that need professional attention");
+        } 
+        else {
+          painScore += 5; // Mild pain still requires evaluation but may be less urgent
+          recommendations.generalAdvice.push("Even mild dental pain can be a warning sign of developing issues");
+        }
+      } else {
+        painScore += 10; // Unspecified pain level still requires attention
+      }
+      
+      // Pain pattern assessment (adding to detailed analysis)
+      if (data.teethSensitivity === "high") {
+        painScore += 5; // Pain with sensitivity suggests exposed dentin or cracked teeth
+        recommendations.generalAdvice.push("Pain combined with sensitivity often suggests exposed dentin, enamel erosion, or potential cracks");
+      }
+    }
+
+    riskScore += painScore;
+    
+    // 4. Periodontal (gum) health assessment
+    if (data.bleedingGums === "yes") {
+      periodontalScore += 25; // Bleeding gums indicate active gingivitis or periodontitis
+      recommendations.generalAdvice.push("Bleeding gums are a clear indicator of gum inflammation that requires attention");
+      
+      // Correlate with other risk factors for more precise assessment
+      if (data.flossingFrequency === "never") {
+        periodontalScore += 5; // Combined lack of flossing with bleeding indicates likely periodontitis
+        recommendations.generalAdvice.push("The combination of bleeding gums and lack of flossing significantly increases periodontal disease risk");
+      }
+      
+      if (data.lastDentalVisit === "never" || data.lastDentalVisit === "more_than_12_months") {
+        periodontalScore += 5; // Untreated bleeding for extended periods increases risk
+        recommendations.generalAdvice.push("Untreated gum disease can progress to more serious conditions affecting both oral and systemic health");
+      }
+    }
+
+    riskScore += periodontalScore;
+    
+    // 5. Sensitivity assessment (indicator of enamel loss, recession, or cracks)
+    if (data.teethSensitivity === "high") {
+      riskScore += 15;
+      recommendations.generalAdvice.push("High sensitivity may indicate enamel erosion, receding gums, or exposed roots");
+    } 
+    else if (data.teethSensitivity === "medium") {
+      riskScore += 8;
+      recommendations.generalAdvice.push("Moderate sensitivity should be evaluated to prevent worsening conditions");
     }
     
-    if (data.bleedingGums === "yes") riskScore += 25;
+    // 6. Dental care history (indicator of prevention and maintenance)
+    if (data.lastDentalVisit === "never") {
+      careHistoryScore += 30; // No dental history suggests likely undiagnosed issues
+      recommendations.generalAdvice.push("Without regular dental exams, problems often go undetected until they become serious");
+    } 
+    else if (data.lastDentalVisit === "more_than_12_months") {
+      careHistoryScore += 20; // Extended gaps in care allow progression of problems
+      recommendations.generalAdvice.push("Regular dental visits are essential for early detection and treatment of dental issues");
+    } 
+    else if (data.lastDentalVisit === "6_to_12_months") {
+      careHistoryScore += 5; // Slightly delayed care schedule
+      recommendations.generalAdvice.push("Maintaining a consistent 6-month check-up schedule helps prevent dental problems");
+    }
+
+    riskScore += careHistoryScore;
     
-    // 4. Sensitivity level
-    if (data.teethSensitivity === "high") riskScore += 20;
-    if (data.teethSensitivity === "medium") riskScore += 10;
-    
-    // 5. Previous dental care
-    if (data.lastDentalVisit === "never") riskScore += 30;
-    if (data.lastDentalVisit === "more_than_12_months") riskScore += 20;
-    if (data.lastDentalVisit === "6_to_12_months") riskScore += 5;
-    
-    // 6. Number of concerns
+    // 7. Specific concern assessment (weighted by clinical significance)
     if (data.concerns && data.concerns.length > 0) {
-      riskScore += Math.min(data.concerns.length * 5, 20);
+      // Base score for having concerns
+      concernScore += Math.min(data.concerns.length * 3, 15);
+      
+      // Weight specific concerns by clinical importance
+      data.concerns.forEach(concern => {
+        switch(concern) {
+          case "gum_disease":
+            concernScore += 8; // Periodontal disease has systemic health implications
+            break;
+          case "cavities":
+            concernScore += 6; // Active decay requires treatment
+            break;
+          case "missing_teeth":
+            concernScore += 7; // Missing teeth affect function and adjacent teeth
+            break;
+          case "grinding_teeth":
+            concernScore += 5; // Grinding causes long-term damage
+            break;
+          case "bad_breath":
+            concernScore += 4; // May indicate underlying issues
+            break;
+          case "teeth_alignment":
+            concernScore += 3; // Functional and aesthetic concern
+            break;
+          case "teeth_whitening":
+            concernScore += 1; // Primarily aesthetic concern
+            break;
+        }
+      });
     }
+
+    riskScore += concernScore;
     
     // DETERMINE URGENCY BASED ON RISK SCORE
     if (riskScore >= 70 || (data.hasPain === "yes" && data.painLevel && data.painLevel >= 7)) {
@@ -401,9 +535,12 @@ export class MemStorage implements IStorage {
     }
 
     // Remove any duplicate recommendations
-    recommendations.generalAdvice = [...new Set(recommendations.generalAdvice)];
-    recommendations.specificTreatments = [...new Set(recommendations.specificTreatments)];
-    recommendations.homeCareTips = [...new Set(recommendations.homeCareTips)];
+    recommendations.generalAdvice = recommendations.generalAdvice.filter((item, index) => 
+      recommendations.generalAdvice.indexOf(item) === index);
+    recommendations.specificTreatments = recommendations.specificTreatments.filter((item, index) => 
+      recommendations.specificTreatments.indexOf(item) === index);
+    recommendations.homeCareTips = recommendations.homeCareTips.filter((item, index) => 
+      recommendations.homeCareTips.indexOf(item) === index);
 
     return recommendations;
   }
