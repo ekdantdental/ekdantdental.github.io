@@ -24,7 +24,7 @@ const ContactSection = () => {
     L.Marker.prototype.options.icon = DefaultIcon;
   }, []);
 
-  const position: [number, number] = [19.0601, 73.0144]; // Ekdant Multi Speciality and Implant Center - Exact Coordinates in Sanpada, Navi Mumbai
+  const position: [number, number] = [19.0601, 73.0154]; // Ekdant Multi Speciality and Implant Center - Exact Coordinates in Sanpada, Navi Mumbai
 
   return (
     <section id="contact" className="py-12 md:py-24 bg-white">
@@ -92,7 +92,7 @@ const ContactSection = () => {
             style={{ height: "100%", width: "100%" }}
             // @ts-ignore - These props are valid but TypeScript definitions are incorrect
             center={position} 
-            zoom={16} 
+            zoom={18} 
             scrollWheelZoom={false}
           >
             <TileLayer
