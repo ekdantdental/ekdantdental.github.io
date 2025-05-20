@@ -93,7 +93,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-sm md:text-base">
-                  Cosmetic Dentistry
+                  Aesthetic Dentistry
                 </a>
               </li>
               <li>

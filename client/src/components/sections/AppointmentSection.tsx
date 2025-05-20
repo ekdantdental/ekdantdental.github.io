@@ -11,7 +11,7 @@ const AppointmentSection = () => {
               Book Your Appointment
             </h2>
             <p className="text-white/90 text-sm md:text-base mb-6 md:mb-8">
-              Schedule your dental or ENT consultation with ease. 
+              Schedule your dental and medical consultation with ease. 
               We'll contact you promptly to confirm your appointment.
             </p>
 
