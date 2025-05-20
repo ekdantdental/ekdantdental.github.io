@@ -46,7 +46,7 @@ const Header = () => {
         </div>
 
         {/* Mobile menu button */}
-        <div className="md:hidden absolute top-6 right-6">
+        <div className="md:hidden absolute top-12 right-6">
           <Button
             variant="ghost"
             size="icon"
@@ -54,7 +54,7 @@ const Header = () => {
             aria-label="Toggle menu"
             className="text-primary hover:bg-primary/10 transition-colors"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="4" x2="20" y1="12" y2="12"/>
               <line x1="4" x2="20" y1="6" y2="6"/>
               <line x1="4" x2="20" y1="18" y2="18"/>
@@ -117,53 +117,53 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       <div className={`md:hidden bg-white border-t border-gray-200 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="px-4 pt-4 pb-6 space-y-4 sm:px-4">
           <a 
             onClick={() => scrollToSection('home')} 
-            className="block px-3 py-2 rounded-md text-base font-medium text-primary cursor-pointer"
+            className="block px-4 py-3 rounded-md text-xl font-medium text-primary cursor-pointer"
           >
             Home
           </a>
           <a 
             onClick={() => scrollToSection('services')} 
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
+            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary cursor-pointer"
           >
             Services
           </a>
           <a 
             onClick={() => scrollToSection('about')} 
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
+            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary cursor-pointer"
           >
             About
           </a>
           <a 
             onClick={() => scrollToSection('testimonials')} 
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
+            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary cursor-pointer"
           >
             Testimonials
           </a>
           <Link 
             href="/dental-anxiety-resources"
             onClick={closeMobileMenu}
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary"
+            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary"
           >
             Anxiety Support
           </Link>
           <a 
             onClick={() => scrollToSection('dental-care-recommendation')} 
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
+            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary cursor-pointer"
           >
             Dental Care Assessment
           </a>
           <a 
             onClick={() => scrollToSection('contact')} 
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
+            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary cursor-pointer"
           >
             Contact
           </a>
           <a 
             onClick={() => scrollToSection('book-appointment')} 
-            className="block px-3 py-2 rounded-md text-base font-medium bg-primary text-white hover:bg-opacity-90 text-center mt-4 cursor-pointer shadow-sm"
+            className="block px-4 py-4 rounded-md text-xl font-bold bg-primary text-white hover:bg-opacity-90 text-center mt-6 cursor-pointer shadow-md"
           >
             Book Appointment
           </a>
