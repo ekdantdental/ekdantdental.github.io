@@ -71,18 +71,8 @@ const AboutSection = () => {
             <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-50 p-4 md:p-6 mt-8">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">Visit Our Clinic</h3>
               <p className="text-sm md:text-base mb-3 md:mb-4">
-                Our state-of-the-art facility provides comfortable, high-quality care for all your dental needs.
+                Our state-of-the-art facility provides comfortable, high-quality care for all your dental and medical needs.
               </p>
-              <div className="grid grid-cols-1 gap-4">
-                <div>
-                  <img
-                    src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
-                    alt="Modern dental clinic waiting area"
-                    className="w-full h-auto rounded-lg shadow"
-                  />
-                  <p className="text-xs md:text-sm text-gray-500 mt-1 md:mt-2 text-center">Comfortable waiting area</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
