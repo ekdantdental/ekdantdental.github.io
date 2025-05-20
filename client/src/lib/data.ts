@@ -35,6 +35,18 @@ export const services = [
     title: "Pediatric Dentistry",
     description: "Gentle and friendly dental care specifically designed for children to build good oral health habits early.",
     image: "https://images.unsplash.com/photo-1588776814735-7e6e2a74b868?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  {
+    id: 7,
+    title: "Critical Care Medicine",
+    description: "Specialized medical care for patients with serious or life-threatening conditions requiring close monitoring and advanced treatment.",
+    image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  {
+    id: 8,
+    title: "General Medical Consultation",
+    description: "Comprehensive medical check-ups, health screenings, and preventive care to ensure your overall wellbeing.",
+    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
   }
 ];
 
