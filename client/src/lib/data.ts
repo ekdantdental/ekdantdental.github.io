@@ -141,6 +141,49 @@ export const services = [
     }
   },
   {
+    id: 11,
+    title: "Geriatric Health Care",
+    description: "Specialized medical care tailored to the unique health needs of older adults, focusing on improving quality of life and maintaining independence.",
+    image: "/images/services/general-medicine.png",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Geriatric Health Care?",
+          content: [
+            "Geriatric care is a specialized field of medicine focused on the unique health needs of older adults, encompassing preventative measures, treatment of illnesses, and optimizing quality of life. It emphasizes a holistic approach, considering the physical, mental, and social aspects of aging, and aims to maintain independence and well-being for as long as possible."
+          ]
+        },
+        {
+          title: "Key Aspects of Geriatric Care",
+          content: [
+            "Comprehensive Assessment: Geriatric care involves a thorough evaluation of the patient's medical history, physical condition, cognitive abilities, and functional status.",
+            "Disease Management: Our geriatric specialists manage chronic illnesses, including heart disease, diabetes, and arthritis, tailoring treatment plans to the specific needs of older adults.",
+            "Preventative Care: This includes screenings for common age-related conditions, vaccinations, and advice on healthy lifestyle choices.",
+            "Functional Maintenance: Geriatric care aims to preserve or restore the patient's ability to perform daily activities, such as bathing, dressing, and eating.",
+            "End-of-life Care: Our specialists provide palliative care and support for patients and their families during the final stages of life.",
+            "Social Support: Geriatric care recognizes the importance of social connections and may involve connecting patients with support groups or community resources."
+          ]
+        },
+        {
+          title: "Why Geriatric Care is Important",
+          content: [
+            "Increasing Life Expectancy: As people live longer, the need for specialized geriatric care becomes increasingly crucial.",
+            "Unique Health Challenges: Older adults often experience age-related changes in physiology and are more susceptible to certain health conditions.",
+            "Complex Care Needs: Older patients may have multiple chronic conditions and require coordinated care from various healthcare professionals.",
+            "Improved Quality of Life: Geriatric care aims to enhance the quality of life for older adults, enabling them to maintain independence and enjoy their later years."
+          ]
+        },
+        {
+          title: "Our Approach to Geriatric Care",
+          content: [
+            "At Ekdant Multi Speciality and Implant Center, we provide comprehensive geriatric health services designed to address the unique needs of our older patients. Our team takes a patient-centered approach, working closely with each individual and their family to develop personalized care plans that promote health, independence, and dignity.",
+            "We recognize that aging can bring complex health challenges, and our goal is to help our patients navigate these challenges with compassion and expertise. Whether you're seeking preventive care, management of chronic conditions, or support during life transitions, we're here to provide the highest quality geriatric care."
+          ]
+        }
+      ]
+    }
+  },
+  {
     id: 4,
     title: "Personalized Medical Care Recommendations",
     description: "Tailored healthcare recommendations based on your unique health profile, lifestyle, and medical history for optimal health outcomes.",
