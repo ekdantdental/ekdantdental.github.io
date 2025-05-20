@@ -262,7 +262,43 @@ export const services = [
     id: 7,
     title: "Diabetes Management",
     description: "Comprehensive care for diabetes patients including monitoring, medication management, dietary guidance, and preventive measures to avoid complications.",
-    image: "/images/services/glucometer.jpg"
+    image: "/images/services/glucometer.jpg",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Diabetes Management?",
+          content: [
+            "Diabetes management involves a multifaceted approach to keep blood sugar levels within a healthy range and prevent complications. This includes lifestyle modifications like healthy eating, regular exercise, and maintaining a healthy weight, as well as medication management when necessary. Blood sugar monitoring is also crucial for tracking progress and adjusting treatment plans."
+          ]
+        },
+        {
+          title: "Key Aspects of Diabetes Management",
+          content: [
+            "Blood Sugar Monitoring: Regular testing with a glucose meter or continuous glucose monitor helps track blood sugar levels and identify trends.",
+            "Medication: Depending on the type of diabetes, medication may be necessary to manage blood sugar. This can include insulin, oral medications, or other therapies.",
+            "Healthy Eating: A balanced diet that focuses on whole foods, limiting processed foods and sugary drinks, is essential for managing blood sugar.",
+            "Regular Exercise: Physical activity helps improve insulin sensitivity and helps lower blood sugar levels.",
+            "Weight Management: Maintaining a healthy weight can improve insulin sensitivity and overall health.",
+            "Diabetes Education: Learning about diabetes and how to manage it is crucial for long-term success.",
+            "Regular Checkups: Working closely with a healthcare team to monitor overall health and manage any complications is vital."
+          ]
+        },
+        {
+          title: "Types of Diabetes and Management",
+          content: [
+            "Type 1 Diabetes: Requires insulin therapy through injections or an insulin pump.",
+            "Type 2 Diabetes: May be managed through lifestyle changes, oral medications, and sometimes insulin.",
+            "Gestational Diabetes: Often managed through diet and exercise, but may require medication in some cases."
+          ]
+        },
+        {
+          title: "Importance of Diabetes Management",
+          content: [
+            "Diabetes management is crucial for preventing serious health complications such as heart disease, kidney disease, eye damage, and nerve damage. By effectively managing blood sugar levels and addressing other health factors, individuals with diabetes can live long and healthy lives."
+          ]
+        }
+      ]
+    }
   },
   {
     id: 8,
