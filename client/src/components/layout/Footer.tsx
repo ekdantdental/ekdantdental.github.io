@@ -153,7 +153,10 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <FaPhoneAlt className="mr-2 md:mr-3 text-primary text-base md:text-lg flex-shrink-0" />
-                <span className="text-gray-400 text-sm md:text-base">+91 79001 39417</span>
+                <div className="text-gray-400 text-sm md:text-base">
+                  <p>+91 79001 39417</p>
+                  <p>022-31439081</p>
+                </div>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-2 md:mr-3 text-primary text-base md:text-lg flex-shrink-0" />
