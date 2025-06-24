@@ -24,6 +24,12 @@ const galleryItems: GalleryItem[] = [
     category: 'facility'
   },
   {
+    id: 9,
+    image: "/images/gallery/consultation-room.jpg",
+    alt: "Doctor Consultation Room",
+    category: 'facility'
+  },
+  {
     id: 3,
     image: "/images/gallery/treatment-room.jpg",
     alt: "Aesthetic Dentistry",
