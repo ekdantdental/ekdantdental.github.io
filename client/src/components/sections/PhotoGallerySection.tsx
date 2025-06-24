@@ -13,90 +13,37 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    image: "/images/gallery/clinic-team.jpg",
-    alt: "Our Dedicated Clinic Team",
-    category: 'team'
-  },
-  {
-    id: 2,
-    image: "/images/gallery/clinic-exterior.jpg",
-    alt: "Ekdant Multi Speciality and Implant Center",
-    category: 'facility'
-  },
-  {
-    id: 9,
     image: "/images/gallery/consultation-room.jpg",
     alt: "Doctor Consultation Room",
     category: 'facility'
   },
   {
-    id: 10,
+    id: 2,
     image: "/images/gallery/doctor-office.jpg",
     alt: "Doctor's Office",
     category: 'facility'
   },
   {
-    id: 11,
+    id: 3,
     image: "/images/gallery/reception-desk.jpg",
     alt: "Reception Desk",
     category: 'facility'
   },
   {
-    id: 12,
+    id: 4,
     image: "/images/gallery/certificates-wall.jpg",
     alt: "Professional Certificates",
     category: 'facility'
   },
   {
-    id: 13,
+    id: 5,
     image: "/images/gallery/waiting-area.jpg",
     alt: "Patient Waiting Area",
     category: 'facility'
-  },
-  {
-    id: 3,
-    image: "/images/gallery/treatment-room.jpg",
-    alt: "Aesthetic Dentistry",
-    category: 'treatment'
-  },
-  {
-    id: 4,
-    image: "/images/gallery/orthodontics.jpg",
-    alt: "Orthodontics Treatment",
-    category: 'treatment'
-  },
-  {
-    id: 5,
-    image: "/images/gallery/pediatric-dentistry.jpg",
-    alt: "Pediatric Dentistry",
-    category: 'treatment'
-  },
-  {
-    id: 6,
-    image: "/images/gallery/dental-implant.jpg",
-    alt: "Dental Implant Procedure",
-    category: 'treatment'
-  },
-  {
-    id: 7,
-    image: "/images/gallery/glucometer.jpg",
-    alt: "Diabetes Management",
-    category: 'treatment'
-  },
-  {
-    id: 8,
-    image: "/images/gallery/hypertension.jpg",
-    alt: "Hypertension Management",
-    category: 'treatment'
   }
 ];
 
 const PhotoGallerySection = () => {
-  const [activeCategory, setActiveCategory] = React.useState<string>('all');
-  
-  const filteredItems = activeCategory === 'all' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === activeCategory);
 
   return (
     <section id="gallery" className="py-12 md:py-24 bg-white">
@@ -110,39 +57,14 @@ const PhotoGallerySection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2 md:gap-4 justify-center mb-8">
-          <Button 
-            variant={activeCategory === 'all' ? 'default' : 'outline'}
-            onClick={() => setActiveCategory('all')}
-            className={`rounded-full px-6 ${activeCategory === 'all' ? 'bg-primary text-white' : 'text-gray-700'}`}
-          >
-            All
-          </Button>
-          <Button 
-            variant={activeCategory === 'facility' ? 'default' : 'outline'}
-            onClick={() => setActiveCategory('facility')}
-            className={`rounded-full px-6 ${activeCategory === 'facility' ? 'bg-primary text-white' : 'text-gray-700'}`}
-          >
-            Facility
-          </Button>
-          <Button 
-            variant={activeCategory === 'treatment' ? 'default' : 'outline'}
-            onClick={() => setActiveCategory('treatment')}
-            className={`rounded-full px-6 ${activeCategory === 'treatment' ? 'bg-primary text-white' : 'text-gray-700'}`}
-          >
-            Treatments
-          </Button>
-          <Button 
-            variant={activeCategory === 'team' ? 'default' : 'outline'}
-            onClick={() => setActiveCategory('team')}
-            className={`rounded-full px-6 ${activeCategory === 'team' ? 'bg-primary text-white' : 'text-gray-700'}`}
-          >
-            Our Team
-          </Button>
+        <div className="text-center mb-8">
+          <p className="text-gray-600 text-sm md:text-base">
+            Explore our modern clinic facilities and professional environment.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {filteredItems.map((item) => (
+          {galleryItems.map((item) => (
             <Card key={item.id} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
               <CardContent className="p-0">
                 <div className="relative aspect-[4/3] overflow-hidden">
