@@ -30,6 +30,30 @@ const galleryItems: GalleryItem[] = [
     category: 'facility'
   },
   {
+    id: 10,
+    image: "/images/gallery/doctor-office.jpg",
+    alt: "Doctor's Office",
+    category: 'facility'
+  },
+  {
+    id: 11,
+    image: "/images/gallery/reception-desk.jpg",
+    alt: "Reception Desk",
+    category: 'facility'
+  },
+  {
+    id: 12,
+    image: "/images/gallery/certificates-wall.jpg",
+    alt: "Professional Certificates",
+    category: 'facility'
+  },
+  {
+    id: 13,
+    image: "/images/gallery/waiting-area.jpg",
+    alt: "Patient Waiting Area",
+    category: 'facility'
+  },
+  {
     id: 3,
     image: "/images/gallery/treatment-room.jpg",
     alt: "Aesthetic Dentistry",
