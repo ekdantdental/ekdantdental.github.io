@@ -40,10 +40,39 @@ const galleryItems: GalleryItem[] = [
     image: "/images/gallery/waiting-area.jpg",
     alt: "Patient Waiting Area",
     category: 'facility'
+  },
+  {
+    id: 6,
+    image: "/images/gallery/dental-chair-advanced.jpg",
+    alt: "Advanced Dental Chair & Equipment",
+    category: 'treatment'
+  },
+  {
+    id: 7,
+    image: "/images/gallery/treatment-room-1.jpg",
+    alt: "Dental Treatment Room",
+    category: 'treatment'
+  },
+  {
+    id: 8,
+    image: "/images/gallery/clinic-corridor.jpg",
+    alt: "Clinic Corridor",
+    category: 'facility'
+  },
+  {
+    id: 9,
+    image: "/images/gallery/clinic-exterior-night.jpg",
+    alt: "Ekdant Clinic Exterior",
+    category: 'facility'
   }
 ];
 
 const PhotoGallerySection = () => {
+  const [activeCategory, setActiveCategory] = React.useState<string>('all');
+  
+  const filteredItems = activeCategory === 'all' 
+    ? galleryItems 
+    : galleryItems.filter(item => item.category === activeCategory);
 
   return (
     <section id="gallery" className="py-12 md:py-24 bg-white">
@@ -57,14 +86,32 @@ const PhotoGallerySection = () => {
           </p>
         </div>
 
-        <div className="text-center mb-8">
-          <p className="text-gray-600 text-sm md:text-base">
-            Explore our modern clinic facilities and professional environment.
-          </p>
+        <div className="flex flex-wrap gap-2 md:gap-4 justify-center mb-8">
+          <Button 
+            variant={activeCategory === 'all' ? 'default' : 'outline'}
+            onClick={() => setActiveCategory('all')}
+            className={`rounded-full px-6 ${activeCategory === 'all' ? 'bg-primary text-white' : 'text-gray-700'}`}
+          >
+            All
+          </Button>
+          <Button 
+            variant={activeCategory === 'facility' ? 'default' : 'outline'}
+            onClick={() => setActiveCategory('facility')}
+            className={`rounded-full px-6 ${activeCategory === 'facility' ? 'bg-primary text-white' : 'text-gray-700'}`}
+          >
+            Facility
+          </Button>
+          <Button 
+            variant={activeCategory === 'treatment' ? 'default' : 'outline'}
+            onClick={() => setActiveCategory('treatment')}
+            className={`rounded-full px-6 ${activeCategory === 'treatment' ? 'bg-primary text-white' : 'text-gray-700'}`}
+          >
+            Treatment Rooms
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {galleryItems.map((item) => (
+          {filteredItems.map((item) => (
             <Card key={item.id} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
               <CardContent className="p-0">
                 <div className="relative aspect-[4/3] overflow-hidden">
