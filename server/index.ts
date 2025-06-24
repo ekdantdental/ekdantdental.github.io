@@ -47,6 +47,9 @@ app.use((req, res, next) => {
     throw err;
   });
 
+  // serve static files in both development and production
+  app.use(express.static("public"));
+  
   // importantly only setup vite in development and after
   // setting up all the other routes so the catch-all route
   // doesn't interfere with the other routes
