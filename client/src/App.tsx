@@ -4,7 +4,6 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import HomePage from "@/pages/HomePage";
-import DentalCareAssessmentPage from "@/pages/DentalCareAssessmentPage";
 import DentalAnxietyResourcesPage from "@/pages/DentalAnxietyResourcesPage";
 import BlogPage from "@/pages/BlogPage";
 import BlogPostPage from "@/pages/BlogPostPage";
@@ -16,7 +15,6 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={HomePage} />
-      <Route path="/dental-care-assessment" component={DentalCareAssessmentPage} />
       <Route path="/dental-anxiety-resources" component={DentalAnxietyResourcesPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/blog/:slug" component={BlogPostPage} />

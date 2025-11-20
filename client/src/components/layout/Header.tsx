@@ -101,12 +101,6 @@ const Header = () => {
             Dental Health Tips
           </Link>
           <a 
-            onClick={() => scrollToSection('dental-care-recommendation')} 
-            className="font-medium text-lg text-gray-600 hover:text-primary transition duration-300 cursor-pointer"
-          >
-            Dental Care Assessment
-          </a>
-          <a 
             onClick={() => scrollToSection('contact')} 
             className="font-medium text-lg text-gray-600 hover:text-primary transition duration-300 cursor-pointer"
           >
@@ -162,12 +156,6 @@ const Header = () => {
           >
             Dental Health Tips
           </Link>
-          <a 
-            onClick={() => scrollToSection('dental-care-recommendation')} 
-            className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary cursor-pointer"
-          >
-            Dental Care Assessment
-          </a>
           <a 
             onClick={() => scrollToSection('contact')} 
             className="block px-4 py-3 rounded-md text-xl font-medium text-gray-600 hover:text-primary cursor-pointer"

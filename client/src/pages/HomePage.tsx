@@ -4,7 +4,6 @@ import AboutSection from "@/components/sections/AboutSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import AppointmentSection from "@/components/sections/AppointmentSection";
 import ContactSection from "@/components/sections/ContactSection";
-import DentalCareRecommendationSection from "@/components/sections/DentalCareRecommendationSection";
 import PatientJourneySection from "@/components/sections/PatientJourneySection";
 import PhotoGallerySection from "@/components/sections/PhotoGallerySection";
 import BlogPreviewSection from "@/components/sections/BlogPreviewSection";
@@ -19,7 +18,6 @@ const HomePage = () => {
       <PhotoGallerySection />
       <TestimonialsSection />
       <BlogPreviewSection />
-      <DentalCareRecommendationSection />
       <AppointmentSection />
       <ContactSection />
     </>
