@@ -510,13 +510,6 @@ export const doctors = [
     image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   },
   {
-    id: 3,
-    name: "Dr. Manisha Sahani",
-    title: "BDS",
-    description: "Skilled dental professional providing quality general dentistry services with a gentle approach.",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
-  },
-  {
     id: 5,
     name: "Dr. Vishal Patil",
     title: "MDS, BDS (Oral Surgeon)",
@@ -552,7 +545,7 @@ export const testimonials = [
     id: 2,
     name: "Bharati Tirakannavar",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
-    text: "I needed root canal treatment which was done here. The treatment provided was really good and happy about it. Highly satisfied. Dr Manisha explained everything about the treatment in detail, took very good care while treating me, making me comfortable. The approach of staff at clinic was friendly and supportive. Really highly recommend dental clinic.",
+    text: "I needed root canal treatment which was done here. The treatment provided was really good and happy about it. Highly satisfied. The doctors explained everything about the treatment in detail, took very good care while treating me, making me comfortable. The approach of staff at clinic was friendly and supportive. Really highly recommend dental clinic.",
     rating: 5
   },
   {
@@ -573,7 +566,7 @@ export const testimonials = [
     id: 5,
     name: "Anonymous Patient",
     image: "https://randomuser.me/api/portraits/women/45.jpg",
-    text: "Dr Reshma is very experienced, knowledgeable and proficient in her work. She makes the patient very much comfortable during entire treatment. Clinic is very neat, hygienic and organized. Dr Manisha is also very efficient. Sanjyota tai is also co-operative and friendly. They all take every single measure to make you comfortable during treatment.",
+    text: "Dr Reshma is very experienced, knowledgeable and proficient in her work. She makes the patient very much comfortable during entire treatment. Clinic is very neat, hygienic and organized. Sanjyota tai is also co-operative and friendly. They all take every single measure to make you comfortable during treatment.",
     rating: 5
   },
   {
