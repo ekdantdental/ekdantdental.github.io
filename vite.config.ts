@@ -29,8 +29,11 @@ export default defineConfig({
     },
   },
   root: path.resolve(__dirname, "client"),
+  // Use "/" for custom domain or GitHub Pages root
+  // Use "/ekdantdental.github.io/" if deploying to username.github.io/repo-name
+  base: "/",
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
 });

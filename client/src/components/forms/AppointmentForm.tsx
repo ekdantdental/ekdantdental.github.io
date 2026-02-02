@@ -8,14 +8,60 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { appointmentSchema, Appointment } from "@shared/schema";
-import AppointmentSuccess from "./AppointmentSuccess";
 import { Link } from "wouter";
+import { FaWhatsapp } from "react-icons/fa";
 
-const formSchema = appointmentSchema.extend({
+// WhatsApp number for appointments
+const WHATSAPP_NUMBER = "918379009320";
+
+// Service labels for better display
+const SERVICE_LABELS: Record<string, string> = {
+  "general": "General Dentistry",
+  "cosmetic": "Cosmetic Dentistry",
+  "root-canal": "Restorative and Root Canal Treatment",
+  "dental-implants": "Dental Implants",
+  "orthodontics": "Orthodontics",
+  "pediatric": "Pediatric Dentistry",
+  "emergency": "Emergency Care",
+};
+
+// Time slot labels
+const TIME_LABELS: Record<string, string> = {
+  "morning": "Morning (9AM - 12PM)",
+  "afternoon": "Afternoon (12PM - 5PM)",
+  "evening": "Evening (5PM - 9PM)",
+};
+
+// Anxiety level labels
+const ANXIETY_LABELS: Record<string, string> = {
+  "none": "None/Minimal",
+  "mild": "Mild anxiety",
+  "moderate": "Moderate anxiety",
+  "severe": "Severe anxiety",
+  "phobia": "Dental phobia",
+};
+
+// Accommodation labels
+const ACCOMMODATION_LABELS: Record<string, string> = {
+  "extra_time": "Extra time during appointment",
+  "detailed_explanations": "Detailed explanations of procedures",
+  "signal": "Hand signal to take breaks",
+  "headphones": "Using headphones/music",
+  "sedation": "Discussion about sedation options",
+};
+
+const formSchema = z.object({
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  email: z.string().email("Please enter a valid email"),
+  phone: z.string().min(10, "Please enter a valid phone number"),
+  service: z.string().min(1, "Please select a service"),
+  preferredDate: z.string().min(1, "Please select a date"),
+  preferredTime: z.string().min(1, "Please select a time"),
+  anxietyLevel: z.string().optional(),
+  anxietyAccommodations: z.array(z.string()).optional(),
+  message: z.string().optional(),
   consent: z.boolean().refine((val) => val === true, {
     message: "You must agree to the privacy policy",
   }),
@@ -25,8 +71,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 const AppointmentForm = () => {
   const { toast } = useToast();
-  const [submittedAppointment, setSubmittedAppointment] = useState<Appointment | null>(null);
-  const [showSuccessPage, setShowSuccessPage] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -45,61 +90,76 @@ const AppointmentForm = () => {
     },
   });
 
-  const mutation = useMutation({
-    mutationFn: (data: z.infer<typeof appointmentSchema>) => 
-      apiRequest("POST", "/api/appointments", data),
-    onSuccess: (response: any) => {
-      // Set the submitted appointment data from the response
-      // Our server returns data in a nested 'data' property
-      const appointmentData = response?.data || response;
-      setSubmittedAppointment(appointmentData);
-      setShowSuccessPage(true);
-      
-      // Show a toast notification
-      toast({
-        title: "Appointment Confirmed",
-        description: "Your appointment has been successfully booked.",
-        variant: "default",
-      });
-      
-      // Reset the form
-      form.reset();
-    },
-    onError: (error) => {
-      toast({
-        title: "Something went wrong",
-        description: error.message || "Please try again later.",
-        variant: "destructive",
-      });
-    },
-  });
+  const formatWhatsAppMessage = (data: FormValues): string => {
+    const formattedDate = new Date(data.preferredDate).toLocaleDateString('en-IN', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+
+    let message = `*New Appointment Request* 🦷\n\n`;
+    message += `*Name:* ${data.firstName} ${data.lastName}\n`;
+    message += `*Phone:* ${data.phone}\n`;
+    message += `*Email:* ${data.email}\n`;
+    message += `*Service:* ${SERVICE_LABELS[data.service] || data.service}\n`;
+    message += `*Preferred Date:* ${formattedDate}\n`;
+    message += `*Preferred Time:* ${TIME_LABELS[data.preferredTime] || data.preferredTime}\n`;
+
+    if (data.anxietyLevel && data.anxietyLevel !== "none") {
+      message += `\n*Dental Anxiety Level:* ${ANXIETY_LABELS[data.anxietyLevel] || data.anxietyLevel}\n`;
+    }
+
+    if (data.anxietyAccommodations && data.anxietyAccommodations.length > 0) {
+      const accommodations = data.anxietyAccommodations
+        .map(a => ACCOMMODATION_LABELS[a] || a)
+        .join(", ");
+      message += `*Preferred Accommodations:* ${accommodations}\n`;
+    }
+
+    if (data.message) {
+      message += `\n*Additional Information:*\n${data.message}\n`;
+    }
+
+    message += `\n---\n_Sent from Ekdant Dental Website_`;
+
+    return encodeURIComponent(message);
+  };
 
   const onSubmit = (data: FormValues) => {
-    const { consent, ...appointmentData } = data;
-    mutation.mutate(appointmentData);
-  };
-  
-  const closeSuccessPage = () => {
-    setShowSuccessPage(false);
-    setSubmittedAppointment(null);
+    setIsSubmitting(true);
+    
+    const whatsappMessage = formatWhatsAppMessage(data);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
+    
+    // Show success toast
+    toast({
+      title: "Redirecting to WhatsApp",
+      description: "Your appointment details will be sent via WhatsApp.",
+      variant: "default",
+    });
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Reset form after short delay
+    setTimeout(() => {
+      form.reset();
+      setIsSubmitting(false);
+    }, 1000);
   };
 
-  // Show success page if appointment was submitted successfully
-  if (showSuccessPage && submittedAppointment) {
-    return (
-      <AppointmentSuccess 
-        appointment={submittedAppointment} 
-        onClose={closeSuccessPage} 
-      />
-    );
-  }
-  
-  // Otherwise show the form
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
       <h3 className="font-heading font-semibold text-xl md:text-2xl text-dark mb-4 md:mb-6">
         Request an Appointment
       </h3>
+      
+      <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-6 flex items-center gap-3">
+        <FaWhatsapp className="text-green-600 text-2xl flex-shrink-0" />
+        <p className="text-sm text-green-800">
+          Your appointment request will be sent directly via WhatsApp for quick confirmation.
+        </p>
+      </div>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 md:space-y-6">
@@ -364,10 +424,11 @@ const AppointmentForm = () => {
 
           <Button 
             type="submit" 
-            className="w-full bg-primary hover:bg-secondary text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-md transition duration-300 text-sm md:text-base"
-            disabled={mutation.isPending}
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-md transition duration-300 text-sm md:text-base flex items-center justify-center gap-2"
+            disabled={isSubmitting}
           >
-            {mutation.isPending ? "Submitting..." : "Request Appointment"}
+            <FaWhatsapp className="text-lg" />
+            {isSubmitting ? "Opening WhatsApp..." : "Book via WhatsApp"}
           </Button>
         </form>
       </Form>

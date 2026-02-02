@@ -1,13 +1,11 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import { Link, useParams } from "wouter";
+import { Link } from "wouter";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
-import { CalendarDays, Tag, Clock } from "lucide-react";
-import { Skeleton } from "@/components/ui/skeleton";
+import { CalendarDays } from "lucide-react";
+import { getBlogPosts, BlogPost } from "@/lib/blogData";
 
 // Categories and their display names
 const CATEGORIES = {
@@ -16,23 +14,22 @@ const CATEGORIES = {
   "patient-education": "Patient Education",
   "dental-procedures": "Dental Procedures",
   "medical-dental": "Medical & Dental Health",
-  "children-dental": "Children's Dental Health"
+  "children-dental": "Children's Dental Health",
+  "health-wellness": "Health & Wellness"
 };
 
 type Category = keyof typeof CATEGORIES;
 
 const BlogPage = () => {
   const [activeCategory, setActiveCategory] = useState<Category | "all">("all");
-
-  const { data: blogPosts = [], isLoading, error } = useQuery<any[]>({
-    queryKey: ['/api/blog-posts'],
-    enabled: true
-  });
+  
+  // Get blog posts from static data
+  const blogPosts = getBlogPosts();
 
   // Filter posts by category if a category is selected
   const filteredPosts = activeCategory === "all" 
     ? blogPosts 
-    : blogPosts.filter((post: any) => post.category === activeCategory);
+    : blogPosts.filter((post: BlogPost) => post.category === activeCategory);
 
   const handleCategoryChange = (category: Category | "all") => {
     setActiveCategory(category);
@@ -84,35 +81,13 @@ const BlogPage = () => {
           </div>
 
           <TabsContent value={activeCategory} className="mt-6">
-            {isLoading ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[1, 2, 3, 4, 5, 6].map((item) => (
-                  <Card key={item} className="overflow-hidden">
-                    <Skeleton className="h-48 w-full" />
-                    <CardHeader>
-                      <Skeleton className="h-6 w-3/4 mb-2" />
-                      <Skeleton className="h-4 w-1/2" />
-                    </CardHeader>
-                    <CardContent>
-                      <Skeleton className="h-20 w-full" />
-                    </CardContent>
-                    <CardFooter>
-                      <Skeleton className="h-4 w-full" />
-                    </CardFooter>
-                  </Card>
-                ))}
-              </div>
-            ) : error ? (
-              <div className="text-center py-10">
-                <p className="text-lg text-red-500">Error loading blog posts. Please try again later.</p>
-              </div>
-            ) : filteredPosts?.length === 0 ? (
+            {filteredPosts?.length === 0 ? (
               <div className="text-center py-10">
                 <p className="text-lg text-gray-500">No blog posts found in this category.</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredPosts?.map((post: any) => (
+                {filteredPosts?.map((post: BlogPost) => (
                   <Card key={post.id} className="overflow-hidden flex flex-col h-full">
                     {post.imageUrl && (
                       <div className="aspect-[16/9] relative">

@@ -1,10 +1,9 @@
-import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "wouter";
 import { ChevronLeft, CalendarDays, User, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
-import { Skeleton } from "@/components/ui/skeleton";
+import { getBlogPostBySlug, BlogPost } from "@/lib/blogData";
 
 // Categories and their display names
 const CATEGORIES = {
@@ -13,34 +12,17 @@ const CATEGORIES = {
   "patient-education": "Patient Education",
   "dental-procedures": "Dental Procedures",
   "medical-dental": "Medical & Dental Health",
-  "children-dental": "Children's Dental Health"
+  "children-dental": "Children's Dental Health",
+  "health-wellness": "Health & Wellness"
 };
 
 type Category = keyof typeof CATEGORIES;
 
-interface BlogPost {
-  id: number;
-  title: string;
-  slug: string;
-  summary: string;
-  content: string;
-  imageUrl: string | null;
-  category: string;
-  tags: string[] | null;
-  authorName: string;
-  authorTitle: string | null;
-  publishedAt: string;
-  updatedAt: string;
-  isPublished: boolean;
-}
-
 const BlogPostPage = () => {
   const { slug } = useParams();
   
-  const { data: post, isLoading, error } = useQuery<BlogPost>({
-    queryKey: [`/api/blog-posts/slug/${slug}`],
-    enabled: !!slug
-  });
+  // Get blog post from static data
+  const post = slug ? getBlogPostBySlug(slug) : undefined;
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -51,33 +33,12 @@ const BlogPostPage = () => {
     });
   };
 
-  if (isLoading) {
-    return (
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          <Skeleton className="h-8 w-40 mb-6" />
-          <Skeleton className="h-12 w-full mb-4" />
-          <div className="flex gap-4 mb-8">
-            <Skeleton className="h-6 w-32" />
-            <Skeleton className="h-6 w-32" />
-          </div>
-          <Skeleton className="h-80 w-full mb-8" />
-          <div className="space-y-4">
-            <Skeleton className="h-6 w-full" />
-            <Skeleton className="h-6 w-full" />
-            <Skeleton className="h-6 w-3/4" />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error || !post) {
+  if (!post) {
     return (
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-2xl font-bold mb-4">Blog Post Not Found</h1>
-          <p className="mb-6 text-gray-600">The blog post you're looking for doesn't exist or there was an error loading it.</p>
+          <p className="mb-6 text-gray-600">The blog post you're looking for doesn't exist.</p>
           <Button asChild>
             <Link href="/blog">
               <ChevronLeft className="mr-2 h-4 w-4" />
@@ -88,23 +49,8 @@ const BlogPostPage = () => {
       </div>
     );
   }
-  
-  // Define post with fallback empty values to make TypeScript happy
-  const blogPost: BlogPost = post || {
-    id: 0,
-    title: '',
-    slug: '',
-    summary: '',
-    content: '',
-    imageUrl: null,
-    category: '',
-    tags: null,
-    authorName: '',
-    authorTitle: null,
-    publishedAt: '',
-    updatedAt: '',
-    isPublished: false,
-  };
+
+  const blogPost: BlogPost = post;
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -180,7 +126,7 @@ const BlogPostPage = () => {
           <h3 className="text-xl font-semibold mb-2">Have questions about your dental health?</h3>
           <p className="mb-4">Our team at Ekdant Multi Speciality and Implant Center is here to help.</p>
           <Button asChild>
-            <Link href="/appointment">Schedule an Appointment</Link>
+            <Link href="/#appointment">Schedule an Appointment</Link>
           </Button>
         </div>
       </div>

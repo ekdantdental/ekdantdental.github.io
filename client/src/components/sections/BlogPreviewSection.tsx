@@ -1,15 +1,12 @@
-import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import { ChevronRight, CalendarDays } from "lucide-react";
+import { getBlogPosts, BlogPost } from "@/lib/blogData";
 
 const BlogPreviewSection = () => {
-  const { data: blogPosts = [], isLoading } = useQuery<any[]>({
-    queryKey: ['/api/blog-posts'],
-    enabled: true
-  });
+  // Get blog posts from static data
+  const blogPosts = getBlogPosts();
 
   // Get the latest 3 blog posts
   const latestPosts = blogPosts.slice(0, 3);
@@ -33,26 +30,9 @@ const BlogPreviewSection = () => {
           </p>
         </div>
 
-        {isLoading ? (
+        {latestPosts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <Card key={i} className="flex flex-col">
-                <CardHeader>
-                  <Skeleton className="h-6 w-3/4 mb-2" />
-                  <Skeleton className="h-4 w-1/2" />
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <Skeleton className="h-32 w-full" />
-                </CardContent>
-                <CardFooter>
-                  <Skeleton className="h-10 w-full" />
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        ) : latestPosts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {latestPosts.map((post: any) => (
+            {latestPosts.map((post: BlogPost) => (
               <Card key={post.id} className="flex flex-col h-full">
                 <CardHeader>
                   <CardTitle className="line-clamp-2 hover:text-primary transition-colors">
