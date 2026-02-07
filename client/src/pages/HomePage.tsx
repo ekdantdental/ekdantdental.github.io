@@ -1,25 +1,30 @@
 import HeroSection from "@/components/sections/HeroSection";
+import TrustBar from "@/components/sections/TrustBar";
 import ServicesSection from "@/components/sections/ServicesSection";
-import AboutSection from "@/components/sections/AboutSection";
+import DoctorShowcase from "@/components/sections/DoctorShowcase";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import AppointmentSection from "@/components/sections/AppointmentSection";
-import ContactSection from "@/components/sections/ContactSection";
-import PatientJourneySection from "@/components/sections/PatientJourneySection";
-import PhotoGallerySection from "@/components/sections/PhotoGallerySection";
-import BlogPreviewSection from "@/components/sections/BlogPreviewSection";
 
 const HomePage = () => {
   return (
     <>
+      {/* 1. Hero - Trust elements, clear CTA, doctor highlight */}
       <HeroSection />
+      
+      {/* 2. Trust Bar - Google rating, years, patient count */}
+      <TrustBar />
+      
+      {/* 3. Services - Visual cards, simplified */}
       <ServicesSection />
-      <AboutSection />
-      <PatientJourneySection />
-      <PhotoGallerySection />
+      
+      {/* 4. Doctors - Lead doctor featured, team grid */}
+      <DoctorShowcase />
+      
+      {/* 5. Testimonials - Google Reviews style */}
       <TestimonialsSection />
-      <BlogPreviewSection />
+      
+      {/* 6. Appointment - Simplified form, WhatsApp CTA (page ends here) */}
       <AppointmentSection />
-      <ContactSection />
     </>
   );
 };

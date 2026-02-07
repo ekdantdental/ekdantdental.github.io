@@ -1,3 +1,107 @@
+// Clinic Trust Data
+export const clinicInfo = {
+  name: "Ekdant Multi Speciality & Implant Center",
+  tagline: "Complete Dental & Medical Care Under One Roof",
+  established: 2014,
+  yearsOfExperience: new Date().getFullYear() - 2014,
+  patientCount: "5000+",
+  googleRating: 4.9,
+  googleReviewCount: 127,
+  googleBusinessUrl: "https://g.page/ekdant-multi-speciality-implant-center",
+  whatsappNumber: "+918379009320",
+  phoneNumber: "+917900139417",
+  emergencyAvailable: true,
+};
+
+// Professional Affiliations
+export const affiliations = [
+  {
+    id: 1,
+    name: "Indian Dental Association",
+    shortName: "IDA",
+    logo: "/images/affiliations/ida-logo.png",
+  },
+  {
+    id: 2,
+    name: "Maharashtra State Dental Council",
+    shortName: "MSDC",
+    logo: "/images/affiliations/msdc-logo.png",
+  },
+  {
+    id: 3,
+    name: "Indian Prosthodontic Society",
+    shortName: "IPS",
+    logo: "/images/affiliations/ips-logo.png",
+  },
+];
+
+// Google Reviews (styled like actual Google reviews)
+export const googleReviews = [
+  {
+    id: 1,
+    name: "Ishant Tale",
+    profileImage: "https://lh3.googleusercontent.com/a/default-user",
+    rating: 5,
+    date: "2 months ago",
+    text: "My wife found Dr Reshma a caring, well knowledge, tooth expert, calm in nature who takes care her 2 root canals n 1 extraction little easier. I am thankful to her as she has adjusted her timing according to us due to our twin babies.",
+    isGoogleReview: true,
+  },
+  {
+    id: 2,
+    name: "Bharati Tirakannavar",
+    profileImage: "https://lh3.googleusercontent.com/a/default-user",
+    rating: 5,
+    date: "1 month ago",
+    text: "The treatment provided was really good and happy about it. Highly satisfied. The doctors explained everything about the treatment in detail, took very good care while treating me, making me comfortable.",
+    isGoogleReview: true,
+  },
+  {
+    id: 3,
+    name: "Rashmi Kirve",
+    profileImage: "https://lh3.googleusercontent.com/a/default-user",
+    rating: 5,
+    date: "3 weeks ago",
+    text: "It was Really nice Experience. All Drs. and staff are professional. My 7 yr son tooth treatment has been done, very carefully handle him. He also felt very comfortable at time of treatment. Highly recommend.",
+    isGoogleReview: true,
+  },
+  {
+    id: 4,
+    name: "Dr. Abhishek Gupta",
+    profileImage: "https://lh3.googleusercontent.com/a/default-user",
+    rating: 5,
+    date: "1 month ago",
+    text: "Ekdant is well organized and staff is friendly and compassionate. Everything about procedure was explained in detail. Procedure was done efficiently. Doctor's have good expertise in terms of procedure.",
+    isGoogleReview: true,
+  },
+  {
+    id: 5,
+    name: "Jay Kamble",
+    profileImage: "https://lh3.googleusercontent.com/a/default-user",
+    rating: 5,
+    date: "2 weeks ago",
+    text: "I wanted to express my gratitude for the wonderful experience during my recent visit. As it was my first time seeing a dentist, I was pleasantly surprised by how painless the treatment was.",
+    isGoogleReview: true,
+  },
+];
+
+// Trust indicators for display
+export const trustIndicators = [
+  { id: 1, icon: "star", value: "4.9", label: "Google Rating", subtext: "127+ Reviews" },
+  { id: 2, icon: "calendar", value: "10+", label: "Years Experience", subtext: "Since 2014" },
+  { id: 3, icon: "users", value: "5000+", label: "Happy Patients", subtext: "And counting" },
+  { id: 4, icon: "award", value: "15+", label: "Specialists", subtext: "Expert team" },
+];
+
+// Featured services (simplified for homepage display)
+export const featuredServices = [
+  { id: 1, title: "Dental Implants", icon: "tooth", image: "/images/services/dental-implants.jpg" },
+  { id: 2, title: "Root Canal", icon: "tooth", image: "/images/services/root-canal.jpg" },
+  { id: 3, title: "Teeth Whitening", icon: "sparkles", image: "/images/services/aesthetic-dentistry.jpg" },
+  { id: 4, title: "Braces & Aligners", icon: "smile", image: "/images/services/orthodontics.jpg" },
+  { id: 5, title: "Kids Dentistry", icon: "baby", image: "/images/services/pediatric-dentistry.jpg" },
+  { id: 6, title: "General Checkup", icon: "stethoscope", image: "/images/services/general-dentistry.jpg" },
+];
+
 // Services data
 export const services = [
   {

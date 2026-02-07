@@ -27,15 +27,14 @@ const ContactSection = () => {
   const position: [number, number] = [19.0609, 73.0152]; // Ekdant Multi Speciality and Implant Center - Exact Coordinates in Sanpada, Navi Mumbai
 
   return (
-    <section id="contact" className="py-12 md:py-24 bg-white">
+    <section id="contact" className="py-12 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-6 md:mb-12">
-          <h2 className="font-heading font-bold text-2xl md:text-4xl text-dark mb-2 md:mb-4">
-            Contact Ekdant Multi Speciality and Implant Center
+        <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-gray-900 mb-3">
+            Visit Our Clinic
           </h2>
-          <p className="text-gray-600 text-sm md:text-base px-1 md:px-0">
-            Have questions or need assistance? Reach out to our team through any
-            of these channels, and we'll be happy to help you.
+          <p className="text-gray-600 text-sm md:text-base">
+            We're conveniently located in Sanpada, Navi Mumbai
           </p>
         </div>
 

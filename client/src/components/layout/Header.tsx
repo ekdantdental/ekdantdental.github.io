@@ -71,10 +71,10 @@ const Header = () => {
               Services
             </a>
             <a 
-              onClick={() => scrollToSection('about')} 
+              onClick={() => scrollToSection('doctors')} 
               className="font-medium text-sm lg:text-base text-gray-600 hover:text-primary transition duration-300 cursor-pointer"
             >
-              About
+              Our Doctors
             </a>
             <a 
               onClick={() => scrollToSection('testimonials')} 
@@ -94,12 +94,6 @@ const Header = () => {
             >
               Health Tips
             </Link>
-            <a 
-              onClick={() => scrollToSection('contact')} 
-              className="font-medium text-sm lg:text-base text-gray-600 hover:text-primary transition duration-300 cursor-pointer"
-            >
-              Contact
-            </a>
             <Button 
               className="bg-primary hover:bg-opacity-90 text-white font-semibold py-2 px-4 lg:py-3 lg:px-6 text-sm lg:text-base rounded-md transition duration-300 shadow-md"
               onClick={() => scrollToSection('book-appointment')}
@@ -151,10 +145,10 @@ const Header = () => {
               Our Services
             </a>
             <a 
-              onClick={() => scrollToSection('about')} 
+              onClick={() => scrollToSection('doctors')} 
               className="flex items-center px-6 py-4 min-h-[56px] text-lg font-medium text-gray-700 hover:text-primary border-b border-gray-100 cursor-pointer active:bg-gray-50"
             >
-              About Us
+              Our Doctors
             </a>
             <a 
               onClick={() => scrollToSection('testimonials')} 
@@ -176,12 +170,6 @@ const Header = () => {
             >
               Health Tips
             </Link>
-            <a 
-              onClick={() => scrollToSection('contact')} 
-              className="flex items-center px-6 py-4 min-h-[56px] text-lg font-medium text-gray-700 hover:text-primary border-b border-gray-100 cursor-pointer active:bg-gray-50"
-            >
-              Contact Us
-            </a>
           </nav>
 
           {/* Bottom CTA */}

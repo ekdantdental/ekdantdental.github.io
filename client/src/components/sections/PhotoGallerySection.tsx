@@ -110,23 +110,33 @@ const PhotoGallerySection = () => {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        {/* Mobile: Horizontal scroll, Desktop: Grid */}
+        <div className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
           {filteredItems.map((item) => (
-            <Card key={item.id} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-              <CardContent className="p-0">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.alt} 
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </div>
-                <div className="px-4 py-3">
-                  <p className="text-gray-700 font-medium text-sm">{item.alt}</p>
-                </div>
-              </CardContent>
-            </Card>
+            <div key={item.id} className="min-w-[280px] snap-center md:min-w-0">
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg h-full">
+                <CardContent className="p-0">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.alt} 
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                  <div className="px-4 py-3">
+                    <p className="text-gray-700 font-medium text-sm">{item.alt}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           ))}
+        </div>
+        
+        {/* Mobile scroll indicator */}
+        <div className="flex justify-center mt-3 md:hidden">
+          <p className="text-xs text-gray-400 flex items-center gap-1">
+            <span>←</span> Swipe to see more <span>→</span>
+          </p>
         </div>
 
         <div className="text-center mt-10">
