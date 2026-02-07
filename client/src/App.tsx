@@ -10,6 +10,8 @@ import BlogPostPage from "@/pages/BlogPostPage";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import StructuredData from "@/components/layout/StructuredData";
+import FloatingCTA from "@/components/mobile/FloatingCTA";
+import FloatingActions from "@/components/mobile/FloatingActions";
 
 function Router() {
   return (
@@ -28,11 +30,17 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow">
+        {/* Main content with bottom padding for floating CTA on mobile */}
+        <main className="flex-grow pb-20 md:pb-0">
           <Router />
         </main>
         <Footer />
       </div>
+      
+      {/* Mobile floating components */}
+      <FloatingCTA />
+      <FloatingActions />
+      
       <Toaster />
       <StructuredData />
     </QueryClientProvider>

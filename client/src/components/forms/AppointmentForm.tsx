@@ -148,6 +148,10 @@ const AppointmentForm = () => {
     }, 1000);
   };
 
+  // Common input class with 16px font to prevent iOS zoom
+  const inputClass = "text-base h-12";
+  const selectTriggerClass = "text-base h-12";
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
       <h3 className="font-heading font-semibold text-xl md:text-2xl text-dark mb-4 md:mb-6">
@@ -157,23 +161,28 @@ const AppointmentForm = () => {
       <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-6 flex items-center gap-3">
         <FaWhatsapp className="text-green-600 text-2xl flex-shrink-0" />
         <p className="text-sm text-green-800">
-          Your appointment request will be sent directly via WhatsApp for quick confirmation.
+          Sent directly via WhatsApp for quick confirmation.
         </p>
       </div>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 md:space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 md:space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormField
               control={form.control}
               name="firstName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm md:text-base">First Name*</FormLabel>
+                  <FormLabel className="text-sm font-medium">First Name*</FormLabel>
                   <FormControl>
-                    <Input {...field} className="text-sm md:text-base" />
+                    <Input 
+                      {...field} 
+                      className={inputClass}
+                      autoComplete="given-name"
+                      inputMode="text"
+                    />
                   </FormControl>
-                  <FormMessage className="text-xs md:text-sm" />
+                  <FormMessage className="text-xs" />
                 </FormItem>
               )}
             />
@@ -183,27 +192,38 @@ const AppointmentForm = () => {
               name="lastName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm md:text-base">Last Name*</FormLabel>
+                  <FormLabel className="text-sm font-medium">Last Name*</FormLabel>
                   <FormControl>
-                    <Input {...field} className="text-sm md:text-base" />
+                    <Input 
+                      {...field} 
+                      className={inputClass}
+                      autoComplete="family-name"
+                      inputMode="text"
+                    />
                   </FormControl>
-                  <FormMessage className="text-xs md:text-sm" />
+                  <FormMessage className="text-xs" />
                 </FormItem>
               )}
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormField
               control={form.control}
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm md:text-base">Email Address*</FormLabel>
+                  <FormLabel className="text-sm font-medium">Email*</FormLabel>
                   <FormControl>
-                    <Input type="email" {...field} className="text-sm md:text-base" />
+                    <Input 
+                      type="email" 
+                      {...field} 
+                      className={inputClass}
+                      autoComplete="email"
+                      inputMode="email"
+                    />
                   </FormControl>
-                  <FormMessage className="text-xs md:text-sm" />
+                  <FormMessage className="text-xs" />
                 </FormItem>
               )}
             />
@@ -213,11 +233,18 @@ const AppointmentForm = () => {
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm md:text-base">Phone Number*</FormLabel>
+                  <FormLabel className="text-sm font-medium">Phone*</FormLabel>
                   <FormControl>
-                    <Input type="tel" {...field} className="text-sm md:text-base" />
+                    <Input 
+                      type="tel" 
+                      {...field} 
+                      className={inputClass}
+                      autoComplete="tel"
+                      inputMode="tel"
+                      placeholder="e.g., 9876543210"
+                    />
                   </FormControl>
-                  <FormMessage className="text-xs md:text-sm" />
+                  <FormMessage className="text-xs" />
                 </FormItem>
               )}
             />
@@ -228,42 +255,47 @@ const AppointmentForm = () => {
             name="service"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm md:text-base">Service Required*</FormLabel>
+                <FormLabel className="text-sm font-medium">Service Required*</FormLabel>
                 <Select 
                   onValueChange={field.onChange} 
                   defaultValue={field.value}
                 >
                   <FormControl>
-                    <SelectTrigger className="text-sm md:text-base">
+                    <SelectTrigger className={selectTriggerClass}>
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                   </FormControl>
-                  <SelectContent className="text-sm md:text-base">
-                    <SelectItem value="general">General Dentistry</SelectItem>
-                    <SelectItem value="cosmetic">Cosmetic Dentistry</SelectItem>
-                    <SelectItem value="root-canal">Restorative and Root Canal Treatment</SelectItem>
-                    <SelectItem value="dental-implants">Dental Implants</SelectItem>
-                    <SelectItem value="orthodontics">Orthodontics</SelectItem>
-                    <SelectItem value="pediatric">Pediatric Dentistry</SelectItem>
-                    <SelectItem value="emergency">Emergency Care</SelectItem>
+                  <SelectContent className="text-base">
+                    <SelectItem value="general" className="py-3">General Dentistry</SelectItem>
+                    <SelectItem value="cosmetic" className="py-3">Cosmetic Dentistry</SelectItem>
+                    <SelectItem value="root-canal" className="py-3">Root Canal Treatment</SelectItem>
+                    <SelectItem value="dental-implants" className="py-3">Dental Implants</SelectItem>
+                    <SelectItem value="orthodontics" className="py-3">Orthodontics</SelectItem>
+                    <SelectItem value="pediatric" className="py-3">Pediatric Dentistry</SelectItem>
+                    <SelectItem value="emergency" className="py-3">Emergency Care</SelectItem>
                   </SelectContent>
                 </Select>
-                <FormMessage className="text-xs md:text-sm" />
+                <FormMessage className="text-xs" />
               </FormItem>
             )}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormField
               control={form.control}
               name="preferredDate"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm md:text-base">Preferred Date*</FormLabel>
+                  <FormLabel className="text-sm font-medium">Preferred Date*</FormLabel>
                   <FormControl>
-                    <Input type="date" {...field} className="text-sm md:text-base" />
+                    <Input 
+                      type="date" 
+                      {...field} 
+                      className={inputClass}
+                      min={new Date().toISOString().split('T')[0]}
+                    />
                   </FormControl>
-                  <FormMessage className="text-xs md:text-sm" />
+                  <FormMessage className="text-xs" />
                 </FormItem>
               )}
             />
@@ -273,116 +305,112 @@ const AppointmentForm = () => {
               name="preferredTime"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm md:text-base">Preferred Time*</FormLabel>
+                  <FormLabel className="text-sm font-medium">Preferred Time*</FormLabel>
                   <Select 
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
                   >
                     <FormControl>
-                      <SelectTrigger className="text-sm md:text-base">
+                      <SelectTrigger className={selectTriggerClass}>
                         <SelectValue placeholder="Select a time" />
                       </SelectTrigger>
                     </FormControl>
-                    <SelectContent className="text-sm md:text-base">
-                      <SelectItem value="morning">Morning (9AM - 12PM)</SelectItem>
-                      <SelectItem value="afternoon">Afternoon (12PM - 5PM)</SelectItem>
-                      <SelectItem value="evening">Evening (5PM - 9PM)</SelectItem>
+                    <SelectContent className="text-base">
+                      <SelectItem value="morning" className="py-3">Morning (9AM - 12PM)</SelectItem>
+                      <SelectItem value="afternoon" className="py-3">Afternoon (12PM - 5PM)</SelectItem>
+                      <SelectItem value="evening" className="py-3">Evening (5PM - 9PM)</SelectItem>
                     </SelectContent>
                   </Select>
-                  <FormMessage className="text-xs md:text-sm" />
+                  <FormMessage className="text-xs" />
                 </FormItem>
               )}
             />
           </div>
 
-          <div className="space-y-4 border p-4 rounded-md border-blue-100 bg-blue-50">
-            <h4 className="text-sm md:text-base font-medium text-blue-800">Dental Anxiety Support</h4>
-            <p className="text-sm text-blue-700 mb-2">
-              We understand that dental visits can cause anxiety. Help us make your visit more comfortable by sharing your anxiety level and preferences.
-            </p>
-            <p className="text-xs text-blue-600 mb-4">
-              Not sure about your anxiety level? <Link href="/dental-anxiety-resources" className="underline">Take our anxiety assessment</Link>
-            </p>
+          {/* Collapsible Anxiety Section - simplified for mobile */}
+          <details className="border rounded-lg border-blue-100 bg-blue-50">
+            <summary className="p-4 cursor-pointer text-sm font-medium text-blue-800 list-none flex justify-between items-center">
+              <span>Dental Anxiety Support (Optional)</span>
+              <span className="text-blue-600">▼</span>
+            </summary>
+            <div className="px-4 pb-4 space-y-4">
+              <p className="text-xs text-blue-700">
+                Help us make your visit comfortable.{" "}
+                <Link href="/dental-anxiety-resources" className="underline">Learn more</Link>
+              </p>
 
-            <FormField
-              control={form.control}
-              name="anxietyLevel"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-sm md:text-base">Dental Anxiety Level</FormLabel>
-                  <Select 
-                    onValueChange={field.onChange} 
-                    defaultValue="none"
-                    value={field.value}
-                  >
-                    <FormControl>
-                      <SelectTrigger className="text-sm md:text-base bg-white">
-                        <SelectValue placeholder="Select your anxiety level" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent className="text-sm md:text-base">
-                      <SelectItem value="none">None/Minimal</SelectItem>
-                      <SelectItem value="mild">Mild anxiety</SelectItem>
-                      <SelectItem value="moderate">Moderate anxiety</SelectItem>
-                      <SelectItem value="severe">Severe anxiety</SelectItem>
-                      <SelectItem value="phobia">Dental phobia</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage className="text-xs md:text-sm" />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="anxietyLevel"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-sm">Anxiety Level</FormLabel>
+                    <Select 
+                      onValueChange={field.onChange} 
+                      defaultValue="none"
+                      value={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger className={`${selectTriggerClass} bg-white`}>
+                          <SelectValue placeholder="Select level" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent className="text-base">
+                        <SelectItem value="none" className="py-3">None/Minimal</SelectItem>
+                        <SelectItem value="mild" className="py-3">Mild</SelectItem>
+                        <SelectItem value="moderate" className="py-3">Moderate</SelectItem>
+                        <SelectItem value="severe" className="py-3">Severe</SelectItem>
+                        <SelectItem value="phobia" className="py-3">Dental Phobia</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormItem>
+                )}
+              />
 
-            <div className="space-y-2">
-              <FormLabel className="text-sm md:text-base">Preferred Accommodations</FormLabel>
-              <p className="text-xs text-gray-600 mb-2">Select any accommodations that would help you feel more comfortable</p>
-              
-              <div className="space-y-2">
+              <div className="space-y-3">
+                <FormLabel className="text-sm">Preferred Accommodations</FormLabel>
                 {[
-                  { id: "extra_time", label: "Extra time during appointment" },
-                  { id: "detailed_explanations", label: "Detailed explanations of procedures" },
-                  { id: "signal", label: "Hand signal to take breaks" },
-                  { id: "headphones", label: "Using headphones/music" },
-                  { id: "sedation", label: "Discussion about sedation options" }
+                  { id: "extra_time", label: "Extra time" },
+                  { id: "detailed_explanations", label: "Detailed explanations" },
+                  { id: "signal", label: "Break signal" },
+                  { id: "headphones", label: "Headphones/music" },
+                  { id: "sedation", label: "Sedation options" }
                 ].map((item) => (
                   <FormField
                     key={item.id}
                     control={form.control}
                     name="anxietyAccommodations"
-                    render={({ field }) => {
-                      return (
-                        <div className="flex items-center space-x-2">
-                          <Checkbox
-                            id={item.id}
-                            checked={field.value?.includes(item.id)}
-                            onCheckedChange={(checked) => {
-                              const currentValues = Array.isArray(field.value) ? field.value : [];
-                              return checked
-                                ? field.onChange([...currentValues, item.id])
-                                : field.onChange(currentValues.filter((value) => value !== item.id));
-                            }}
-                          />
-                          <label
-                            htmlFor={item.id}
-                            className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                          >
-                            {item.label}
-                          </label>
-                        </div>
-                      );
-                    }}
+                    render={({ field }) => (
+                      <label 
+                        htmlFor={item.id}
+                        className="flex items-center space-x-3 py-2 cursor-pointer"
+                      >
+                        <Checkbox
+                          id={item.id}
+                          checked={field.value?.includes(item.id)}
+                          onCheckedChange={(checked) => {
+                            const currentValues = Array.isArray(field.value) ? field.value : [];
+                            return checked
+                              ? field.onChange([...currentValues, item.id])
+                              : field.onChange(currentValues.filter((value) => value !== item.id));
+                          }}
+                          className="h-5 w-5"
+                        />
+                        <span className="text-sm">{item.label}</span>
+                      </label>
+                    )}
                   />
                 ))}
               </div>
             </div>
-          </div>
+          </details>
 
           <FormField
             control={form.control}
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm md:text-base">Additional Information</FormLabel>
+                <FormLabel className="text-sm font-medium">Additional Notes (Optional)</FormLabel>
                 <FormControl>
                   <Textarea 
                     rows={3} 
@@ -391,11 +419,10 @@ const AppointmentForm = () => {
                     onBlur={field.onBlur}
                     name={field.name}
                     ref={field.ref}
-                    className="text-sm md:text-base" 
-                    placeholder="Please share any other concerns, questions, or special requirements"
+                    className="text-base resize-none" 
+                    placeholder="Any other concerns or requirements"
                   />
                 </FormControl>
-                <FormMessage className="text-xs md:text-sm" />
               </FormItem>
             )}
           />
@@ -404,30 +431,28 @@ const AppointmentForm = () => {
             control={form.control}
             name="consent"
             render={({ field }) => (
-              <FormItem className="flex flex-row items-start space-x-2 md:space-x-3 space-y-0">
-                <FormControl>
+              <FormItem>
+                <label className="flex items-start space-x-3 cursor-pointer py-2">
                   <Checkbox
                     checked={field.value}
                     onCheckedChange={field.onChange}
-                    className="mt-0.5"
+                    className="h-5 w-5 mt-0.5"
                   />
-                </FormControl>
-                <div className="space-y-1 leading-none">
-                  <FormLabel className="text-xs md:text-sm">
-                    I consent to having my information collected and stored as per privacy policy.*
-                  </FormLabel>
-                  <FormMessage className="text-xs" />
-                </div>
+                  <span className="text-xs text-gray-600 leading-relaxed">
+                    I consent to having my information collected as per privacy policy.*
+                  </span>
+                </label>
+                <FormMessage className="text-xs" />
               </FormItem>
             )}
           />
 
           <Button 
             type="submit" 
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-md transition duration-300 text-sm md:text-base flex items-center justify-center gap-2"
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg transition duration-300 text-base flex items-center justify-center gap-2 shadow-lg"
             disabled={isSubmitting}
           >
-            <FaWhatsapp className="text-lg" />
+            <FaWhatsapp className="text-xl" />
             {isSubmitting ? "Opening WhatsApp..." : "Book via WhatsApp"}
           </Button>
         </form>
