@@ -5,7 +5,11 @@ import {
   Smile, 
   Baby, 
   CircleDot,
-  ArrowRight
+  ArrowRight,
+  Wind,
+  Activity,
+  Apple,
+  Zap
 } from "lucide-react";
 import { FaTooth } from "react-icons/fa";
 
@@ -15,6 +19,10 @@ const iconMap: Record<string, React.ReactNode> = {
   smile: <Smile className="h-6 w-6" />,
   baby: <Baby className="h-6 w-6" />,
   stethoscope: <Stethoscope className="h-6 w-6" />,
+  wind: <Wind className="h-6 w-6" />,
+  activity: <Activity className="h-6 w-6" />,
+  apple: <Apple className="h-6 w-6" />,
+  zap: <Zap className="h-6 w-6" />,
   default: <CircleDot className="h-6 w-6" />,
 };
 

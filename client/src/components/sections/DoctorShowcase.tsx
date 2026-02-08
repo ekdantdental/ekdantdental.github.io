@@ -1,9 +1,46 @@
 import { doctors } from "@/lib/data";
 import { Award, GraduationCap, Star, Check } from "lucide-react";
 
+// Helper function to extract initials from a doctor's name
+const getInitials = (name: string): string => {
+  const words = name.replace(/^Dr\.?\s*/i, "").split(" ");
+  if (words.length >= 2) {
+    return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+  }
+  return words[0].substring(0, 2).toUpperCase();
+};
+
+// Generate a deterministic color based on the doctor's name
+const getAvatarColor = (name: string): string => {
+  const colors = [
+    "bg-blue-500",
+    "bg-emerald-500",
+    "bg-violet-500",
+    "bg-amber-500",
+    "bg-rose-500",
+    "bg-cyan-500",
+    "bg-indigo-500",
+    "bg-teal-500",
+  ];
+  
+  // Create a simple hash from the name
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) {
+    hash = name.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  
+  return colors[Math.abs(hash) % colors.length];
+};
+
+// Check if the image is a real photo (non-empty local path)
+const isRealPhoto = (imagePath: string): boolean => {
+  if (!imagePath || imagePath.length === 0) return false;
+  return imagePath.startsWith("/images/doctors/");
+};
+
 const DoctorShowcase = () => {
   const leadDoctor = doctors[0]; // Dr. Reshma Rathod
-  const otherDoctors = doctors.slice(1, 5); // Show 4 other doctors
+  const otherDoctors = doctors.slice(1); // Show all other doctors
 
   return (
     <section id="doctors" className="py-12 md:py-20 bg-white">
@@ -57,7 +94,7 @@ const DoctorShowcase = () => {
                   </div>
                   <div className="flex items-center gap-2 text-gray-600 text-sm justify-center md:justify-start">
                     <Award className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>10+ Years Experience</span>
+                    <span>7+ Years Experience</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600 text-sm justify-center md:justify-start">
                     <Star className="h-4 w-4 text-yellow-500 fill-yellow-500 flex-shrink-0" />
@@ -67,7 +104,7 @@ const DoctorShowcase = () => {
 
                 {/* Specializations */}
                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                  {["Dental Implants", "Crown & Bridge", "Smile Design", "Full Mouth Rehab"].map((spec) => (
+                  {["Dental Implants", "Implant Dentistry", "Crown & Bridge", "Smile Design", "Full Mouth Rehab"].map((spec) => (
                     <span
                       key={spec}
                       className="inline-flex items-center gap-1 bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full"
@@ -124,18 +161,27 @@ interface DoctorCardProps {
 }
 
 const DoctorCard = ({ doctor }: DoctorCardProps) => {
+  const hasRealPhoto = isRealPhoto(doctor.image);
+  const initials = getInitials(doctor.name);
+  const avatarColor = getAvatarColor(doctor.name);
+
   return (
     <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-      {/* Image */}
-      <div className="h-40 md:h-48 overflow-hidden bg-gray-100">
-        <img
-          src={doctor.image}
-          alt={doctor.name}
-          className="w-full h-full object-cover"
-          onError={(e) => {
-            e.currentTarget.src = "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80";
-          }}
-        />
+      {/* Image or Initials Avatar */}
+      <div className="h-40 md:h-48 overflow-hidden bg-gray-100 flex items-center justify-center">
+        {hasRealPhoto ? (
+          <img
+            src={doctor.image}
+            alt={doctor.name}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className={`w-24 h-24 md:w-28 md:h-28 rounded-full ${avatarColor} flex items-center justify-center shadow-lg`}>
+            <span className="text-white font-bold text-3xl md:text-4xl">
+              {initials}
+            </span>
+          </div>
+        )}
       </div>
       
       {/* Info */}

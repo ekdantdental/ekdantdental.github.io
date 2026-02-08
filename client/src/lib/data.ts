@@ -2,13 +2,13 @@
 export const clinicInfo = {
   name: "Ekdant Multi Speciality & Implant Center",
   tagline: "Complete Dental & Medical Care Under One Roof",
-  established: 2014,
-  yearsOfExperience: new Date().getFullYear() - 2014,
-  patientCount: "5000+",
+  established: 2021,
+  yearsOfExperience: new Date().getFullYear() - 2021,
+  patientCount: "3000+",
   googleRating: 4.9,
-  googleReviewCount: 127,
+  googleReviewCount: 200,
   googleBusinessUrl: "https://g.page/ekdant-multi-speciality-implant-center",
-  whatsappNumber: "+918379009320",
+  whatsappNumber: "+917900139417",
   phoneNumber: "+917900139417",
   emergencyAvailable: true,
 };
@@ -86,10 +86,10 @@ export const googleReviews = [
 
 // Trust indicators for display
 export const trustIndicators = [
-  { id: 1, icon: "star", value: "4.9", label: "Google Rating", subtext: "127+ Reviews" },
-  { id: 2, icon: "calendar", value: "10+", label: "Years Experience", subtext: "Since 2014" },
-  { id: 3, icon: "users", value: "5000+", label: "Happy Patients", subtext: "And counting" },
-  { id: 4, icon: "award", value: "15+", label: "Specialists", subtext: "Expert team" },
+  { id: 1, icon: "star", value: "4.9", label: "Google Rating", subtext: "200+ Reviews" },
+  { id: 2, icon: "calendar", value: "7+", label: "Years Experience", subtext: "Since 2021" },
+  { id: 3, icon: "users", value: "3000+", label: "Happy Patients", subtext: "And counting" },
+  { id: 4, icon: "award", value: "10+", label: "Specialists", subtext: "Expert team" },
 ];
 
 // Featured services (simplified for homepage display)
@@ -100,6 +100,10 @@ export const featuredServices = [
   { id: 4, title: "Braces & Aligners", icon: "smile", image: "/images/services/orthodontics.jpg" },
   { id: 5, title: "Kids Dentistry", icon: "baby", image: "/images/services/pediatric-dentistry.jpg" },
   { id: 6, title: "General Checkup", icon: "stethoscope", image: "/images/services/general-dentistry.jpg" },
+  { id: 7, title: "Airway Dentistry", icon: "wind", image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+  { id: 8, title: "Physiotherapy", icon: "activity", image: "https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+  { id: 9, title: "Dietician", icon: "apple", image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+  { id: 10, title: "Laser Dentistry", icon: "zap", image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
 ];
 
 // Services data
@@ -587,6 +591,196 @@ export const services = [
         }
       ]
     }
+  },
+  {
+    id: 12,
+    title: "Airway Dentistry",
+    description: "Specialized treatment for sleep apnea, snoring, and breathing-related dental issues. We address airway obstruction through oral appliances and comprehensive airway management.",
+    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Airway Dentistry?",
+          content: [
+            "Airway dentistry is a specialized field that focuses on the relationship between oral health and breathing. It addresses conditions like obstructive sleep apnea (OSA), snoring, and other sleep-disordered breathing issues through dental interventions. By examining the structure of the mouth, jaw, and airway, airway dentists can identify and treat conditions that affect breathing during sleep."
+          ]
+        },
+        {
+          title: "Common Conditions Treated",
+          content: [
+            "Obstructive Sleep Apnea (OSA): A condition where the airway becomes partially or completely blocked during sleep, leading to interrupted breathing.",
+            "Snoring: Often caused by relaxed tissues in the throat that vibrate during breathing.",
+            "Upper Airway Resistance Syndrome (UARS): A milder form of sleep-disordered breathing that can still impact sleep quality.",
+            "Mouth Breathing: Chronic breathing through the mouth instead of the nose, which can affect facial development and overall health.",
+            "Tongue Tie and Lip Tie: Conditions that can restrict tongue movement and affect breathing and swallowing."
+          ]
+        },
+        {
+          title: "Treatment Options",
+          content: [
+            "Oral Appliance Therapy: Custom-made devices worn during sleep to reposition the jaw and tongue, keeping the airway open.",
+            "Myofunctional Therapy: Exercises to strengthen the muscles of the mouth and throat to improve breathing.",
+            "Orthodontic Interventions: Treatments to expand the palate or correct jaw alignment to improve airway space.",
+            "Collaborative Care: Working with sleep specialists, ENTs, and other healthcare providers for comprehensive treatment.",
+            "Lifestyle Modifications: Guidance on sleep positioning, weight management, and other factors affecting breathing."
+          ]
+        },
+        {
+          title: "Benefits of Airway Dentistry",
+          content: [
+            "Improved sleep quality and reduced daytime fatigue.",
+            "Decreased risk of cardiovascular problems associated with sleep apnea.",
+            "Better concentration, memory, and overall cognitive function.",
+            "Reduced snoring for better sleep for both patient and partner.",
+            "Non-invasive alternatives to CPAP machines for many patients."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 13,
+    title: "Physiotherapy",
+    description: "Comprehensive physiotherapy services including pain management, rehabilitation, and movement therapy to restore function and improve quality of life.",
+    image: "https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Physiotherapy?",
+          content: [
+            "Physiotherapy is a healthcare profession focused on restoring, maintaining, and maximizing physical strength, function, and movement. Our physiotherapists use evidence-based techniques to help patients recover from injuries, manage chronic conditions, and improve overall physical well-being. We provide personalized treatment plans tailored to each patient's specific needs and goals."
+          ]
+        },
+        {
+          title: "Conditions We Treat",
+          content: [
+            "Musculoskeletal Issues: Back pain, neck pain, joint problems, and sports injuries.",
+            "Post-Surgical Rehabilitation: Recovery after orthopedic surgeries, including joint replacements.",
+            "Neurological Conditions: Stroke recovery, Parkinson's disease, and multiple sclerosis management.",
+            "Chronic Pain Management: Fibromyalgia, arthritis, and other chronic pain conditions.",
+            "TMJ Disorders: Jaw pain and dysfunction often related to dental issues.",
+            "Postural Problems: Correcting poor posture and related discomfort."
+          ]
+        },
+        {
+          title: "Our Treatment Approaches",
+          content: [
+            "Manual Therapy: Hands-on techniques including massage, joint mobilization, and manipulation.",
+            "Exercise Therapy: Customized exercise programs to strengthen muscles and improve flexibility.",
+            "Electrotherapy: Use of electrical modalities like TENS, ultrasound, and laser therapy for pain relief.",
+            "Dry Needling: Targeted needle insertion to release muscle tension and trigger points.",
+            "Postural Training: Education and exercises to improve posture and prevent future problems.",
+            "Home Exercise Programs: Personalized exercise routines for continued progress at home."
+          ]
+        },
+        {
+          title: "Benefits of Physiotherapy",
+          content: [
+            "Pain relief without medication or surgery.",
+            "Improved mobility, flexibility, and strength.",
+            "Faster recovery from injuries and surgeries.",
+            "Prevention of future injuries and health issues.",
+            "Enhanced quality of life and independence.",
+            "Better understanding of your body and how to care for it."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 14,
+    title: "Dietician & Nutrition Counseling",
+    description: "Expert nutritional guidance and personalized diet plans to support your overall health, manage chronic conditions, and achieve your wellness goals.",
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Nutrition Counseling?",
+          content: [
+            "Nutrition counseling is a personalized approach to dietary planning that considers your individual health needs, lifestyle, and goals. Our registered dieticians work with you to develop sustainable eating habits that support your overall health, manage chronic conditions, and help you achieve optimal wellness. We believe in practical, evidence-based nutrition advice that fits your real life."
+          ]
+        },
+        {
+          title: "Services We Offer",
+          content: [
+            "Personalized Diet Plans: Customized meal plans based on your health conditions, preferences, and lifestyle.",
+            "Weight Management: Sustainable strategies for healthy weight loss or gain.",
+            "Disease-Specific Nutrition: Dietary guidance for diabetes, hypertension, heart disease, and other conditions.",
+            "Sports Nutrition: Optimizing nutrition for athletic performance and recovery.",
+            "Pediatric Nutrition: Ensuring proper nutrition for growing children.",
+            "Prenatal and Postnatal Nutrition: Supporting mothers and babies through proper nutrition."
+          ]
+        },
+        {
+          title: "Conditions We Support",
+          content: [
+            "Diabetes Management: Blood sugar control through balanced nutrition.",
+            "Heart Health: Heart-healthy eating to manage cholesterol and blood pressure.",
+            "Digestive Disorders: Diet modifications for IBS, GERD, and other digestive issues.",
+            "Food Allergies and Intolerances: Managing dietary restrictions safely.",
+            "Eating Disorders: Supportive nutrition therapy as part of comprehensive treatment.",
+            "Obesity and Metabolic Syndrome: Comprehensive nutritional support for weight-related conditions."
+          ]
+        },
+        {
+          title: "Our Approach",
+          content: [
+            "We take a holistic approach to nutrition, considering not just what you eat, but how, when, and why you eat.",
+            "Our dieticians work collaboratively with your medical team to ensure integrated care.",
+            "We provide practical, realistic advice that fits your budget, cultural preferences, and daily routine.",
+            "Regular follow-ups help track progress and adjust plans as needed.",
+            "Education and empowerment are at the core of our practice, helping you make informed food choices for life."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 15,
+    title: "Laser Dentistry",
+    description: "Advanced laser technology for precise, minimally invasive dental treatments with faster healing, less discomfort, and improved outcomes.",
+    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    detailedDescription: {
+      sections: [
+        {
+          title: "What is Laser Dentistry?",
+          content: [
+            "Laser dentistry uses focused light beams to perform a variety of dental procedures with exceptional precision and minimal invasiveness. This advanced technology allows for more comfortable treatments, reduced bleeding, faster healing times, and often eliminates the need for anesthesia in many procedures. At our clinic, we use state-of-the-art dental lasers to provide you with the most advanced care available."
+          ]
+        },
+        {
+          title: "Common Laser Dental Procedures",
+          content: [
+            "Cavity Detection and Treatment: Lasers can detect early tooth decay and remove decayed tissue with precision, preserving more healthy tooth structure.",
+            "Gum Disease Treatment: Laser therapy effectively removes infected tissue and bacteria from periodontal pockets while promoting healing.",
+            "Gum Reshaping: Cosmetic gum contouring to improve the appearance of a 'gummy smile' or uneven gum line.",
+            "Teeth Whitening: Laser-activated whitening treatments for faster, more dramatic results.",
+            "Root Canal Therapy: Lasers help disinfect and clean root canals more effectively than traditional methods.",
+            "Lesion Removal: Safe removal of oral lesions, cold sores, and canker sores with minimal discomfort.",
+            "Frenectomy: Quick and comfortable treatment for tongue-tie or lip-tie conditions."
+          ]
+        },
+        {
+          title: "Benefits of Laser Dentistry",
+          content: [
+            "Minimally Invasive: Precise targeting means less damage to surrounding healthy tissue.",
+            "Reduced Discomfort: Many procedures require little or no anesthesia.",
+            "Less Bleeding: Lasers cauterize as they work, reducing bleeding during and after procedures.",
+            "Faster Healing: Laser treatment promotes tissue regeneration and faster recovery.",
+            "Lower Infection Risk: The laser sterilizes the treatment area, reducing the risk of bacterial infections.",
+            "Less Anxiety: The quiet operation and reduced need for drills makes treatment more comfortable for anxious patients."
+          ]
+        },
+        {
+          title: "Is Laser Dentistry Right for You?",
+          content: [
+            "Laser dentistry is suitable for patients of all ages and is particularly beneficial for those who experience dental anxiety or have sensitivity to traditional dental tools.",
+            "Our dental team will evaluate your specific needs and recommend laser treatment when it offers the best outcomes for your condition.",
+            "Whether you need a simple cavity treatment, gum therapy, or cosmetic enhancement, laser dentistry may provide a more comfortable and effective solution."
+          ]
+        }
+      ]
+    }
   }
 ];
 
@@ -609,8 +803,8 @@ export const doctors = [
   {
     id: 2,
     name: "Dr. Sonali J Patil",
-    title: "MDS, BDS (Prosthodontist)",
-    description: "Expert in prosthodontics providing comprehensive dental treatments with precision.",
+    title: "MDS, BDS (Prosthodontist & Airway Dentist)",
+    description: "Expert in prosthodontics and airway dentistry, providing comprehensive dental treatments with precision.",
     image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
   },
   {
@@ -633,6 +827,20 @@ export const doctors = [
     title: "MDS, BDS (Pediatric Dentist)",
     description: "Specialized in providing dental care for children, with expertise in creating a comfortable environment for young patients.",
     image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    id: 8,
+    name: "Dr. Neeti Mahalwal",
+    title: "Physiotherapist",
+    description: "Specialist in physical rehabilitation, pain management, and movement therapy to restore function and improve quality of life.",
+    image: ""
+  },
+  {
+    id: 9,
+    name: "Sayli Patil",
+    title: "Dietician & Nutritionist",
+    description: "Expert in personalized nutrition counseling, diet planning, and lifestyle modification for optimal health and wellness.",
+    image: ""
   }
 ];
 

@@ -28,20 +28,27 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main header row */}
         <div className="flex justify-between items-center py-2 md:py-4">
-          {/* Logo - smaller on mobile */}
+          {/* Logo with clinic name */}
           <Link href="/" className="flex items-center">
-            <div className="relative h-12 w-12 sm:h-16 sm:w-16 md:h-24 md:w-24 lg:h-28 lg:w-28 flex items-center justify-center bg-white rounded-md">
+            <div className="relative h-12 w-12 sm:h-16 sm:w-16 md:h-24 md:w-24 lg:h-28 lg:w-28 flex items-center justify-center bg-white rounded-md flex-shrink-0">
               <img 
                 src="/images/brand/logo-ekdant-new.jpg" 
                 alt="Ekdant Logo" 
                 className="h-10 w-10 sm:h-14 sm:w-14 md:h-20 md:w-20 lg:h-24 lg:w-24 object-contain" 
               />
             </div>
-            {/* Text logo - hidden on mobile, visible from sm+ */}
+            
+            {/* Mobile: Text name with subheading */}
+            <div className="sm:hidden ml-2">
+              <span className="font-heading font-bold text-lg text-primary block leading-tight">Ekdant</span>
+              <span className="text-[10px] text-gray-500 leading-tight">Multi Speciality Clinic & Implant Center</span>
+            </div>
+            
+            {/* Desktop: Styled text logo image */}
             <div className="hidden sm:block h-12 sm:h-16 md:h-24 lg:h-28 ml-2 md:ml-4">
               <img 
                 src="/images/brand/ekdant-text-styling.png" 
-                alt="Ekdant Multi Speciality and Implant Center" 
+                alt="Ekdant Multi Speciality Clinic and Implant Center" 
                 className="h-full object-contain" 
               />
             </div>

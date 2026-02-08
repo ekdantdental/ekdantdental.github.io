@@ -51,7 +51,7 @@ const AboutSection = () => {
 
         {/* Stats Row */}
         <div className="grid grid-cols-3 gap-4 mb-10 md:mb-16 max-w-md mx-auto md:max-w-2xl">
-          <StatItem value="10+" label="Years Experience" />
+          <StatItem value="7+" label="Years Experience" />
           <StatItem value="5000+" label="Happy Patients" />
           <StatItem value="15+" label="Specialists" />
         </div>

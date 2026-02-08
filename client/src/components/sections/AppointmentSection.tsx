@@ -89,7 +89,7 @@ const AppointmentSection = () => {
           </div>
 
           {/* Right Content - Form */}
-          <div className="lg:pl-8">
+          <div id="appointment-form" className="lg:pl-8">
             <AppointmentForm />
           </div>
         </div>

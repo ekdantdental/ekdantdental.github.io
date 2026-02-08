@@ -6,7 +6,14 @@ const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const headerOffset = 80; // Account for sticky header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
@@ -48,17 +55,17 @@ const HeroSection = () => {
             {/* Subheading */}
             <p className="text-lg md:text-xl text-white/80 mb-6 md:mb-8 max-w-xl mx-auto lg:mx-0">
               {clinicInfo.tagline}. Trusted by{" "}
-              <span className="font-semibold text-white">{clinicInfo.patientsServed} patients</span>{" "}
-              since {clinicInfo.establishedYear}.
+              <span className="font-semibold text-white">{clinicInfo.patientCount} patients</span>{" "}
+              since {clinicInfo.established}.
             </p>
 
             {/* Single CTA */}
             <Button
               size="lg"
               className="bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-4 px-8 rounded-lg shadow-lg shadow-cyan-500/30 transition-all duration-300 text-base md:text-lg"
-              onClick={() => scrollToSection("book-appointment")}
+              onClick={() => scrollToSection("appointment-form")}
             >
-              Book Free Consultation
+              Book Consultation Today
             </Button>
           </div>
 

@@ -29,7 +29,7 @@ ${appointment.message ? `Message: ${appointment.message}` : ''}
     `.trim();
     
     // Create WhatsApp URL with pre-filled message
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=918379009320&text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=917900139417&text=${encodeURIComponent(message)}`;
     
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');

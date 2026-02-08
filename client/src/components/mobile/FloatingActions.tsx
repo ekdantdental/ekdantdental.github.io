@@ -1,8 +1,8 @@
 import { Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
-const PHONE_NUMBER = "+918379009320";
-const WHATSAPP_NUMBER = "918379009320";
+const PHONE_NUMBER = "+917900139417";
+const WHATSAPP_NUMBER = "917900139417";
 const WHATSAPP_MESSAGE = encodeURIComponent("Hi! I'd like to book an appointment at Ekdant Multi Speciality and Implant Center.");
 
 const FloatingActions = () => {
